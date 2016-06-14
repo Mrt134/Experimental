@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BSDCAN Documentation Developers’ Summit (1300 Wed Jun 8) &mdash; bsdcan notes 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="bsdcan notes 1.0 documentation" href="index.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="intelquickassist.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bsdcan notes
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">BSDCAN Documentation Developers&#8217; Summit (1300 Wed Jun 8)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#session-one">Session One</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#challenges">Challenges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-website">The Website</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#session-2">Session 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simplifying-the-submission-and-editorial-process">Simplifying the submission and editorial process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wish-lists">Wish Lists</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">bsdcan notes</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>BSDCAN Documentation Developers&#8217; Summit (1300 Wed Jun 8)</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/docdevsummit.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bsdcan-documentation-developers-summit-1300-wed-jun-8">
+<span id="docdevsummit"></span><h1>BSDCAN Documentation Developers&#8217; Summit (1300 Wed Jun 8)<a class="headerlink" href="#bsdcan-documentation-developers-summit-1300-wed-jun-8" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="session-one">
+<span id="id1"></span><h1>Session One<a class="headerlink" href="#session-one" title="Permalink to this headline">¶</a></h1>
+<p>Categories</p>
+<p>PO Translation Project
+Status Report
+Tried at ASIA</p>
+<p>Working on implementing PO translation after BSDCAN 2015
+not a replacement for the old translation system, they exist side by side
+PO uses get text/editors in an attempt to streamline the process
+PO translator program has improved the number of new translations being available
+No new translations came online in 2015 prior to the PO program coming online.
+It is hard to gage how in depth a specific translation commit can be.</p>
+<div class="section" id="challenges">
+<span id="id2"></span><h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h2>
+<p>The PO translator has no way to mark items to not be translated
+Things that should not be translated</p>
+<blockquote>
+<div>pgp keys (most of the text cannot be translated)
+preserving existing translations (xml2po). FreeBSD needs help finding a program that auto translated xml files to po files.
+showing context
+more PO editors (poedit, gtranslator, kde based <a href="#id3"><span class="problematic" id="id4">*</span></a>) none show context
+UTF-8 Most XML documents are not UTF-8, they need to be converted. itstool converts the strings from the english text files</div></blockquote>
+<dl class="docutils">
+<dt>Translation Project Access</dt>
+<dd>Translator committers: limit access? Translators don&#8217;t necessarily need access to all of the repo, just a small part. Limiting access would enable giving access to a much larger group of potential translators. Pootle or Weblate offers more options. Transfx is a commercialized product that also provides options</dd>
+<dt>Participation</dt>
+<dd><p class="first">FreeBSD needs more participation in all documentation (manpages, translates, reviews, etc.)
+In addition, FreeBSD needs more ways to reduce the learning curve for documentation submission.</p>
+<dl class="last docutils">
+<dt>Encouraging documentation activity</dt>
+<dd><p class="first">regular reports, like portmgr
+doceng&#8217;s role</p>
+<blockquote>
+<div>the documentation engineering team is very small (xslt experience needed). The make sure the documents work. Toolchain, build. Maybe a leadership role? Currently, the flow of documentation is controlled by the contributions</div></blockquote>
+<p>web reviews of rendered docs
+website news items for doc changes</p>
+<blockquote class="last">
+<div>blog posts/evangelization/encourages activity</div></blockquote>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="the-website">
+<span id="website"></span><h2>The Website<a class="headerlink" href="#the-website" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The current website is a full and complete object. it is manually generated by a static site generator.
+Rewrite and address the .css issues without changing any of the underlying structure.
+Perhaps having a stable of skins available to alter how the website appears, to let the user choose the skin which appears best to them. A couple of standards must apply (logos)
+Branding/marketing perspective: it is very important that every customer have the same experience in order to unify the brand experience.
+Mobile device adaptation/
+Replacing the website probably has to include all of the current functionality
+Side-by-side rebuilding of the website that is focused on a few of the most important elements</p>
+<dl class="docutils">
+<dt>Q: is the website meant for a different class of writer? Instead of tech writers, perhaps marketers?</dt>
+<dd>What is a reasonable barrier to entry for the website or tech docs? We need to reach a middle ground where time to update and quality are balanced.
+The website is a legacy system. Updating the website is a problem of scale
+Perhaps the foundation should use other people (web designers) for the website instead of documentation writers
+How to make translations work on both systems?
+What is the ultimate decision for the website?</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="session-2">
+<h1>Session 2<a class="headerlink" href="#session-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simplifying-the-submission-and-editorial-process">
+<span id="editor-process"></span><h2>Simplifying the submission and editorial process<a class="headerlink" href="#simplifying-the-submission-and-editorial-process" title="Permalink to this headline">¶</a></h2>
+<p>Currently we ask contributors to submit a quarterly report.
+We have a specific xml format developed specifically for these documents that has its own tags and syntax which any contributor must learn prior to submitting anything.
+Quarterly reports should be engaging and exciting to read.
+This is a process which could potentially be made easier by switching formats? How to agree on a new standard format.
+Two challenges</p>
+<ol class="arabic simple">
+<li>Getting consistent contributions for quarterly reports.</li>
+<li>Simplifying the formatting</li>
+</ol>
+<p>How do you maintain a structured output format</p>
+<p>What are the time - stretching factors?
+People with wrong formatting
+People with lengthy articles (long to format) a shorter article formatted in xml was 2586 lines.</p>
+</div>
+<div class="section" id="wish-lists">
+<span id="id5"></span><h2>Wish Lists<a class="headerlink" href="#wish-lists" title="Permalink to this headline">¶</a></h2>
+<p>(Warren&#8217;s wishlist)</p>
+<ul class="simple">
+<li>Help with doc toolchain/more participation in doceng</li>
+<li>localizable links to other formats at top of documentat.</li>
+<li>new website/skins for new website</li>
+<li>UTF-8 for all DocBook docs.</li>
+<li>More developer participation in the forums</li>
+<li>XInclude instead of entities for DocBook docs.</li>
+<li>DBlatex instead of fop for PDF</li>
+<li>Subscription required mailing lists</li>
+<li>method to mak items &#8220;do not translate&#8221;</li>
+<li>man page examples</li>
+</ul>
+<p>Other wishlists</p>
+<ul class="simple">
+<li>Monthly online docsprints</li>
+<li>Face to face docsprints. These could be combined with the idea for short tutorial sessions.</li>
+<li>git pull requests for docs:</li>
+</ul>
+<p>The documentation toolchain has all been combined into one package, but is still a little too lengthy</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="intelquickassist.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Tim Moore.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

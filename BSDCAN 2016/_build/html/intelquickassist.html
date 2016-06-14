@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Intel QuickAssist (Devsummit session 2 1106am) by Fiona Trahe &mdash; bsdcan notes 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="bsdcan notes 1.0 documentation" href="index.html"/>
+        <link rel="next" title="BSDCAN Documentation Developers’ Summit (1300 Wed Jun 8)" href="docdevsummit.html"/>
+        <link rel="prev" title="Microsoft Azure Presentation" href="mcsftazure.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bsdcan notes
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="mcsftazure.html">Microsoft Azure Presentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Intel QuickAssist (Devsummit session 2 1106am) by Fiona Trahe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docdevsummit.html">BSDCAN Documentation Developers&#8217; Summit (1300 Wed Jun 8)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docdevsummit.html#session-one">Session One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docdevsummit.html#session-2">Session 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freebsd1112.html">FreeBSD 11 and 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freebsd1112.html#freebsd-12-goals">FreeBSD 12 Goals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="foundationcoreqa.html">What can you do</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">bsdcan notes</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Intel QuickAssist (Devsummit session 2 1106am) by Fiona Trahe</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/intelquickassist.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="intel-quickassist-devsummit-session-2-1106am-by-fiona-trahe">
+<span id="intel-quickassist"></span><h1>Intel QuickAssist (Devsummit session 2 1106am) by Fiona Trahe<a class="headerlink" href="#intel-quickassist-devsummit-session-2-1106am-by-fiona-trahe" title="Permalink to this headline">¶</a></h1>
+<p>Intel quickasist tech overview</p>
+<ul class="simple">
+<li>Bulk Crypto: High speed encrypt/decrypt</li>
+<li>Public Key Crypto: Heavily map intensive/cpu cycles</li>
+<li>Compression: lossless data compression for data in flight and rest</li>
+</ul>
+<p>Form factors</p>
+<ul class="simple">
+<li>Chipsets</li>
+<li>PCI express Plugin Card</li>
+<li>SoC - Connects to CPU via on chip interconnect</li>
+<li>Tech is relatively mature with continued optimization</li>
+</ul>
+<p>Potential Applications</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Cloud</p>
+<blockquote>
+<div><ul class="simple">
+<li>Secure Networking</li>
+<li>Efficient VM Migration</li>
+<li>Databases</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Networking</p>
+<blockquote>
+<div><p>-Secure Routing
+-Web Proxy
+-WAN Optimize
+-Wireless infrastructure</p>
+</div></blockquote>
+</li>
+<li><p class="first">Big Data</p>
+<blockquote>
+<div><ul class="simple">
+<li>Analytics (APACHE Hadoop)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Storage</p>
+<blockquote>
+<div><ul class="simple">
+<li>Data integrity</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p class="first">Terminology:</p>
+<p>I QA T integrates hardware acceleration of compute intensive workloads (specifically, crypto and compression on intel arch. platforms
+Crypto primitives supported:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Compression and decompression (static and dynamic)</li>
+<li>algorithms: Deflate (LZ77 plus Huffman coding with gzip or zlib header)</li>
+<li>stateful and stateless compression and decompression (stateless recommended)</li>
+<li>symmetric ciphers</li>
+<li>message diges hash</li>
+<li>algorithm chaining and autheniticated encryption</li>
+<li>public key crypto</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Operating Systems ,hypervisor, and frameworks: FreeBSD, Linux, other os&#8217; not publically available
+Applications</p>
+<blockquote>
+<div>Web Server, engineX, mysql, dropsdb</div></blockquote>
+<dl class="docutils">
+<dt>Services and Engines</dt>
+<dd><dl class="first docutils">
+<dt>Each I QA T device offers up to four services</dt>
+<dd>-PKE
+-SYM
+-RNG
+-DA</dd>
+</dl>
+<p class="last">Each service has multiple engines with accelerators and threads
+DMA writes to the DRAM are also cached in the LLC per the Intel data direct/io tech
+Overview of Service Engine:
+Dram CPU and PCIE
+data enters the chip through channels/rings/qpips , etc. (in DRAM)
+request for encrypted data goes to DRAM, which writes to a PCIe endpoint
+most of the work is done in the DRAM, but the PCIe conducts the compression
+most work is DRAM read/writes
+This results in relatively quick compression/encryption speeds.
+PCI bandwith is (one) limiting factor to encrypt speeds</p>
+</dd>
+<dt>intel quickasist freebsd port</dt>
+<dd><blockquote class="first">
+<div><dl class="docutils">
+<dt>I QA T driver on FreeSD 10.x (direct model, out of tree)</dt>
+<dd>initial port in q2 2016</dd>
+</dl>
+</div></blockquote>
+<dl class="last docutils">
+<dt>issues with porting</dt>
+<dd><p class="first">common code base
+for all operating systems - FreeBSD, etc.
+Multiple Repos</p>
+<blockquote>
+<div>common Repos (6 or 7)
+individual platform repos
+single mainline branch development - changes for one platform applies to all</div></blockquote>
+<p class="last">Scripts/macros/compile time flags to generate release packages for each os
+in-tree/out-of-tree/direct/indirect
+<em>Found FreeBSD to be much more flexible, leading to faster development</em></p>
+</dd>
+</dl>
+</dd>
+<dt>intel quickasist data plane development kit (DPDK)</dt>
+<dd><dl class="first docutils">
+<dt>current cryptodev implementation</dt>
+<dd><dl class="first last docutils">
+<dt>supports software and hardware symmetric crypto</dt>
+<dd>one top shop for best of intel crypto
+all harware implementations also have software implementations</dd>
+</dl>
+</dd>
+</dl>
+<p class="last">supports standard ipsec aes and sha algorithms as well as snow3g Wireless algorithms
+upstreaming to dpdk.org with an ipsec sample Applicationsuses the stock kernal driver to init
+can add new accel device types to the arch</p>
+</dd>
+</dl>
+<p>device exposure
+DPDK Crypto APIs</p>
+<blockquote>
+<div><p>crypto device management apis
+crypto stats and capabilities apis
+symmetriccipher/hash algorithm definitions
+session management apis</p>
+<blockquote>
+<div>number of sessions is user defined</div></blockquote>
+<p>operation management apis
+burst apis</p>
+<blockquote>
+<div>group encryption requests together and for simple transmission to the hardware</div></blockquote>
+</div></blockquote>
+<p>qa: dpdk is company and os (mostly) agnostic. (any x86 cpu)</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="docdevsummit.html" class="btn btn-neutral float-right" title="BSDCAN Documentation Developers’ Summit (1300 Wed Jun 8)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mcsftazure.html" class="btn btn-neutral" title="Microsoft Azure Presentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Tim Moore.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+BSDCAN 2016 is an eclectic affair.
+Informal, corporate, collegiate.
+
+Held at Ottowa University, BSD CAN is a formal/informal gathering of developers, businesses, and interested parties, all under the banner of "open source".
+
+A developer's summit starts the conference, Wednesday June 8.
+Microsoft began with a presentation about Azure, Microsoft's growth effort into open-source computing.
+
+Having just started a new technical writing job with iX Systems, 
+I had never been to an open source computing conference, and was a little nervous about attending BSD Can, since my co-workers told me this was one of the largest conferences. 
+
+I attended the developer's summit, listening to interesting presentations from Microsoft and Intel about software their companies were building that intersected with FreeBSD and the broader open source world. 
+After lunch, the developer's summit broke into several working group sessions. I chose to attend the documentation working group meeting as I desired to learn as much as possible about FreeBSD documentation as I could. In this session, about a dozen contributors listened to a presentation (Warren Block) about FreeBSD documentation (see docdevsummit.rst). This session was more informal, with comments and questions welcomed freely in order to open broader discussions about strengths and weaknesses of the documentation efforts. The appearance and function of the documentation web site appeared to stimulate a rather spirited discussion. 
+
+After an hour and a half, our group took a break to join the general session, where the conference T-Shirt was unveiled to much fanfare. 
