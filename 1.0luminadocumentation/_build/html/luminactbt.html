@@ -1,0 +1,524 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Contributing to Lumina &mdash; Lumina Handbook 0.9.0</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/lumina.ico"/>
+  
+
+  
+
+  
+    
+
+    <link rel="stylesheet" href="_static/css/pcbsd_style.css" type="text/css" />
+
+  
+
+  
+    <link rel="top" title="Lumina Handbook 0.9.0" href="index.html"/>
+        <link rel="next" title="6. Changelog" href="changelog.html"/>
+        <link rel="prev" title="4. Lumina Utilities" href="luminautl.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Lumina Handbook
+        
+
+        
+          
+          <img src="_static/lumina.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="testintro.html">1. Introduction to Lumina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminaconfig.html">2. Lumina Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminaplugins.html">3. Lumina Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminautl.html">4. Lumina Utilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Contributing to Lumina</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#report-a-bug">5.1. Report a Bug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#become-a-translator">5.2. Become a Translator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interface-translation">5.2.1. Interface Translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-translation">5.2.2. Documentation Translation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#become-a-developer">5.3. Become a Developer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-the-source-code">5.3.1. Getting the Source Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-guidelines">5.3.2. Design Guidelines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">6. Changelog</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Lumina Handbook</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div class="wy-breadcrumbs-nav" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs-nav">
+    <li class="wy-breadcrumbs-nav"><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li class="wy-breadcrumbs-nav">5. Contributing to Lumina</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/luminactbt.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+&nbsp;
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contributing-to-lumina">
+<span id="id1"></span><h1>5. Contributing to Lumina<a class="headerlink" href="#contributing-to-lumina" title="Permalink to this headline">¶</a></h1>
+<p>Lumina is an open source project which relies on involvement from its
+users and supporters to assist in development, documentation, and
+localization. This section describes how you can assist the Lumina
+Project.</p>
+<div class="section" id="report-a-bug">
+<span id="id2"></span><h2>5.1. Report a Bug<a class="headerlink" href="#report-a-bug" title="Permalink to this headline">¶</a></h2>
+<p>If you like playing around with your desktop environment and have a bit
+of spare time, one of the most effective ways you can assist the Lumina
+Project is by reporting problems you encounter while using Lumina.
+Subscribing to <a class="reference external" href="http://lumina-desktop.org/news/">Lumina News</a> is a
+good way to keep up-to-date on the availability of new Lumina versions.</p>
+<p>Anyone can report a Lumina bug. Follow these tips so that you can
+accurately describe your findings so they can be fixed as soon as
+possible:</p>
+<ul class="simple">
+<li>Lumina is part of the PC-BSD® Project and Lumina bugs are reported to
+the PC-BSD® bug tracker. If you haven&#8217;t already, click the &#8220;Register&#8221;
+link at <a class="reference external" href="https://bugs.pcbsd.org">bugs.pcbsd.org</a> and reply to the
+automatic email to confirm your user account.</li>
+<li>Use the &#8220;Search&#8221; bar at <a class="reference external" href="https://bugs.pcbsd.org">bugs.pcbsd.org</a> to
+see if anyone else has reported a similar problem. If a similar bug
+exists which has not been resolved yet, you can add a comment if you
+have additional information to aid the developers in fixing the bug.
+Note that you do not need to be logged in to perform a search, but you
+will have to login using the &#8220;Sign in&#8221; link in order to add a comment
+to an existing bug or to create a new bug report.</li>
+<li>To create a new bug report, make sure you are signed in, then go to
+<a class="reference external" href="https://bugs.pcbsd.org/projects/pcbsd/issues/new">https://bugs.pcbsd.org/projects/pcbsd/issues/new</a>. In the screen
+shown in <a class="reference internal" href="#bug"><span class="std std-numref">Figure 5.1.1: Creating a Bug Report</span></a>, click the
+&#8220;Category&#8221; drop-down menu and select &#8220;Lumina Desktop&#8221;.</li>
+</ul>
+<div class="figure" id="bug">
+<a class="reference internal image-reference" href="_images/bug.png"><img alt="_images/bug.png" src="_images/bug.png" style="width: 981.0px; height: 458.0px;" /></a>
+</div>
+<ul class="simple">
+<li>Input a descriptive &#8220;Subject&#8221; that includes the error and the version
+of Lumina. Ideally, the subject is short (8 words or less) and
+contains key words about the error so that other users with similar
+issues will find the bug report when they perform a search.</li>
+<li>In the &#8220;Description&#8221;, give a short (2-3 sentences) description of how
+to recreate the error. If there is an error message, include its
+complete text. You can also attach a screenshot if it can help the
+developer in visualizing the problem.</li>
+<li>When finished, click &#8220;Create&#8221; to save the report. It will
+automatically be assigned a number and you will receive an email at
+the email address you used to register whenever a comment is added to
+the report or its status changes.</li>
+</ul>
+</div>
+<div class="section" id="become-a-translator">
+<span id="id4"></span><h2>5.2. Become a Translator<a class="headerlink" href="#become-a-translator" title="Permalink to this headline">¶</a></h2>
+<p>If you are interested in translating Lumina into your native language,
+there are two translation areas that you can choose to become involved
+in:</p>
+<ol class="arabic simple">
+<li>Translate the graphical menus within Lumina.</li>
+<li>Translate the Lumina Handbook (this document).</li>
+</ol>
+<p>This section describes each of these translation areas in more detail
+and how to get started as a translator.</p>
+<p>Regardless of the type of translation you are interested in, you should
+first join the <a class="reference external" href="http://lists.pcbsd.org/mailman/listinfo/translations">translations mailing list</a>.
+When you join, send an email to introduce yourself and indicate which
+language(s) and which type(s) of translations you can assist with. This
+will allow you to meet other volunteers as well as keep abreast of any
+notices or updates that affect translators.</p>
+<div class="section" id="interface-translation">
+<span id="index-0"></span><span id="id5"></span><h3>5.2.1. Interface Translation<a class="headerlink" href="#interface-translation" title="Permalink to this headline">¶</a></h3>
+<p>Lumina uses <a class="reference external" href="https://en.wikipedia.org/wiki/Pootle">Pootle</a> for
+managing localization of the menu screens seen in Lumina. Pootle makes
+it easy to find out if your native language has been fully localized for
+Lumina. Pootle also makes it easy for users to check and submit
+translated text as it provides a web editor and commenting system. This
+means that translators can spend their time making and reviewing
+translations rather than learning how to use a translation tool.</p>
+<p>To see the status of a localization, open up the <a class="reference external" href="http://translate.pcbsd.org/projects/lumina/">Lumina translation website</a>
+in a web browser, as seen in <a class="reference internal" href="#translate1"><span class="std std-numref">Figure 5.2.1: The Lumina Pootle Translation System</span></a>.</p>
+<div class="figure" id="translate1">
+<a class="reference internal image-reference" href="_images/translate1.png"><img alt="_images/translate1.png" src="_images/translate1.png" style="width: 800.0px; height: 453.0px;" /></a>
+</div>
+<p>The localizations Lumina users have requested are listed alphabetically
+on the left. If your language is missing and you would like to help in
+its translation, send an email to the <a class="reference external" href="http://lists.pcbsd.org/mailman/listinfo/translations">translations mailing list</a>
+so it can be added.</p>
+<p>The green bar in the &#8220;Progress&#8221; column indicates the percentage of
+Lumina menus that have been localized. If a language is not at 100%, it
+means that the menus that currently are not translated will appear in
+English instead of in that language.</p>
+<p>If you click on a language name, you will see each menu item that is
+available for translation. The example shown in <a class="reference internal" href="#translate2"><span class="std std-numref">Figure 5.2.2: Viewing a Language&#8217;s Available Menus</span></a>
+is for the Greek localization. In this example, the menu for
+&#8220;lumina-search&#8221; is almost complete, but the translation for
+&#8220;lumina-config&#8221; has not been started yet.</p>
+<div class="figure" id="translate2">
+<a class="reference internal image-reference" href="_images/translate2.png"><img alt="_images/translate2.png" src="_images/translate2.png" style="width: 800.0px; height: 453.0px;" /></a>
+</div>
+<p>In order to edit a translation, you need to first create a Pootle login
+account. Once you are logged in to Pootle, navigate to the menu item
+that you wish to translate. In <a class="reference internal" href="#translate3"><span class="std std-numref">Figure 5.2.3: Using the Pootle Interface to Edit a Translation String</span></a>,
+the translator has clicked on &#8220;lumina-config.ts&#8221; then clicked the
+&#8220;Continue translation&#8221; link.</p>
+<div class="figure" id="translate3">
+<a class="reference internal image-reference" href="_images/translate3.png"><img alt="_images/translate3.png" src="_images/translate3.png" style="width: 800.0px; height: 453.0px;" /></a>
+</div>
+<p>In this example, the first string, the phrase &#8220;Select Application&#8221; has
+not yet been translated. To add the translation, type the translated
+text into the white text field and click the &#8220;Submit&#8221; button. To
+translate another text field, click on the hyperlink associated with its
+name, or use the &#8220;Next&#8221; and &#8220;Previous&#8221; links to navigate between text
+fields. Sometimes, as seen in this example, a text field exists in
+another screen and already has a translation. In this case, you can
+click the link for a &#8220;Similar translations&#8221; and it will be added to the
+field for you so that you can &#8220;Submit&#8221; it.</p>
+<p>If you need help with a translation or using the Pootle system, you can
+ask for help on the translations mailing list or in the
+<a class="reference external" href="https://forums.pcbsd.org/forum-40.html">translations forum</a>.</p>
+</div>
+<div class="section" id="documentation-translation">
+<span id="index-1"></span><span id="id7"></span><h3>5.2.2. Documentation Translation<a class="headerlink" href="#documentation-translation" title="Permalink to this headline">¶</a></h3>
+<p>At this time, the Lumina Handbook has not yet been added to the
+translation system. Once it has, instructions for translating the
+Handbook will be added here.</p>
+</div>
+</div>
+<div class="section" id="become-a-developer">
+<span id="id8"></span><h2>5.3. Become a Developer<a class="headerlink" href="#become-a-developer" title="Permalink to this headline">¶</a></h2>
+<p>Developers who want to help improve the Lumina codebase are always
+welcome! If you would like to participate in core development, subscribe
+to the <a class="reference external" href="http://lists.pcbsd.org/mailman/listinfo/dev">developers mailing list</a>.</p>
+<p>All of the Lumina utilities are developed in C++ using the Qt Libraries,
+but other Qt-based languages are used for various parts of the project
+as well. For example, the <a class="reference external" href="http://doc.qt.io/qt-4.8/stylesheet.html">Qt Stylesheet language</a>,
+which is similar to CSS, is used for theme templates and <a class="reference external" href="http://doc.qt.io/qt-5/qtqml-index.html">QML</a>,
+which is similar to JavaScript, may optionally be used for desktop
+interface plugins.</p>
+<div class="section" id="getting-the-source-code">
+<span id="index-2"></span><span id="id9"></span><h3>5.3.1. Getting the Source Code<a class="headerlink" href="#getting-the-source-code" title="Permalink to this headline">¶</a></h3>
+<p>The Lumina source code is available from github and <strong class="command">git</strong> needs
+to be installed in order to download the source code. When using
+PC-BSD®, <strong class="command">git</strong> is included in the base install.</p>
+<p>To download the source code, <strong class="command">cd</strong> to the directory to store the
+source and type:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcbsd</span><span class="o">/</span><span class="n">lumina</span><span class="o">.</span><span class="n">git</span>
+<span class="n">git</span> <span class="n">pull</span>
+</pre></div>
+</div>
+<p>This will create a directory named <code class="file docutils literal"><span class="pre">lumina/</span></code> which contains the
+local copy of the repository. To keep the local copy in sync with the
+official repository, run <strong class="command">git pull</strong> within the <code class="file docutils literal"><span class="pre">lumina</span></code>
+directory.</p>
+<p>In order to compile the source, make sure that the following
+<a class="reference external" href="https://github.com/pcbsd/lumina/blob/master/DEPENDENCIES">list of required software</a>
+is installed. If you are on a PC-BSD® system, the required software is
+contained in the &#8220;PC-BSD Build Toolchain&#8221; PBI which can be installed
+using AppCafe® or by typing <strong class="command">pkg install pcbsd-toolchain</strong>. You
+will also need to run <strong class="command">pkg install devel/qt5-concurrent</strong> On
+other operating systems, install any missing software using the
+operating system&#8217;s package management utility.</p>
+<p>To compile the source, first run <strong class="command">qmake</strong> to generate the
+necessary <code class="file docutils literal"><span class="pre">Makefile</span></code>, then run <strong class="command">make</strong>. The following
+example is for a PC-BSD® system and the binary paths may differ on your
+operating system:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">lumina</span>
+
+<span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">qt5</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">qmake</span>
+
+<span class="n">make</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you encounter an issue trying to compile source on a
+non-PC-BSD® system, refer to the &#8220;How to build from source&#8221;
+section of the <a class="reference external" href="https://github.com/pcbsd/lumina/blob/master/README.md">README</a>
+for some additional tips.</p>
+</div>
+<p>If you wish to also install the compiled applications, run this command
+which requires superuser privileges:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>For development purposes, several Qt IDEs are available. On a PC-BSD®
+system they can be installed using AppCafe® and these open source
+applications should also be available using the software management
+utility of other operating systems. <a class="reference external" href="http://wiki.qt.io/Category:Tools::QtCreator">QtCreator</a>
+is a full-featured IDE designed to help new Qt users get up and running
+faster while boosting the productivity of experienced Qt developers.
+<a class="reference external" href="http://doc.qt.io/qt-4.8/designer-manual.html">Qt Designer</a> is lighter
+weight as it is only a <code class="file docutils literal"><span class="pre">.ui</span></code> file editor and does not provide any
+other IDE functionality.</p>
+<p>If you plan to submit changes so that they can be included in Lumina,
+fork the repository using the instructions in
+<a class="reference external" href="https://help.github.com/articles/fork-a-repo">fork a repo</a>.
+Make your changes to the fork, then submit them by issuing a
+<a class="reference external" href="https://help.github.com/articles/using-pull-requests">git pull request</a>.
+Once your changes have been reviewed, they will be committed or sent
+back with suggestions.</p>
+</div>
+<div class="section" id="design-guidelines">
+<span id="index-3"></span><span id="id10"></span><h3>5.3.2. Design Guidelines<a class="headerlink" href="#design-guidelines" title="Permalink to this headline">¶</a></h3>
+<p>Lumina is a community driven project that relies on the support of
+developers in the community to help in the design and implementation of
+new utilities and tools. The Project aims to present a unified design so
+that programs feel familiar to users. As an example, while programs
+could have &#8220;File&#8221;, &#8220;Main&#8221;, or &#8220;System&#8221; as their first entry in a menu
+bar, &#8220;File&#8221; is used as the accepted norm for the first category on the
+menu bar.</p>
+<p>The <a class="reference external" href="https://github.com/pcbsd/lumina/blob/5beb2730a9e8230d2377ea89e9728504ea88de9c/DeveloperGuidelines.txt">Developer Guidelines</a>
+contain some coding practices for getting started with submitting
+updates or utilities. This section describes a small list of guidelines
+for menu and program design in Lumina.</p>
+<p>Any graphical program that is a full-featured utility, such as
+<a class="reference internal" href="luminautl.html#insight-file-manager"><span class="std std-ref">Insight File Manager</span></a>, should have a &#8220;File&#8221; menu. However, file
+menus are not necessary for small widget programs or dialogue boxes.
+When making a file menu, a good rule of thumb is keep it simple. Most
+Lumina utilities do not need more than two or three items on the file
+menu.</p>
+<p>&#8220;Configure&#8221; is our adopted standard for the category that contains
+settings or configuration-related settings. If additional categories
+are needed, check to see what other Lumina utilities are using.</p>
+<p>File menu icons are taken from the installed icon theme. Table 5.3a
+lists some commonly used icons and their default file names.</p>
+<p><strong>Table 5.3a: Commonly Used File Menu Icons</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="35%" />
+<col width="42%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">File Menu Icon</th>
+<th class="head">File Name</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Quit</td>
+<td>row 1, cell 2</td>
+<td>window-close.png</td>
+</tr>
+<tr class="row-odd"><td>Settings</td>
+<td>row 2, cell 2</td>
+<td>configure.png</td>
+</tr>
+</tbody>
+</table>
+<p>Lumina utilities use these buttons as follows:</p>
+<ul class="simple">
+<li><strong>Apply:</strong> applies settings and leaves the window open.</li>
+<li><strong>Close:</strong> closes program without applying settings.</li>
+<li><strong>OK:</strong> closes dialogue window and saves settings.</li>
+<li><strong>Cancel:</strong> closes dialog window without applying settings.</li>
+<li><strong>Save:</strong> saves settings and closes window.</li>
+</ul>
+<p>Many users benefit from keyboard shortcuts and we aim to make them
+available in every Lumina utility. Qt makes it easy to assign keyboard
+shortcuts. For instance, to configure keyboard shortcuts that browse the
+&#8220;File&#8221; menu, put <em>&amp;File</em> in the text slot for the menu entry when making
+the application. Whichever letter has the <em>&amp;</em> symbol in front of it will
+become the hot key. You can also make a shortcut key by clicking the
+menu or submenu entry and assigning a shortcut key. Be careful not to
+duplicate hot keys or shortcut keys. Every key in a menu and submenu
+should have a key assigned for ease of use and accessibility.
+Tables 5.3b and 5.3c summarize the commonly used shortcut and hot keys.</p>
+<p><strong>Table 5.3b: Shortcut Keys</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Shortcut Key</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>CTRL + Q</td>
+<td>Quit</td>
+</tr>
+<tr class="row-odd"><td>F1</td>
+<td>Help</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 5.3c: Hot Keys</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Hot Key</th>
+<th class="head">Action</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Alt + Q</td>
+<td>Quit</td>
+</tr>
+<tr class="row-odd"><td>Alt + S</td>
+<td>Settings</td>
+</tr>
+<tr class="row-even"><td>Alt + I</td>
+<td>Import</td>
+</tr>
+<tr class="row-odd"><td>Alt + E</td>
+<td>Export</td>
+</tr>
+<tr class="row-even"><td>ALT + F</td>
+<td>File Menu</td>
+</tr>
+<tr class="row-odd"><td>ALT + C</td>
+<td>Configure Menu</td>
+</tr>
+<tr class="row-even"><td>ALT + H</td>
+<td>Help Menu</td>
+</tr>
+</tbody>
+</table>
+<p>Developers will also find the following resources helpful:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://lists.pcbsd.org/mailman/listinfo/commits">Commits Mailing List</a></li>
+<li><a class="reference external" href="http://doc.qt.io/qt-5/index.html">Qt 5.4 Documentation</a></li>
+<li><a class="reference external" href="http://www.cplusplus.com/doc/tutorial/">C++ Tutorials</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="luminautl.html" class="btn btn-neutral" title="4. Lumina Utilities" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+      
+        <a href="changelog.html" class="btn btn-neutral float-right" title="6. Changelog" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2016, iXsystems.
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

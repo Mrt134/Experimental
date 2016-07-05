@@ -1,0 +1,562 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Lumina Plugins &mdash; Lumina Handbook 0.9.0</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/lumina.ico"/>
+  
+
+  
+
+  
+    
+
+    <link rel="stylesheet" href="_static/css/pcbsd_style.css" type="text/css" />
+
+  
+
+  
+    <link rel="top" title="Lumina Handbook 0.9.0" href="index.html"/>
+        <link rel="next" title="4. Lumina Utilities" href="luminautl.html"/>
+        <link rel="prev" title="2. Lumina Configuration" href="luminaconfig.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Lumina Handbook
+        
+
+        
+          
+          <img src="_static/lumina.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="testintro.html">1. Introduction to Lumina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminaconfig.html">2. Lumina Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Lumina Plugins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#desktop-plugins">3.1. Desktop Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#application-launcher">3.1.1. Application Launcher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#audio-player">3.1.2. Audio Player</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calendar">3.1.3. Calendar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#desktop-icons-view">3.1.4. Desktop Icons View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#note-pad">3.1.5. Note Pad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rss-reader">3.1.6. RSS Reader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-monitor">3.1.7. System Monitor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#menu-plugins">3.2. Menu Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#applications">3.2.1. Applications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-app">3.2.2. Custom App</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-manager">3.2.3. File Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#json-menu">3.2.4. JSON Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#separator">3.2.5. Separator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preferences">3.2.6. Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#terminal">3.2.7. Terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#window-list">3.2.8. Window List</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#panel-plugins">3.3. Panel Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#panel-application-launcher">3.3.1. Panel Application Launcher</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#application-menu">3.3.2. Application Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#battery-monitor">3.3.3. Battery Monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#desktop-bar">3.3.4. Desktop Bar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line">3.3.5. Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show-desktop">3.3.6. Show Desktop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spacer">3.3.7. Spacer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#start-menu">3.3.8. Start Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-dashboard">3.3.9. System Dashboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-tray">3.3.10. System Tray</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-manager-no-groups">3.3.11. Task Manager (No Groups)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-manager">3.3.12. Task Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#time-date">3.3.13. Time/Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-menu">3.3.14. User Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workspace-switcher">3.3.15. Workspace Switcher</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="luminautl.html">4. Lumina Utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminactbt.html">5. Contributing to Lumina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">6. Changelog</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Lumina Handbook</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div class="wy-breadcrumbs-nav" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs-nav">
+    <li class="wy-breadcrumbs-nav"><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li class="wy-breadcrumbs-nav">3. Lumina Plugins</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/luminaplugins.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+&nbsp;
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lumina-plugins">
+<span id="lumina-desktop-plugins"></span><h1>3. Lumina Plugins<a class="headerlink" href="#lumina-plugins" title="Permalink to this headline">¶</a></h1>
+<p>Here&#8217;s all the Lumina plugins, divided between desktop, menu,
+and panel plugins.</p>
+<div class="section" id="desktop-plugins">
+<span id="id1"></span><h2>3.1. Desktop Plugins<a class="headerlink" href="#desktop-plugins" title="Permalink to this headline">¶</a></h2>
+<p>These plugins are configured via this menu or that menu.</p>
+<div class="section" id="application-launcher">
+<span id="id2"></span><h3>3.1.1. Application Launcher<a class="headerlink" href="#application-launcher" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;applauncher&#8221;</p>
+<div class="figure" id="luminadesktopplugin1">
+<img alt="_images/luminadesktopplugin1.png" src="_images/luminadesktopplugin1.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin1"><span class="std std-numref">Figure 3.1.1: Application Launcher</span></a> This
+icon is the result of using the Application Launcher to add a link to
+the &#8220;Lumina Desktop Information&#8221; application on the desktop.</p>
+<p>Desktop button for launching an application.</p>
+</div>
+<div class="section" id="audio-player">
+<span id="id3"></span><h3>3.1.2. Audio Player<a class="headerlink" href="#audio-player" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;audioplayer&#8221;</p>
+<div class="figure" id="luminadesktopplugin2">
+<img alt="_images/luminadesktopplugin2.png" src="_images/luminadesktopplugin2.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin2"><span class="std std-numref">Figure 3.1.2: Audio Player</span></a> The Audio
+Player plugin will play user generated lists of audio files.</p>
+<p>Play through lists of audio files.</p>
+</div>
+<div class="section" id="calendar">
+<span id="id4"></span><h3>3.1.3. Calendar<a class="headerlink" href="#calendar" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;calendar&#8221;</p>
+<div class="figure" id="luminadesktopplugin3">
+<img alt="_images/luminadesktopplugin3.png" src="_images/luminadesktopplugin3.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin3"><span class="std std-numref">Figure 3.1.3: Calendar</span></a> This is a calendar
+plugin</p>
+<p>Display a calendar on the desktop.</p>
+</div>
+<div class="section" id="desktop-icons-view">
+<span id="id5"></span><h3>3.1.4. Desktop Icons View<a class="headerlink" href="#desktop-icons-view" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;desktopview&#8221;</p>
+<div class="figure" id="luminadesktopplugin4">
+<img alt="_images/luminadesktopplugin4.png" src="_images/luminadesktopplugin4.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin4"><span class="std std-numref">Figure 3.1.4: Desktop Icons</span></a></p>
+<p>Area for automatically showing desktop icons.</p>
+</div>
+<div class="section" id="note-pad">
+<span id="id6"></span><h3>3.1.5. Note Pad<a class="headerlink" href="#note-pad" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;notepad&#8221;</p>
+<div class="figure" id="luminadesktopplugin5">
+<img alt="_images/luminadesktopplugin5.png" src="_images/luminadesktopplugin5.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin5"><span class="std std-numref">Figure 3.1.5: Note Pad</span></a></p>
+<p>&#8220;Keep simple text notes on your desktop&#8221;</p>
+</div>
+<div class="section" id="rss-reader">
+<span id="id7"></span><h3>3.1.6. RSS Reader<a class="headerlink" href="#rss-reader" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;rssreader&#8221;</p>
+<div class="figure" id="luminadesktopplugin6">
+<img alt="_images/luminadesktopplugin6.png" src="_images/luminadesktopplugin6.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin6"><span class="std std-numref">Figure 3.1.6: RSS Reader</span></a></p>
+<p>Monitor RSS Feeds (Requires internet connection).</p>
+</div>
+<div class="section" id="system-monitor">
+<span id="id8"></span><h3>3.1.7. System Monitor<a class="headerlink" href="#system-monitor" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;systemmonitor&#8221;</p>
+<div class="figure" id="luminadesktopplugin7">
+<img alt="_images/luminadesktopplugin7.png" src="_images/luminadesktopplugin7.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin7"><span class="std std-numref">Figure 3.1.7: System Monitor Display</span></a> Shows
+the &#8220;Summary&#8221; tab of the System Monitor plugin. CPU Temperature, CPU
+Usage, and Memory Usage are displayed.</p>
+<div class="figure" id="luminadesktopplugin8">
+<img alt="_images/luminadesktopplugin8.png" src="_images/luminadesktopplugin8.png" />
+</div>
+<p><a class="reference internal" href="#luminadesktopplugin8"><span class="std std-numref">Figure 3.1.8: System Monitor I/O</span></a> Shows
+the &#8220;Disk I/O&#8221; tab of the System Monitor plugin. Displayed are the
+current read and write speeds of the connected hardware, which in this
+case is hard drive and cd player.</p>
+<p>Keep track of system statistics such as CPU/Memory usage and CPU
+temperatures.</p>
+</div>
+</div>
+<div class="section" id="menu-plugins">
+<span id="id9"></span><h2>3.2. Menu Plugins<a class="headerlink" href="#menu-plugins" title="Permalink to this headline">¶</a></h2>
+<p>The right-click menu will always display the name of the current virtual
+desktop at the top and the shutdown options on the bottom, as pictured
+in <a class="reference internal" href="#luminamenuplugin1"><span class="std std-numref">Figure 3.2.1: Default Menu</span></a>. The user can
+customize the rest of the menu at their leisure.</p>
+<div class="figure" id="luminamenuplugin1">
+<img alt="_images/luminamenuplugin1.png" src="_images/luminamenuplugin1.png" />
+</div>
+<p>Right Click <span class="menuselection">Preferences ‣ Desktop ‣ Interface Configuration ‣ Context Menu and Plugins</span></p>
+<div class="section" id="applications">
+<span id="menu-applications"></span><h3>3.2.1. Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;applications&#8221;</p>
+<div class="figure" id="luminamenuplugin2">
+<img alt="_images/luminamenuplugin2.png" src="_images/luminamenuplugin2.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin2"><span class="std std-numref">Figure 3.2.2: Applications</span></a></p>
+<p>Show the system applications menu.</p>
+</div>
+<div class="section" id="custom-app">
+<span id="id10"></span><h3>3.2.2. Custom App<a class="headerlink" href="#custom-app" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;app&#8221;</p>
+<div class="figure" id="luminamenuplugin3">
+<img alt="_images/luminamenuplugin3.png" src="_images/luminamenuplugin3.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin3"><span class="std std-numref">Figure 3.2.3: Custom Application</span></a></p>
+<p>Start a custom application.</p>
+</div>
+<div class="section" id="file-manager">
+<span id="id11"></span><h3>3.2.3. File Manager<a class="headerlink" href="#file-manager" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;filemanager&#8221;</p>
+<div class="figure" id="luminamenuplugin4">
+<img alt="_images/luminamenuplugin4.png" src="_images/luminamenuplugin4.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin4"><span class="std std-numref">Figure 3.2.4: File Manager</span></a></p>
+<p>Browse the system with the default file manager.</p>
+</div>
+<div class="section" id="json-menu">
+<span id="id12"></span><h3>3.2.4. JSON Menu<a class="headerlink" href="#json-menu" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;JSON Menu&#8221;</p>
+<div class="figure" id="luminamenuplugin5">
+<img alt="_images/luminamenuplugin5.png" src="_images/luminamenuplugin5.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin5"><span class="std std-numref">Figure 3.2.5: JSON Menu Configuration</span></a></p>
+<div class="figure" id="luminamenuplugin6">
+<img alt="_images/luminamenuplugin6.png" src="_images/luminamenuplugin6.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin6"><span class="std std-numref">Figure 3.2.6: JSON Menu Example</span></a></p>
+<p>External script menu generation.</p>
+</div>
+<div class="section" id="separator">
+<span id="id13"></span><h3>3.2.5. Separator<a class="headerlink" href="#separator" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;line&#8221;</p>
+<p><a class="reference internal" href="#luminamenuplugin1"><span class="std std-numref">Figure 3.2.1: Separator</span></a></p>
+<p>Static horizontal line.</p>
+</div>
+<div class="section" id="preferences">
+<span id="settings"></span><h3>3.2.6. Preferences<a class="headerlink" href="#preferences" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;Settings&#8221;</p>
+<div class="figure" id="luminamenuplugin7">
+<img alt="_images/luminamenuplugin7.png" src="_images/luminamenuplugin7.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin7"><span class="std std-numref">Figure 3.2.7: Preferences</span></a></p>
+<p>Show the desktop settings menu.</p>
+</div>
+<div class="section" id="terminal">
+<span id="id14"></span><h3>3.2.7. Terminal<a class="headerlink" href="#terminal" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;terminal&#8221;</p>
+<div class="figure" id="luminamenuplugin8">
+<img alt="_images/luminamenuplugin8.png" src="_images/luminamenuplugin8.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin8"><span class="std std-numref">Figure 3.2.8: Terminal</span></a></p>
+<p>Start the default system terminal.</p>
+</div>
+<div class="section" id="window-list">
+<span id="id15"></span><h3>3.2.8. Window List<a class="headerlink" href="#window-list" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;windowlist&#8221;</p>
+<div class="figure" id="luminamenuplugin9">
+<img alt="_images/luminamenuplugin9.png" src="_images/luminamenuplugin9.png" />
+</div>
+<p><a class="reference internal" href="#luminamenuplugin9"><span class="std std-numref">Figure 3.2.9: Window List</span></a></p>
+<p>List the open application windows.</p>
+</div>
+</div>
+<div class="section" id="panel-plugins">
+<span id="id16"></span><h2>3.3. Panel Plugins<a class="headerlink" href="#panel-plugins" title="Permalink to this headline">¶</a></h2>
+<p>Panel plugins are useful and configurable. Here is a list of all
+available panel plugins:</p>
+<div class="figure" id="luminapanelplugin1">
+<img alt="_images/luminapanelplugin1.png" src="_images/luminapanelplugin1.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin1"><span class="std std-numref">Figure 3.3.1: Panel Settings</span></a></p>
+<div class="section" id="panel-application-launcher">
+<span id="id17"></span><h3>3.3.1. Panel Application Launcher<a class="headerlink" href="#panel-application-launcher" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;applauncher&#8221;</p>
+<div class="figure" id="luminapanelplugin2">
+<img alt="_images/luminapanelplugin2.png" src="_images/luminapanelplugin2.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin2"><span class="std std-numref">Figure 3.3.2: Panel Application Launcher</span></a></p>
+<p>When you select this plugin, it will prompt you to select the
+application to launch. This will add a shortcut for launching the
+selected application to the panel.</p>
+</div>
+<div class="section" id="application-menu">
+<span id="id18"></span><h3>3.3.2. Application Menu<a class="headerlink" href="#application-menu" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;appmenu&#8221;</p>
+<div class="figure" id="luminapanelplugin3">
+<img alt="_images/luminapanelplugin3.png" src="_images/luminapanelplugin3.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin3"><span class="std std-numref">Figure 3.3.3: Application Menu</span></a></p>
+<p>Adds an application menu that contains a shortcut to your home directory,
+a shortcut to the operating system’s graphical software management
+utility (if there is one), a shortcut to the operating system’s Control
+Panel (if it provides one), and a list of installed software sorted by
+categories.</p>
+</div>
+<div class="section" id="battery-monitor">
+<span id="id19"></span><h3>3.3.3. Battery Monitor<a class="headerlink" href="#battery-monitor" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;battery&#8221;</p>
+<p>Hover over this icon (not pictured) to view the current charge status of
+the battery. When the charge reaches 15% or below, the low battery icon
+will flash intermittently and will change to a low battery icon when
+there is less than 5% charge left.</p>
+</div>
+<div class="section" id="desktop-bar">
+<span id="id20"></span><h3>3.3.4. Desktop Bar<a class="headerlink" href="#desktop-bar" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;desktopbar&#8221;</p>
+<div class="figure" id="luminapanelplugin4">
+<img alt="_images/luminapanelplugin4.png" src="_images/luminapanelplugin4.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin4"><span class="std std-numref">Figure 3.3.4: Desktop Bar</span></a></p>
+<p>Adds a “star” button for automatically displaying entries for anything
+in the ~/Desktop folder and alternately launching the selected entry.</p>
+</div>
+<div class="section" id="line">
+<span id="id21"></span><h3>3.3.5. Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;line&#8221;</p>
+<div class="figure" id="luminapanelplugin5">
+<img alt="_images/luminapanelplugin5.png" src="_images/luminapanelplugin5.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin5"><span class="std std-numref">Figure 3.3.5: Line</span></a></p>
+<p>Adds a separator line to the panel.</p>
+</div>
+<div class="section" id="show-desktop">
+<span id="id22"></span><h3>3.3.6. Show Desktop<a class="headerlink" href="#show-desktop" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;homebutton&#8221;</p>
+<div class="figure" id="luminapanelplugin6">
+<img alt="_images/luminapanelplugin6.png" src="_images/luminapanelplugin6.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin6"><span class="std std-numref">Figure 3.3.6: Show Desktop Button</span></a></p>
+<p>This button will hide all open windows so that only the desktop is visible.
+This is useful for touch screens or small devices.</p>
+</div>
+<div class="section" id="spacer">
+<span id="id23"></span><h3>3.3.7. Spacer<a class="headerlink" href="#spacer" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;spacer&#8221;</p>
+<div class="figure" id="luminapanelplugin7">
+<img alt="_images/luminapanelplugin7.png" src="_images/luminapanelplugin7.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin7"><span class="std std-numref">Figure 3.3.7: Spacer</span></a></p>
+<p>Adds a blank area to the panel.</p>
+</div>
+<div class="section" id="start-menu">
+<span id="panel-start-menu"></span><h3>3.3.8. Start Menu<a class="headerlink" href="#start-menu" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;systemstart&#8221;</p>
+<div class="figure" id="luminapanelplugin8">
+<img alt="_images/luminapanelplugin8.png" src="_images/luminapanelplugin8.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin8"><span class="std std-numref">Figure 3.3.8: Start Menu</span></a></p>
+<p>Adds a classic start menu as seen on other operating systems.</p>
+</div>
+<div class="section" id="system-dashboard">
+<span id="id24"></span><h3>3.3.9. System Dashboard<a class="headerlink" href="#system-dashboard" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;systemdashboard&#8221;</p>
+<div class="figure" id="luminapanelplugin9">
+<img alt="_images/luminapanelplugin9.png" src="_images/luminapanelplugin9.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin9"><span class="std std-numref">Figure 3.3.9: System Dashboard</span></a></p>
+<p>Used to view/modify audio volume, screen brightness, battery life, and
+virtual desktops.</p>
+</div>
+<div class="section" id="system-tray">
+<span id="id25"></span><h3>3.3.10. System Tray<a class="headerlink" href="#system-tray" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;systemtray&#8221;</p>
+<p>Provides a display area for dockable applications.</p>
+</div>
+<div class="section" id="task-manager-no-groups">
+<span id="id26"></span><h3>3.3.11. Task Manager (No Groups)<a class="headerlink" href="#task-manager-no-groups" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;taskmanager-nogroups&#8221;</p>
+<div class="figure" id="luminapanelplugin10">
+<img alt="_images/luminapanelplugin10.png" src="_images/luminapanelplugin10.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin10"><span class="std std-numref">Figure 3.3.10: Task Manager (No Groups)</span></a></p>
+<p>Ensures that every window gets its own button. This uses a lot more space
+on the panel since it needs to put part of the window title on each button.</p>
+</div>
+<div class="section" id="task-manager">
+<span id="id27"></span><h3>3.3.12. Task Manager<a class="headerlink" href="#task-manager" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;taskmanager&#8221;</p>
+<div class="figure" id="luminapanelplugin11">
+<img alt="_images/luminapanelplugin11.png" src="_images/luminapanelplugin11.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin11"><span class="std std-numref">Figure 3.3.11: Task Manager</span></a></p>
+<p>Added by default. Its behavior is to group windows by application.</p>
+</div>
+<div class="section" id="time-date">
+<span id="id28"></span><h3>3.3.13. Time/Date<a class="headerlink" href="#time-date" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;clock&#8221;</p>
+<div class="figure" id="luminapanelplugin12">
+<img alt="_images/luminapanelplugin12.png" src="_images/luminapanelplugin12.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin12"><span class="std std-numref">Figure 3.3.12: Time/Date</span></a></p>
+<p>Displays the current time and date.</p>
+</div>
+<div class="section" id="user-menu">
+<span id="user-button"></span><h3>3.3.14. User Menu<a class="headerlink" href="#user-menu" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;userbutton&#8221;</p>
+<div class="figure" id="luminapanelplugin13">
+<img alt="_images/luminapanelplugin13.png" src="_images/luminapanelplugin13.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin13"><span class="std std-numref">Figure 3.3.13: User Menu 1</span></a></p>
+<div class="figure" id="luminapanelplugin14">
+<img alt="_images/luminapanelplugin14.png" src="_images/luminapanelplugin14.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin14"><span class="std std-numref">Figure 3.3.14: User Menu 2</span></a></p>
+<div class="figure" id="luminapanelplugin15">
+<img alt="_images/luminapanelplugin15.png" src="_images/luminapanelplugin15.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin15"><span class="std std-numref">Figure 3.3.15: User Menu 3</span></a></p>
+<div class="figure" id="luminapanelplugin16">
+<img alt="_images/luminapanelplugin16.png" src="_images/luminapanelplugin16.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin16"><span class="std std-numref">Figure 3.3.16: User Menu 4</span></a></p>
+<div class="figure" id="luminapanelplugin17">
+<img alt="_images/luminapanelplugin17.png" src="_images/luminapanelplugin17.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin17"><span class="std std-numref">Figure 3.3.17: User Menu 5</span></a></p>
+<div class="figure" id="luminapanelplugin18">
+<img alt="_images/luminapanelplugin18.png" src="_images/luminapanelplugin18.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin18"><span class="std std-numref">Figure 3.3.18: User Menu 6</span></a>
+Main button for accessing applications, directories, settings, and log
+out.</p>
+</div>
+<div class="section" id="workspace-switcher">
+<span id="id29"></span><h3>3.3.15. Workspace Switcher<a class="headerlink" href="#workspace-switcher" title="Permalink to this headline">¶</a></h3>
+<p>info.ID = &#8220;desktopswitcher&#8221;</p>
+<div class="figure" id="luminapanelplugin19">
+<img alt="_images/luminapanelplugin19.png" src="_images/luminapanelplugin19.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin19"><span class="std std-numref">Figure 3.3.19: Workspace Switcher</span></a></p>
+<p>Used to switch between virtual desktops.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="luminaconfig.html" class="btn btn-neutral" title="2. Lumina Configuration" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+      
+        <a href="luminautl.html" class="btn btn-neutral float-right" title="4. Lumina Utilities" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2016, iXsystems.
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

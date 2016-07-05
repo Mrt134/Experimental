@@ -1,0 +1,463 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. Lumina Utilities &mdash; Lumina Handbook 0.9.0</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/lumina.ico"/>
+  
+
+  
+
+  
+    
+
+    <link rel="stylesheet" href="_static/css/pcbsd_style.css" type="text/css" />
+
+  
+
+  
+    <link rel="top" title="Lumina Handbook 0.9.0" href="index.html"/>
+        <link rel="next" title="5. Contributing to Lumina" href="luminactbt.html"/>
+        <link rel="prev" title="3. Lumina Plugins" href="luminaplugins.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="index.html" class="icon icon-home"> Lumina Handbook
+        
+
+        
+          
+          <img src="_static/lumina.png" class="logo" />
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="testintro.html">1. Introduction to Lumina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminaconfig.html">2. Lumina Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="luminaplugins.html">3. Lumina Plugins</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Lumina Utilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-screenshot">4.1. Lumina Screenshot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insight-file-manager">4.2. Insight File Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-open">4.3. Lumina Open</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-search">4.4. Lumina Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-file-information">4.5. Lumina File Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-information">4.6. Lumina Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-xconfig">4.7. Lumina Xconfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lumina-text-editor">4.8. Lumina Text Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="luminactbt.html">5. Contributing to Lumina</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">6. Changelog</a></li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Lumina Handbook</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div class="wy-breadcrumbs-nav" role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs-nav">
+    <li class="wy-breadcrumbs-nav"><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li class="wy-breadcrumbs-nav">4. Lumina Utilities</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/luminautl.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+&nbsp;
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lumina-utilities">
+<span id="index-0"></span><span id="id1"></span><h1>4. Lumina Utilities<a class="headerlink" href="#lumina-utilities" title="Permalink to this headline">¶</a></h1>
+<p>Lumina provides many built-in utilities, which are described in this
+chapter.</p>
+<div class="section" id="lumina-screenshot">
+<span id="index-1"></span><span id="id2"></span><h2>4.1. Lumina Screenshot<a class="headerlink" href="#lumina-screenshot" title="Permalink to this headline">¶</a></h2>
+<p>This utility can be used to take screenshots of the desktop or selected
+window and save them as PNG image files. To launch this utility, click
+the start menu and select <span class="menuselection">Browse Applications ‣ Utility ‣ Lumina Screenshot</span>,
+right-click the desktop and select <span class="menuselection">Applications ‣ Utility ‣ Lumina Screenshot</span>,
+type <strong class="command">lumina-screenshot</strong> from a terminal window, or press the
+<code class="kbd docutils literal"><span class="pre">Print</span> <span class="pre">Screen</span></code> button.</p>
+<p>On the &#8220;New Screenshot&#8221; tab, seen here in <a class="reference internal" href="#lumina9a"><span class="std std-numref">Figure 4.1.1: New Screenshot Tab</span></a>
+the following settings can be used to fine-tune the screenshot:</p>
+<div class="figure" id="lumina9a">
+<a class="reference internal image-reference" href="_images/lumina9a.png"><img alt="_images/lumina9a.png" src="_images/lumina9a.png" style="width: 351.0px; height: 310.0px;" /></a>
+</div>
+<ul class="simple">
+<li><strong>Entire Session:</strong> will take a screenshot of the entire screen.</li>
+<li><strong>Single Screen:</strong> in a multi-monitor setup, you can select which
+screen number to use for the screenshot.</li>
+<li><strong>Single Window:</strong> will screenshot a selected window. Simply choose
+&#8220;Single Window,&#8221; then the &#8220;Take Screenshot&#8221; button, and click on the
+desired window. The &#8220;Include Borders&#8221; checkbox can be used to
+determine whether or not the screenshot of the window is surrounded by
+a black border.</li>
+<li><strong>Delay:</strong> in seconds. This can be used to give you time to setup the
+screenshot.</li>
+</ul>
+<p>There are three options for taking a screenshot: clicking the &#8220;Take
+Screenshot&#8221; button in the lower-right corner of Lumina Screenshot,
+pressing <code class="kbd docutils literal"><span class="pre">Ctrl+N</span></code>, or clicking <span class="menuselection">File ‣ Take Screenshot</span>.</p>
+<p>After capturing a screenshot, the &#8220;View/Edit&#8221;, seen here in <a class="reference internal" href="#lumina25"><span class="std std-numref">Figure 4.1.2: View/Edit Tab</span></a>
+tab provides additional options for manipulating the screenshot:</p>
+<div class="figure" id="lumina25">
+<a class="reference internal image-reference" href="_images/lumina25.png"><img alt="_images/lumina25.png" src="_images/lumina25.png" style="width: 351.0px; height: 310.0px;" /></a>
+</div>
+<ul class="simple">
+<li><strong>Image Preview:</strong> displays the captured screenshot. Right clicking
+the image will provide options for zooming in or out. Left click and
+dragging across the image will highlight an area which can be cropped
+by pressing the &#8220;Crop&#8221; button in the lower-right corner.</li>
+<li><strong>&#8220;Save As&#8221;:</strong> button to open a window where you can specify the
+filename and location for saving the screenshot.</li>
+<li><strong>Launch Editor:</strong> button to launch a selectable image manipulation
+program.</li>
+</ul>
+<p>Additionally, clicking <span class="menuselection">File ‣ Quick Save</span> will
+automatically save the screenshot to the default &#8220;Pictures&#8221; directory
+and open a window to select an image manipulation program.</p>
+</div>
+<div class="section" id="insight-file-manager">
+<span id="index-2"></span><span id="id3"></span><h2>4.2. Insight File Manager<a class="headerlink" href="#insight-file-manager" title="Permalink to this headline">¶</a></h2>
+<p>The Insight file manager, shown in <a class="reference internal" href="#lumina10a"><span class="std std-numref">Figure 4.2.1: Insight File Manager</span></a>,
+allows the user to easily browse and modify files on the local system on
+a per-directory basis. To open Insight, click the start menu and select
+&#8220;Browse Files&#8221;, right-click the desktop and select &#8220;Browse Files&#8221;, or
+type <strong class="command">lumina-fm</strong> from an xterm.</p>
+<div class="figure" id="lumina10a">
+<a class="reference internal image-reference" href="_images/lumina10a.png"><img alt="_images/lumina10a.png" src="_images/lumina10a.png" style="width: 569.0px; height: 442.0px;" /></a>
+</div>
+<p>It is possible to open up additional directories through the tab system
+using <code class="kbd docutils literal"><span class="pre">Ctrl-T</span></code> or by clicking <span class="menuselection">File ‣ New Browser</span>,
+allowing the user to easily manage multiple locations on the system.
+Insight also features the ability to &#8220;bookmark&#8221; locations on the system
+for instant access via the &#8220;star&#8221; button. Once a location has been
+bookmarked, it will be available via the &#8220;Bookmarks&#8221; menu at the top of
+the window. Any removable devices that are available on the system will
+show up in the &#8220;External Devices&#8221; menu, if supported by the operating
+system. When an item is selected, the icons on the left side of the
+screen provide the possible actions that may be taken with regards to
+that item. Possible actions include: &#8220;open item&#8221;, &#8220;open item&#8221; (will
+prompt to select the application to use), &#8220;add item to personal
+favorites&#8221;, &#8220;rename item&#8221;, &#8220;cut items (add to the clipboard)&#8221;, &#8220;copy
+items to the clipboard&#8221;, &#8220;paste items from clipboard&#8221;, and &#8220;delete
+items&#8221;. By default, the action buttons are visible. They can be made
+invisible by clicking <span class="menuselection">View ‣ Show Action Buttons</span>. To
+disable thumbnails, uncheck <span class="menuselection">View ‣ Load Thumbnails</span>.
+Note that this option does not remove thumbnails that have already been
+loaded, it only prevents loading thumbnails in new directories. Hidden
+files are not shown by default; this can be changed by checking
+<span class="menuselection">View ‣ Show Hidden Files</span>.</p>
+<p>If you select a file or directory and right-click it, the following
+options become available: &#8220;Open&#8221;, &#8220;Open With&#8221; (where you select the
+application to use), &#8220;Rename&#8221;, &#8220;View Checksums&#8221; (shows the MD5
+checksum), &#8220;Cut Selection&#8221;, &#8220;Copy Selection&#8221;, &#8220;Paste&#8221;, &#8220;Delete
+Selection&#8221;, &#8220;File Properties&#8221; (such as file type, size, permissions, and
+creation date), or &#8220;Open Terminal here&#8221;.</p>
+<p>A few additional options may be available at the bottom of the window,
+depending on the directory being viewed and the types of files that are
+in it:</p>
+<ul class="simple">
+<li><strong>New file:</strong> the ability to create a new file is available if the
+user has permission to modify the contents of the current directory.</li>
+<li><strong>New Dir:</strong> the ability to create a new directory is available if the
+user has permission to modify the contents of the current directory.</li>
+<li><strong>Slideshow:</strong> if there are image files in the directory, this option
+will display those image files as a slideshow and provide arrows for
+going forward or back by one file or to the very beginning or end of
+the file list. Buttons are also provided for deleting the currently
+displayed image or to rotate it, and save the rotation, clockwise or
+counter-clockwise.</li>
+<li><strong>Play:</strong> will appear if there are supported multimedia files in the
+directory. The types of files that are supported depends on what
+multimedia plugins are installed on the system. If a particular file
+is not recognized as a multimedia file, install the associated
+multimedia codec using the operating system&#8217;s application management
+software and restart the file manager.</li>
+<li><strong>Backups:</strong> if the system is formatted with ZFS and snapshots of the
+current directory are available, this button will appear. Snapshots
+are organized from oldest to newest, with the most recent snapshot
+selected by default, and the contents of the directory at the time of
+that snapshot are displayed. To restore a file or multiple files,
+select them from the list and click the &#8220;Restore Selection&#8221; button. If
+those files still exist and you want to overwrite them, make sure the
+&#8220;Overwrite Existing Files&#8221; option is checked first. Otherwise, if a
+file with that name exists, the restore will append a number to the
+end of the filename. For example, the first restored version of
+<code class="file docutils literal"><span class="pre">testfile.txt</span></code> will become <code class="file docutils literal"><span class="pre">testfile-1.txt</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="lumina-open">
+<span id="index-3"></span><span id="id4"></span><h2>4.3. Lumina Open<a class="headerlink" href="#lumina-open" title="Permalink to this headline">¶</a></h2>
+<p>To open a file, directory, or URL from the command line, use
+<strong class="command">lumina-open</strong> followed by the full path to the file or the URL.
+This utility will look for an appropriate application to use to open the
+specified file or URL. If there is no default application registered for
+the input type, a small dialog will prompt the user to select which
+application to use, and optionally set it as the default application for
+this file type. As seen in the example shown in <a class="reference internal" href="#lumina11b"><span class="std std-numref">Figure 4.3.1: Lumina Open</span></a>,
+this dialog organizes the available applications into three types:</p>
+<div class="figure" id="lumina11b">
+<a class="reference internal image-reference" href="_images/lumina11b.png"><img alt="_images/lumina11b.png" src="_images/lumina11b.png" style="width: 309.0px; height: 257.0px;" /></a>
+</div>
+<ul class="simple">
+<li><strong>Preferred:</strong> these applications have registered their Mime type with
+the system and can open that type of file. Also included are any
+applications that have been used to open this type of file before as
+it keeps track of the last three applications used for that file type.</li>
+<li><strong>Available:</strong> displays all the applications installed on the system,
+organized by category and name.</li>
+<li><strong>Custom:</strong> lets the user manually type in the binary name or path of
+the application to use. It also provides a search button to let the
+user graphically search the system for the binary. Whenever text is
+entered, a check is performed to determine whether that is a valid
+binary and the icon will change between a green checkmark or a red X
+as appropriate.</li>
+</ul>
+</div>
+<div class="section" id="lumina-search">
+<span id="index-4"></span><span id="id5"></span><h2>4.4. Lumina Search<a class="headerlink" href="#lumina-search" title="Permalink to this headline">¶</a></h2>
+<p>Lumina Search provides the ability to easily search for and launch
+applications or to quickly search for file and directories. The &#8220;*&#8221;
+wildcard can be used in the search terms and the search will include
+hidden files if the search term starts with a dot (&#8221;.&#8221;).</p>
+<p>To start this utility, type <strong class="command">lumina-search</strong> or go to the start
+menu <span class="menuselection">Browse Applications ‣ Utility ‣ Lumina Search</span>.
+<a class="reference internal" href="#lumina13b"><span class="std std-numref">Figure 4.4.1: Search for Applications</span></a> shows a
+screenshot of this utility.</p>
+<div class="figure" id="lumina13b">
+<a class="reference internal image-reference" href="_images/lumina13b.png"><img alt="_images/lumina13b.png" src="_images/lumina13b.png" style="width: 290.0px; height: 274.0px;" /></a>
+</div>
+<p>To open an application, begin to enter its name. The box below the
+selected &#8220;Applications&#8221; button will display any matching application
+names. Select the desired application and click the &#8220;Launch Item&#8221; button
+to open it.</p>
+<p>If you click the &#8220;Files or Directories&#8221; button, the screen changes
+slightly, as seen in <a class="reference internal" href="#lumina26"><span class="std std-numref">Figure 4.4.2: Search for Files</span></a>.</p>
+<div class="figure" id="lumina26">
+<a class="reference internal image-reference" href="_images/lumina26.png"><img alt="_images/lumina26.png" src="_images/lumina26.png" style="width: 290.0px; height: 274.0px;" /></a>
+</div>
+<p>By default, a &#8220;Files or Directories&#8221; search is limited to the user&#8217;s
+home directory, as indicated by the &#8220;Search: ~&#8221; at the bottom of the
+screen. The &#8220;Smart: Off&#8221; indicates that every subdirectory is included
+in the search; in other words, there are no excluded directories. To add
+additional search directories or to exclude subdirectories, click the
+wrench icon to see the screen shown in <a class="reference internal" href="#lumina14a"><span class="std std-numref">Figure 4.4.3: Configuring the Search Directories</span></a>.</p>
+<div class="figure" id="lumina14a">
+<a class="reference internal image-reference" href="_images/lumina14a.png"><img alt="_images/lumina14a.png" src="_images/lumina14a.png" style="width: 352.0px; height: 264.0px;" /></a>
+</div>
+<p>Click the blue folder icon to change the starting search directory. For
+example, you can select &#8220;Computer&#8221; then &#8220;/&#8221; from the &#8220;Select Search
+Directory&#8221; screen to search the entire contents of the computer. You can
+also add directories to exclude from searches by clicking the &#8220;+&#8221;
+button. If you add any excludes, you can delete an exclude by
+highlighting it and clicking the &#8220;-&#8221; button. By default, the &#8220;Save as
+Defaults&#8221; option is selected. Unselect this option if you only wish to
+temporarily modify your search settings.</p>
+</div>
+<div class="section" id="lumina-file-information">
+<span id="index-5"></span><span id="id6"></span><h2>4.5. Lumina File Information<a class="headerlink" href="#lumina-file-information" title="Permalink to this headline">¶</a></h2>
+<p>The <strong class="command">lumina-fileinfo</strong> utility can be used to open a graphical
+window summarizing the size, permissions and ownership, creation time,
+and last modification time of the specified file or directory. In the
+example shown in in <a class="reference internal" href="#file1a"><span class="std std-numref">Figure 4.5.1: Sample File Information</span></a>,
+the user has typed <strong class="command">lumina-fileinfo Downloads</strong> from a terminal
+window to view the file information of their <code class="file docutils literal"><span class="pre">~/Downloads</span></code>
+directory.</p>
+<div class="figure" id="file1a">
+<a class="reference internal image-reference" href="_images/file1a.png"><img alt="_images/file1a.png" src="_images/file1a.png" style="width: 413.0px; height: 419.0px;" /></a>
+</div>
+</div>
+<div class="section" id="lumina-information">
+<span id="index-6"></span><span id="id7"></span><h2>4.6. Lumina Information<a class="headerlink" href="#lumina-information" title="Permalink to this headline">¶</a></h2>
+<p>This utility provides information about the version of Lumina, as well
+as the license, acknowledgements, and Project links. To launch this
+utility, right-click the desktop and select <span class="menuselection">Preferences ‣ About Lumina</span>,
+click the start menu then the question mark icon in &#8220;Preferences&#8221;, or
+type <strong class="command">lumina-info</strong> in a terminal window. An example is shown in
+<a class="reference internal" href="#about1b"><span class="std std-numref">Figure 4.6.1: About Lumina</span></a>.</p>
+<div class="figure" id="about1b">
+<a class="reference internal image-reference" href="_images/about1b.png"><img alt="_images/about1b.png" src="_images/about1b.png" style="width: 421.0px; height: 482.0px;" /></a>
+</div>
+<p>The &#8220;General&#8221; tab contains the following information:</p>
+<ul class="simple">
+<li><strong>Desktop Version:</strong> indicates the version of Lumina.</li>
+<li><strong>OS Build:</strong> indicates the operating system that was used to build
+this version of Lumina.</li>
+<li><strong>Qt Version:</strong> click the &#8220;View Information&#8221; button to display the QT
+version and its license.</li>
+<li><strong>Lumina Website:</strong> click the &#8220;Open in web browser&#8221; link to open
+<a class="reference external" href="http://lumina-desktop.org/">http://lumina-desktop.org/</a> in the default web browser.</li>
+<li><strong>Source Repository:</strong> click the &#8220;Open in web browser&#8221; link to open
+<a class="reference external" href="https://github.com/pcbsd/lumina">https://github.com/pcbsd/lumina</a> in the default web browser.</li>
+<li><strong>Report a Bug:</strong> click the &#8220;Open in web browser&#8221; link to open
+<a class="reference external" href="https://bugs.pcbsd.org/projects/pcbsd">https://bugs.pcbsd.org/projects/pcbsd</a> in the default web browser.
+Refer to <a class="reference internal" href="luminactbt.html#report-a-bug"><span class="std std-ref">Report a Bug</span></a> for instructions on how to submit a bug
+report.</li>
+</ul>
+<p>The &#8220;License&#8221; tab contains the license text for Lumina. Lumina is
+licensed under a <a class="reference external" href="http://opensource.org/licenses/BSD-3-Clause">3-clause BSD license</a>.</p>
+<p>The &#8220;Acknowledgements&#8221; tab contains the following:</p>
+<ul class="simple">
+<li><strong>Project Lead:</strong> the name of the Project&#8217;s lead developer. Click the
+name to open his profile on GitHub in the default web browser.</li>
+<li><strong>Contributors:</strong> click the &#8220;Open in web browser&#8221; link to open
+<a class="reference external" href="https://github.com/pcbsd/lumina/graphs/contributors">https://github.com/pcbsd/lumina/graphs/contributors</a>.</li>
+<li><strong>Sponsors:</strong> lists the project and corporate sponsors of the Lumina
+Project.</li>
+</ul>
+</div>
+<div class="section" id="lumina-xconfig">
+<span id="index-7"></span><span id="id8"></span><h2>4.7. Lumina Xconfig<a class="headerlink" href="#lumina-xconfig" title="Permalink to this headline">¶</a></h2>
+<p>The <strong class="command">lumina-xconfig</strong> utility is a graphical front-end to the
+<strong class="command">xrandr</strong> command line utility. It provides the ability to probe
+and manage any number of attached monitors. To start this utility,
+right-click the desktop and select <span class="menuselection">Preferences ‣ Display</span>
+or type <strong class="command">lumina-xconfig</strong> from a terminal window. This will open
+a screen similar to the one shown in <a class="reference internal" href="#lumina15a"><span class="std std-numref">Figure 4.7.1: Configuring Monitors</span></a>.</p>
+<div class="figure" id="lumina15a">
+<a class="reference internal image-reference" href="_images/lumina15a.png"><img alt="_images/lumina15a.png" src="_images/lumina15a.png" style="width: 410.0px; height: 343.0px;" /></a>
+</div>
+<p>In this example, two display inputs are attached to the system and their
+current screen resolutions are displayed. If the display input supports
+multiple resolutions, they will appear in the &#8220;Resolution&#8221; drop-down
+menu so that you can select a different resolution.</p>
+<p>If you attach another display input, the &#8220;Add Screen&#8221; tab is activated
+so that you can configure the new input&#8217;s resolution and whether or not
+it should be the default input.</p>
+</div>
+<div class="section" id="lumina-text-editor">
+<span id="index-8"></span><span id="id9"></span><h2>4.8. Lumina Text Editor<a class="headerlink" href="#lumina-text-editor" title="Permalink to this headline">¶</a></h2>
+<p>The <strong class="command">lumina-textedit</strong> utility, seen in <a class="reference internal" href="#lumina23"><span class="std std-numref">Figure 4.8.1: Lumina Text Edit</span></a>
+is a simple plaintext editor which features four primary elements:
+optional syntax highlighting, find/replace functionality, line
+numbering, and bracket highlighting. Additionally, colors can be
+customized by selecting <span class="menuselection">View ‣ Customize Colors</span>.</p>
+<div class="figure" id="lumina23">
+<a class="reference internal image-reference" href="_images/lumina23.png"><img alt="_images/lumina23.png" src="_images/lumina23.png" style="width: 507.0px; height: 532.0px;" /></a>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="luminaplugins.html" class="btn btn-neutral" title="3. Lumina Plugins" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+      
+        <a href="luminactbt.html" class="btn btn-neutral float-right" title="5. Contributing to Lumina" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2016, iXsystems.
+    </p>
+  </div>
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
