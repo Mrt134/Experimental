@@ -6,18 +6,21 @@
 Lumina Plugins
 **************
 
-Here's all the Lumina plugins, divided between desktop, menu, 
-and panel plugins.
+Lumina offers a wide variety of plugins which allow the user to 
+customize their desktop experience. Plugins are divided between desktop,
+menu, and panel plugins.
 
-.. TODO: Add Screenshots and expanded descriptions to every plugin 
-   entry. Example: :numref:`Figure %s: Placeholder <place1d>`
+.. TODO: Create descriptions of every plugin: menu, and panel
+   entry.
 
 .. _desktop plugins:
 
 Desktop Plugins
 ===============
 
-These plugins are configured via this menu or that menu.
+Desktop plugins will add icons or widgets for display on the main screen
+of the Lumina Desktop Environment. Right click on the main screen, then 
+click :menuselection:`Preferences --> Desktop`. 
 
 .. _Application Launcher:
 
@@ -32,7 +35,9 @@ info.ID = "applauncher"
 
 :numref:`Figure %s: Application Launcher <luminadesktopplugin1>` This 
 icon is the result of using the Application Launcher to add a link to 
-the "Lumina Desktop Information" application on the desktop.
+the "Lumina Desktop Information" application on the desktop. Clicking 
+the Application Launcher option allows the user to select a single 
+application to add to the desktop area as a "quick launch" icon. 
 
 Desktop button for launching an application.
 
@@ -48,7 +53,9 @@ info.ID = "audioplayer"
 .. figure:: images/luminadesktopplugin2.png
 
 :numref:`Figure %s: Audio Player <luminadesktopplugin2>` The Audio 
-Player plugin will play user generated lists of audio files.
+Player plugin will play user generated lists of audio files. Pressing 
+the wrench icon in the upper left corner will open an options menu, 
+while the green plus icon adds files to the playlist.
 
 Play through lists of audio files.
 
@@ -64,9 +71,9 @@ info.ID = "calendar"
 .. figure:: images/luminadesktopplugin3.png
 
 :numref:`Figure %s: Calendar <luminadesktopplugin3>` This is a calendar 
-plugin 
-
-Display a calendar on the desktop.
+plugin which will display a calendar set to the current month and day. 
+The arrows in the upper left and right of the plugin allow the user to 
+view previous or upcoming months.
 
 .. _Desktop Icons View:
 
@@ -79,9 +86,10 @@ info.ID = "desktopview"
 
 .. figure:: images/luminadesktopplugin4.png
 
-:numref:`Figure %s: Desktop Icons <luminadesktopplugin4>`
-
-Area for automatically showing desktop icons.
+:numref:`Figure %s: Desktop Icons <luminadesktopplugin4>` This plugin 
+will define an area on the desktop to display icons. If enough icons are
+added to the plugin, a scroll bar will appear for the user to scroll 
+through all available icons.
 
 .. _Note Pad:
 
@@ -94,9 +102,10 @@ info.ID = "notepad"
 
 .. figure:: images/luminadesktopplugin5.png
 
-:numref:`Figure %s: Note Pad <luminadesktopplugin5>`
-
-"Keep simple text notes on your desktop"
+:numref:`Figure %s: Note Pad <luminadesktopplugin5>` is a simple plugin 
+which adds a simple text creation widget to the desktop. The user needs 
+to create a new note before they can type a message. The notes are saved
+by default in the "Notes" folder.
 
 .. _RSS Reader:
 
@@ -109,9 +118,13 @@ info.ID = "rssreader"
 
 .. figure:: images/luminadesktopplugin6.png
 
-:numref:`Figure %s: RSS Reader <luminadesktopplugin6>`
+:numref:`Figure %s: RSS Reader <luminadesktopplugin6>` plugin displays a
+connected RSS feed. The user can add their own custom RSS feeds to the 
+plugin, but the default feed displayed is the Lumina Desktop Environment
+blog.
 
-Monitor RSS Feeds (Requires internet connection).
+.. note:: An active Internet connection is required for the RSS Reader 
+          plugin to function properly.
 
 .. _System Monitor:
 
@@ -125,8 +138,10 @@ info.ID = "systemmonitor"
 .. figure:: images/luminadesktopplugin7.png
 
 :numref:`Figure %s: System Monitor Display <luminadesktopplugin7>` Shows 
-the "Summary" tab of the System Monitor plugin. CPU Temperature, CPU 
-Usage, and Memory Usage are displayed.
+the "Summary" tab of the System Monitor plugin. CPU Temperature (in 
+Celsius), CPU Usage, and Memory Usage are displayed. Currently, there 
+are no other options to display in the system monitor aside from these 
+statistics and the read/write speed monitor, shown next.
 
 .. _luminadesktopplugin8:
 
@@ -135,27 +150,26 @@ Usage, and Memory Usage are displayed.
 :numref:`Figure %s: System Monitor I/O <luminadesktopplugin8>` Shows 
 the "Disk I/O" tab of the System Monitor plugin. Displayed are the 
 current read and write speeds of the connected hardware, which in this 
-case is hard drive and cd player. 
-
-
-Keep track of system statistics such as CPU/Memory usage and CPU 
-temperatures.
+case is a hard drive and cd player. 
 
 .. _menu plugins:
 
 Menu Plugins
 ============
 
-The right-click menu will always display the name of the current virtual
-desktop at the top and the shutdown options on the bottom, as pictured 
-in :numref:`Figure %s: Default Menu <luminamenuplugin1>`. The user can 
-customize the rest of the menu at their leisure.
+Menu plugins are the options which appear when the user right-clicks on 
+the main desktop screen in Lumina. Two elements the right-click menu 
+will always display are the name of the current virtual desktop at the 
+top of the menu and the shutdown options on the bottom, as pictured 
+in :numref:`Figure %s: Default Menu <luminamenuplugin1>`.
 
 .. _luminamenuplugin1:
 
 .. figure:: images/luminamenuplugin1.png
 
-Right Click :menuselection:`Preferences --> Desktop --> Interface Configuration --> Context Menu and Plugins`
+The user can customize what appears between these two elements of the 
+menu however they wish. To customize the right-click menu, click 
+:menuselection:`Start Menu --> Preferences --> Desktop --> Interface Configuration --> Context Menu and Plugins`.
 
 .. _Menu Applications:
 
@@ -170,7 +184,10 @@ info.ID = "applications"
 
 :numref:`Figure %s: Applications <luminamenuplugin2>`
 
-Show the system applications menu.
+This plugin adds an application menu which can be navigated to open any 
+installed application. The Control Panel and Application Management 
+options will always be shown at the top, while the categories of 
+applications are shown underneath.
 
 .. _Custom App:
 
@@ -185,7 +202,9 @@ info.ID = "app"
 
 :numref:`Figure %s: Custom Application <luminamenuplugin3>`
 
-Start a custom application.
+Adds a specific quickstart icon for a single application to the 
+right-click menu. Pictured is the icon for the "About" application, 
+which displays current system information.
 
 .. _File Manager:
 
@@ -200,7 +219,8 @@ info.ID = "filemanager"
 
 :numref:`Figure %s: File Manager <luminamenuplugin4>`
 
-Browse the system with the default file manager.
+Opens the Insight File Manager (Default) to allow the user to browse the
+system files. 
 
 .. _JSON Menu:
 
@@ -209,11 +229,20 @@ JSON Menu
 
 info.ID = "JSON Menu"
 
+The JSON Menu plugin give a more advanced user the flexibility to create
+their own entries into the right-click menu. Selecting the JSON Menu 
+plugin immediately brings up the 
+:numref:`Figure %s: JSON Menu Configuration Window <luminamenuplugin5>`.
+
 .. _luminamenuplugin5:
 
 .. figure:: images/luminamenuplugin5.png
 
-:numref:`Figure %s: JSON Menu Configuration <luminamenuplugin5>`
+This window has three fields: Visible Name, Executable, and Icon. The 
+Visible Name field will define the name of the right-click menu entry. 
+Executable is the path to the custom script that is to be run for the 
+entry. The Icon field is optional, but is used to assign a specific 
+icon to the custom script.
 
 .. _luminamenuplugin6:
 
@@ -221,7 +250,9 @@ info.ID = "JSON Menu"
 
 :numref:`Figure %s: JSON Menu Example <luminamenuplugin6>`
 
-External script menu generation.
+After completing the configuration window, the resultant display shows 
+the custom script in action. The Visible Name appears under "Workspace 2",
+while the executable script has generated the menu of files and folders.
 
 .. _Separator:
 
@@ -232,7 +263,10 @@ info.ID = "line"
 
 :numref:`Figure %s: Separator <luminamenuplugin1>`
 
-Static horizontal line.
+A Separator is simply a horizontal line which can be used to divide 
+entries in the right-click menu. When added to the menu, use the up and
+down arrows in the plugin selection menu to place the Separator plugin 
+between the plugins you wish to place a line between.
 
 .. _Settings:
 
@@ -247,7 +281,8 @@ info.ID = "Settings"
 
 :numref:`Figure %s: Preferences <luminamenuplugin7>`
 
-Show the desktop settings menu.
+This plugin adds a shortcut to the right-click menu which points to the 
+desktop settings menu.
 
 .. _Terminal:
 
@@ -262,7 +297,7 @@ info.ID = "terminal"
 
 :numref:`Figure %s: Terminal <luminamenuplugin8>`
 
-Start the default system terminal.
+A shortcut to the default system terminal.
 
 .. _Window List:
 
@@ -277,21 +312,24 @@ info.ID = "windowlist"
 
 :numref:`Figure %s: Window List <luminamenuplugin9>`
 
-List the open application windows.
+This plugin adds an entry to the right-click menu which, when hovered 
+over with the mouse, will list all open application windows.
 
 .. _panel plugins:
 
 Panel Plugins
 =============
 
-Panel plugins are useful and configurable. Here is a list of all 
-available panel plugins:
+Panels are a completely customizable option for Lumina users. By default,
+Lumina users will have one panel stretched across the bottom of the 
+primary screen and one smaller pop-up panel in the top middle of the 
+primary screen. A simple panel centered at the top of the secondary 
+screen was utilized to demonstrate the various plugins listed below. The
+settings for this panel are pictured in :numref:`Figure %s: Panel Settings <luminapanelplugin1>`.
 
 .. _luminapanelplugin1:
 
 .. figure:: images/luminapanelplugin1.png
-
-:numref:`Figure %s: Panel Settings <luminapanelplugin1>`
 
 .. _panel application launcher:
 
