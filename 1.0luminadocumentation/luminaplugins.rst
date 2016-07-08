@@ -407,19 +407,19 @@ primary screen. To adjust the default panels and add plugins, click the
 start menu and navigate :menuselection:`Preferences --> Configure Desktop --> Interface Configuration --> Floating Panels and Plugins`.
 For demonstration purposes, a simple panel centered at the top of a 
 secondary screen was utilized to show the various plugins listed below.
-The settings for this panel are pictured in :numref:`Figure %s: Panel Settings <luminapanelplugin1>`.
-
-.. _luminapanelplugin1:
-
-.. figure:: images/luminapanelplugin1.png
-
-As you can see, Panel 1 is configured to the top center of Monitor 1 
-(plugged into DVI-I-O). To add or adjust plugins for this panel, click 
-on the green puzzle piece icon to open the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu1>`.
+The settings for this panel are pictured in :numref:`Figure %s: Panel Settings <luminapanelpluginmenu1>`.
 
 .. _luminapanelpluginmenu1:
 
 .. figure:: images/luminapanelpluginmenu1.png
+
+As you can see, Panel 1 is configured to the top center of Monitor 1 
+(plugged into DVI-I-O). To add or adjust plugins for this panel, click 
+on the green puzzle piece icon to open the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu2>`.
+
+.. _luminapanelpluginmenu2:
+
+.. figure:: images/luminapanelpluginmenu2.png
 
 The large field shows currently active plugins. Click the red minus or 
 green plus buttons to add or remove plugins to the panel. Use the arrow 
@@ -434,11 +434,11 @@ Panel Application Launcher
 
 info.ID = "applauncher"
 
-.. _luminapanelplugin2:
+.. _luminapanelplugin1:
 
-.. figure:: images/luminapanelplugin2.png
+.. figure:: images/luminapanelplugin1.png
 
-:numref:`Figure %s: Panel Application Launcher <luminapanelplugin2>`
+:numref:`Figure %s: Panel Application Launcher <luminapanelplugin1>`
 
 When you select this plugin, it will prompt you to select the 
 application to launch. This will add a shortcut for launching the 
@@ -451,11 +451,11 @@ Application Menu
 
 info.ID = "appmenu"
 
-.. _luminapanelplugin3:
+.. _luminapanelplugin2:
 
-.. figure:: images/luminapanelplugin3.png
+.. figure:: images/luminapanelplugin2.png
 
-:numref:`Figure %s: Application Menu <luminapanelplugin3>`
+:numref:`Figure %s: Application Menu <luminapanelplugin2>`
 
 Adds an application menu that contains a shortcut to your home directory,
 a shortcut to the operating system’s graphical software management 
@@ -482,11 +482,11 @@ Desktop Bar
 
 info.ID = "desktopbar"
 
-.. _luminapanelplugin4:
+.. _luminapanelplugin3:
 
-.. figure:: images/luminapanelplugin4.png
+.. figure:: images/luminapanelplugin3.png
 
-:numref:`Figure %s: Desktop Bar <luminapanelplugin4>` The "Favorite 
+:numref:`Figure %s: Desktop Bar <luminapanelplugin3>` The "Favorite 
 Applications" button is pressed.
 
 This plugin adds shortcuts to the panel for applications or files 
@@ -509,14 +509,14 @@ Line
 
 info.ID = "line"
 
-.. _luminapanelplugin5:
+.. _luminapanelplugin4:
 
-.. figure:: images/luminapanelplugin5.png
+.. figure:: images/luminapanelplugin4.png
 
-:numref:`Figure %s: Line <luminapanelplugin5>`
+:numref:`Figure %s: Line <luminapanelplugin4>`
 
 Adds a separator line to the panel to provide visual separation between 
-plugins. When adding a line plugin in the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu1>`,
+plugins. When adding a line plugin in the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu2>`,
 be sure to use the arrow buttons in the bottom-right corner of the 
 window to place the line entry between the two other plugins you wish to 
 separate.
@@ -528,11 +528,11 @@ Show Desktop
 
 info.ID = "homebutton"
 
-.. _luminapanelplugin6:
+.. _luminapanelplugin5:
 
-.. figure:: images/luminapanelplugin6.png
+.. figure:: images/luminapanelplugin5.png
 
-:numref:`Figure %s: Show Desktop Button <luminapanelplugin6>`
+:numref:`Figure %s: Show Desktop Button <luminapanelplugin5>`
 
 This button will immediately hide all open windows on all active 
 monitors so that only the desktop is visible. This is useful for touch 
@@ -545,14 +545,14 @@ Spacer
 
 info.ID = "spacer"
 
-.. _luminapanelplugin7:
+.. _luminapanelplugin6:
 
-.. figure:: images/luminapanelplugin7.png
+.. figure:: images/luminapanelplugin6.png
 
-:numref:`Figure %s: Spacer <luminapanelplugin7>`
+:numref:`Figure %s: Spacer <luminapanelplugin6>`
 
 Adds a blank area to the panel. Similar to lines, spacers need to be 
-positioned between plugins in the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu1>`
+positioned between plugins in the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu2>`
 in order to achieve the desired separation.
 
 .. _Panel Start Menu:
@@ -562,11 +562,11 @@ Start Menu
 
 info.ID = "systemstart"
 
-.. _luminapanelplugin8:
+.. _luminapanelplugin7:
 
-.. figure:: images/luminapanelplugin8.png
+.. figure:: images/luminapanelplugin7.png
 
-:numref:`Figure %s: Start Menu <luminapanelplugin8>`
+:numref:`Figure %s: Start Menu <luminapanelplugin7>`
 
 Adds a classic start menu as seen on other operating systems. This is 
 added by default to the primary desktop panel in the lower left corner.
@@ -578,11 +578,11 @@ System Dashboard
 
 info.ID = "systemdashboard"
 
-.. _luminapanelplugin9:
+.. _luminapanelplugin8:
 
-.. figure:: images/luminapanelplugin9.png
+.. figure:: images/luminapanelplugin8.png
 
-:numref:`Figure %s: System Dashboard <luminapanelplugin9>` with the 
+:numref:`Figure %s: System Dashboard <luminapanelplugin8>` with the 
 button pressed.
 
 The System Dashboard plugin is a convenient shortcut to view or modify 
@@ -602,11 +602,11 @@ System Tray
 
 info.ID = "systemtray"
 
-.. _luminapanelplugin20:
+.. _luminapanelplugin9:
 
-.. figure:: images/luminapanelplugin20.png
+.. figure:: images/luminapanelplugin9.png
 
-:numref:`Figure %s: System Tray <luminapanelplugin20>` with several 
+:numref:`Figure %s: System Tray <luminapanelplugin9>` with several 
 docked applications (Quassel IRC, PC Mixer, etc.). 
 
 Provides an area on the panel for dockable applications. Applications 
@@ -699,22 +699,22 @@ default view after clicking the user button. On the sidebar, the
 the "Places" and "Files" tabs, respectively.
 
 Clicking the "gear" icon in the left sidebar will open the "Applications"
-section of the menu, seen in :numref:`Figure %s: User Applications <luminapanelplugin16>`.
+section of the menu, seen in :numref:`Figure %s: User Applications <luminapanelplugin14>`.
 
-.. _luminapanelplugin16:
+.. _luminapanelplugin14:
 
-.. figure:: images/luminapanelplugin16.png
+.. figure:: images/luminapanelplugin14.png
 
 This section displays all applications by default, with the drop down 
 menu at the top allowing you to view applications by category. The 
 "AppCafe" button in the top right will open the SysAdm AppCafe, allowing
 you to quickly search for and download more applications.
 
-.. _luminapanelplugin17:
+.. _luminapanelplugin15:
 
-.. figure:: images/luminapanelplugin17.png
+.. figure:: images/luminapanelplugin15.png
 
-:numref:`Figure %s: Home Directory <luminapanelplugin17>`
+:numref:`Figure %s: Home Directory <luminapanelplugin15>`
 
 The "folder" icon on the left sidebar opens the Home directory, giving 
 you the option to quickly browse through system directories. Clicking 
@@ -723,11 +723,11 @@ Manager at the home directory. Clicking the binoculars and gear icon
 will launch the search utility. 
 
 Finally, selecting the screwdriver and wrench icon on the sidebar will 
-open the "Desktop Preferences" section, seen in :numref:`Figure %s: User Menu 6 <luminapanelplugin18>`
+open the "Desktop Preferences" section, seen in :numref:`Figure %s: Desktop Preferences <luminapanelplugin16>`
 
-.. _luminapanelplugin18:
+.. _luminapanelplugin16:
 
-.. figure:: images/luminapanelplugin18.png
+.. figure:: images/luminapanelplugin16.png
 
 This panel displays shortcuts to all the settings and configuration 
 utilities, as well as the system information window. 
@@ -739,11 +739,11 @@ Workspace Switcher
 
 info.ID = "desktopswitcher"
 
-.. _luminapanelplugin19:
+.. _luminapanelplugin17:
 
-.. figure:: images/luminapanelplugin19.png
+.. figure:: images/luminapanelplugin17.png
 
-:numref:`Figure %s: Workspace Switcher <luminapanelplugin19>`
+:numref:`Figure %s: Workspace Switcher <luminapanelplugin17>`
 
 Used to switch between virtual desktops. Click the monitor icon to show 
 a drop down menu of all workspaces. The active workspace will have 
