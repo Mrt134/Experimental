@@ -500,9 +500,22 @@ there is less than 5% charge left.</p>
 <div class="figure" id="luminapanelplugin4">
 <img alt="_images/luminapanelplugin4.png" src="_images/luminapanelplugin4.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin4"><span class="std std-numref">Figure 3.3.5: Desktop Bar</span></a></p>
-<p>Adds a “star” button for automatically displaying entries for anything
-in the ~/Desktop folder and alternately launching the selected entry.</p>
+<p><a class="reference internal" href="#luminapanelplugin4"><span class="std std-numref">Figure 3.3.5: Desktop Bar</span></a> The &#8220;Favorite
+Applications&#8221; button is pressed.</p>
+<p>This plugin adds shortcuts to the panel for applications or files
+contained within the ~/Desktop folder or favorited by the user. The
+“star” button displays applications, the &#8220;folder&#8221; button displays
+folders, and the &#8220;file&#8221; button shows favorite files.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Duplicate entries may appear when you click any one of the
+favorites icons. This is due to the plugin populating the menu
+with both the items inside ~/Desktop and the user selected
+&#8220;favorites&#8221;, which are located in two separate places on the
+system. The plugin brings both elements together to show the
+most complete list of user desired applications or files, but
+can result in duplicate entries.</p>
+</div>
 </div>
 <div class="section" id="line">
 <span id="id21"></span><h3>3.3.5. Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h3>
@@ -511,7 +524,11 @@ in the ~/Desktop folder and alternately launching the selected entry.</p>
 <img alt="_images/luminapanelplugin5.png" src="_images/luminapanelplugin5.png" />
 </div>
 <p><a class="reference internal" href="#luminapanelplugin5"><span class="std std-numref">Figure 3.3.6: Line</span></a></p>
-<p>Adds a separator line to the panel.</p>
+<p>Adds a separator line to the panel to provide visual separation between
+plugins. When adding a line plugin in the <a class="reference internal" href="#luminapanelpluginmenu1"><span class="std std-numref">Figure 3.3.2: Panel Plugins Menu</span></a>,
+be sure to use the arrow buttons in the bottom-right corner of the
+window to place the line entry between the two other plugins you wish to
+separate.</p>
 </div>
 <div class="section" id="show-desktop">
 <span id="id22"></span><h3>3.3.6. Show Desktop<a class="headerlink" href="#show-desktop" title="Permalink to this headline">¶</a></h3>
@@ -520,8 +537,9 @@ in the ~/Desktop folder and alternately launching the selected entry.</p>
 <img alt="_images/luminapanelplugin6.png" src="_images/luminapanelplugin6.png" />
 </div>
 <p><a class="reference internal" href="#luminapanelplugin6"><span class="std std-numref">Figure 3.3.7: Show Desktop Button</span></a></p>
-<p>This button will hide all open windows so that only the desktop is visible.
-This is useful for touch screens or small devices.</p>
+<p>This button will immediately hide all open windows on all active
+monitors so that only the desktop is visible. This is useful for touch
+screens or small devices.</p>
 </div>
 <div class="section" id="spacer">
 <span id="id23"></span><h3>3.3.7. Spacer<a class="headerlink" href="#spacer" title="Permalink to this headline">¶</a></h3>
@@ -530,7 +548,9 @@ This is useful for touch screens or small devices.</p>
 <img alt="_images/luminapanelplugin7.png" src="_images/luminapanelplugin7.png" />
 </div>
 <p><a class="reference internal" href="#luminapanelplugin7"><span class="std std-numref">Figure 3.3.8: Spacer</span></a></p>
-<p>Adds a blank area to the panel.</p>
+<p>Adds a blank area to the panel. Similar to lines, spacers need to be
+positioned between plugins in the <a class="reference internal" href="#luminapanelpluginmenu1"><span class="std std-numref">Figure 3.3.2: Panel Plugins Menu</span></a>
+in order to achieve the desired separation.</p>
 </div>
 <div class="section" id="start-menu">
 <span id="panel-start-menu"></span><h3>3.3.8. Start Menu<a class="headerlink" href="#start-menu" title="Permalink to this headline">¶</a></h3>
@@ -539,7 +559,8 @@ This is useful for touch screens or small devices.</p>
 <img alt="_images/luminapanelplugin8.png" src="_images/luminapanelplugin8.png" />
 </div>
 <p><a class="reference internal" href="#luminapanelplugin8"><span class="std std-numref">Figure 3.3.9: Start Menu</span></a></p>
-<p>Adds a classic start menu as seen on other operating systems.</p>
+<p>Adds a classic start menu as seen on other operating systems. This is
+added by default to the primary desktop panel in the lower left corner.</p>
 </div>
 <div class="section" id="system-dashboard">
 <span id="id24"></span><h3>3.3.9. System Dashboard<a class="headerlink" href="#system-dashboard" title="Permalink to this headline">¶</a></h3>
@@ -547,14 +568,37 @@ This is useful for touch screens or small devices.</p>
 <div class="figure" id="luminapanelplugin9">
 <img alt="_images/luminapanelplugin9.png" src="_images/luminapanelplugin9.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin9"><span class="std std-numref">Figure 3.3.10: System Dashboard</span></a></p>
-<p>Used to view/modify audio volume, screen brightness, battery life, and
-virtual desktops.</p>
+<p><a class="reference internal" href="#luminapanelplugin9"><span class="std std-numref">Figure 3.3.10: System Dashboard</span></a> with the
+button pressed.</p>
+<p>The System Dashboard plugin is a convenient shortcut to view or modify
+a number of basic settings. The system volume and screen brightness can
+be manually adjusted higher or lower, and you can also toggle between
+virtual workspaces with the left and right arrows. A &#8220;Log Out&#8221; button
+has also been added for additional convenience. If your system has a
+battery, its current charge will also be displayed.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Adjusting the screen brightness on a multi-monitor system will
+affect both monitors.</p>
+</div>
 </div>
 <div class="section" id="system-tray">
 <span id="id25"></span><h3>3.3.10. System Tray<a class="headerlink" href="#system-tray" title="Permalink to this headline">¶</a></h3>
 <p>info.ID = &#8220;systemtray&#8221;</p>
-<p>Provides a display area for dockable applications.</p>
+<div class="figure" id="luminapanelplugin20">
+<img alt="_images/luminapanelplugin20.png" src="_images/luminapanelplugin20.png" />
+</div>
+<p><a class="reference internal" href="#luminapanelplugin20"><span class="std std-numref">Figure 3.3.11: System Tray</span></a> with several
+docked applications (Quassel IRC, PC Mixer, etc.).</p>
+<p>Provides an area on the panel for dockable applications. Applications
+can be sent to this area on a per-application basis, but only one system
+tray plugin can be active at a time. By default, the active system tray
+will be the one on the <strong>lowest number</strong> monitor and panel. For example,
+when adding the system tray plugin to monitor zero, panel one and again
+to monitor one, panel one, only the system tray on on monitor zero will
+be active. Disabling the system tray on monitor zero will activate the
+tray on monitor one, automatically migrating any docked applications to
+the other panel.</p>
 </div>
 <div class="section" id="task-manager-no-groups">
 <span id="id26"></span><h3>3.3.11. Task Manager (No Groups)<a class="headerlink" href="#task-manager-no-groups" title="Permalink to this headline">¶</a></h3>
@@ -562,9 +606,11 @@ virtual desktops.</p>
 <div class="figure" id="luminapanelplugin10">
 <img alt="_images/luminapanelplugin10.png" src="_images/luminapanelplugin10.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin10"><span class="std std-numref">Figure 3.3.11: Task Manager (No Groups)</span></a></p>
-<p>Ensures that every window gets its own button. This uses a lot more space
-on the panel since it needs to put part of the window title on each button.</p>
+<p><a class="reference internal" href="#luminapanelplugin10"><span class="std std-numref">Figure 3.3.12: Task Manager (No Groups)</span></a></p>
+<p>Ensures that every window gets its own button on the panel. This plugin
+will use a large amount of space on the plugin, as every window will
+need to display a part of its title. This plugin is added to the default
+panel for Lumina.</p>
 </div>
 <div class="section" id="task-manager">
 <span id="id27"></span><h3>3.3.12. Task Manager<a class="headerlink" href="#task-manager" title="Permalink to this headline">¶</a></h3>
@@ -572,8 +618,13 @@ on the panel since it needs to put part of the window title on each button.</p>
 <div class="figure" id="luminapanelplugin11">
 <img alt="_images/luminapanelplugin11.png" src="_images/luminapanelplugin11.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin11"><span class="std std-numref">Figure 3.3.12: Task Manager</span></a></p>
-<p>Added by default. Its behavior is to group windows by application.</p>
+<p><a class="reference internal" href="#luminapanelplugin11"><span class="std std-numref">Figure 3.3.13: Task Manager</span></a> Pictured are
+three open terminal windows grouped into one minimal panel entry with
+&#8220;(3)&#8221; displayed next to the terminal icon.</p>
+<p>The grouping task manager displays windows in the panel as well. Its
+primary function is to group windows by application, saving more space
+on the panel. This manager also does not typically display window titles
+on the panel, a further space savings.</p>
 </div>
 <div class="section" id="time-date">
 <span id="id28"></span><h3>3.3.13. Time/Date<a class="headerlink" href="#time-date" title="Permalink to this headline">¶</a></h3>
@@ -581,38 +632,53 @@ on the panel since it needs to put part of the window title on each button.</p>
 <div class="figure" id="luminapanelplugin12">
 <img alt="_images/luminapanelplugin12.png" src="_images/luminapanelplugin12.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin12"><span class="std std-numref">Figure 3.3.13: Time/Date</span></a></p>
-<p>Displays the current time and date.</p>
+<p><a class="reference internal" href="#luminapanelplugin12"><span class="std std-numref">Figure 3.3.14: Time/Date</span></a> The clock has been
+selected, opening the larger calendar and time zone settings.</p>
+<p>Displays the current time and date. A basic clock is added to the panel;
+clicking it will open the calendar, which will highlight the current
+date. Clicking the arrows in the top corners will allow you to look back
+or ahead in the calendar, while clicking the &#8220;Time Zone&#8221; will allow you
+to adjust the displayed time.</p>
 </div>
 <div class="section" id="user-menu">
 <span id="user-button"></span><h3>3.3.14. User Menu<a class="headerlink" href="#user-menu" title="Permalink to this headline">¶</a></h3>
 <p>info.ID = &#8220;userbutton&#8221;</p>
+<p>The User Menu is a more complicated plugin that provides an array of
+shortcuts to files and applications on the system, essentially as an
+alternative to the Start Menu.</p>
 <div class="figure" id="luminapanelplugin13">
 <img alt="_images/luminapanelplugin13.png" src="_images/luminapanelplugin13.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin13"><span class="std std-numref">Figure 3.3.14: User Menu 1</span></a></p>
-<div class="figure" id="luminapanelplugin14">
-<img alt="_images/luminapanelplugin14.png" src="_images/luminapanelplugin14.png" />
-</div>
-<p><a class="reference internal" href="#luminapanelplugin14"><span class="std std-numref">Figure 3.3.15: User Menu 2</span></a></p>
-<div class="figure" id="luminapanelplugin15">
-<img alt="_images/luminapanelplugin15.png" src="_images/luminapanelplugin15.png" />
-</div>
-<p><a class="reference internal" href="#luminapanelplugin15"><span class="std std-numref">Figure 3.3.16: User Menu 3</span></a></p>
+<p><a class="reference internal" href="#luminapanelplugin13"><span class="std std-numref">Figure 3.3.15: User Favorites</span></a> Shows the
+default view after clicking the user button. On the sidebar, the
+&#8220;Favorites&#8221; folder is highlighted, with the top tab showing
+&#8220;Applications&#8221;. You can also view favorite folders and files by clicking
+the &#8220;Places&#8221; and &#8220;Files&#8221; tabs, respectively.</p>
+<p>Clicking the &#8220;gear&#8221; icon in the left sidebar will open the &#8220;Applications&#8221;
+section of the menu, seen in <a class="reference internal" href="#luminapanelplugin16"><span class="std std-numref">Figure 3.3.16: User Applications</span></a>.</p>
 <div class="figure" id="luminapanelplugin16">
 <img alt="_images/luminapanelplugin16.png" src="_images/luminapanelplugin16.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin16"><span class="std std-numref">Figure 3.3.17: User Menu 4</span></a></p>
+<p>This section displays all applications by default, with the drop down
+menu at the top allowing you to view applications by category. The
+&#8220;AppCafe&#8221; button in the top right will open the SysAdm AppCafe, allowing
+you to quickly search for and download more applications.</p>
 <div class="figure" id="luminapanelplugin17">
 <img alt="_images/luminapanelplugin17.png" src="_images/luminapanelplugin17.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin17"><span class="std std-numref">Figure 3.3.18: User Menu 5</span></a></p>
+<p><a class="reference internal" href="#luminapanelplugin17"><span class="std std-numref">Figure 3.3.17: Home Directory</span></a></p>
+<p>The &#8220;folder&#8221; icon on the left sidebar opens the Home directory, giving
+you the option to quickly browse through system directories. Clicking
+the file/folder button in the upper right launches the Insight File
+Manager at the home directory. Clicking the binoculars and gear icon
+will launch the search utility.</p>
+<p>Finally, selecting the screwdriver and wrench icon on the sidebar will
+open the &#8220;Desktop Preferences&#8221; section, seen in <a class="reference internal" href="#luminapanelplugin18"><span class="std std-numref">Figure 3.3.18: User Menu 6</span></a></p>
 <div class="figure" id="luminapanelplugin18">
 <img alt="_images/luminapanelplugin18.png" src="_images/luminapanelplugin18.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin18"><span class="std std-numref">Figure 3.3.19: User Menu 6</span></a>
-Main button for accessing applications, directories, settings, and log
-out.</p>
+<p>This panel displays shortcuts to all the settings and configuration
+utilities, as well as the system information window.</p>
 </div>
 <div class="section" id="workspace-switcher">
 <span id="id29"></span><h3>3.3.15. Workspace Switcher<a class="headerlink" href="#workspace-switcher" title="Permalink to this headline">¶</a></h3>
@@ -620,8 +686,10 @@ out.</p>
 <div class="figure" id="luminapanelplugin19">
 <img alt="_images/luminapanelplugin19.png" src="_images/luminapanelplugin19.png" />
 </div>
-<p><a class="reference internal" href="#luminapanelplugin19"><span class="std std-numref">Figure 3.3.20: Workspace Switcher</span></a></p>
-<p>Used to switch between virtual desktops.</p>
+<p><a class="reference internal" href="#luminapanelplugin19"><span class="std std-numref">Figure 3.3.19: Workspace Switcher</span></a></p>
+<p>Used to switch between virtual desktops. Click the monitor icon to show
+a drop down menu of all workspaces. The active workspace will have
+asterisks (*) before and after its name.</p>
 </div>
 </div>
 </div>
