@@ -7,32 +7,29 @@ Lumina Configuration
 ********************
 
 The Lumina Configuration utility, shown in 
-:numref:`Figure %s: Lumina Desktop Configuration <lumina3c>`, can be 
+:numref:`Figure %s: Lumina Desktop Configuration <lumina3d>`, can be 
 used to configure every aspect of the desktop and is the recommended way
 to make changes. To launch this utility, click the start menu then 
 :menuselection:`Preferences --> Configure Desktop`, right-click the 
 desktop and click :menuselection:`Preferences --> Desktop`, or type 
 :command:`lumina-config` from an xterm.
 
-.. _lumina3c:
+.. _lumina3d:
 
-.. figure:: images/lumina3c.png
-   :width: 662px
-   :height: 476px
+.. figure:: images/lumina3d.png
    :scale: 100%
-   
-Each of the tabs at the top configures a different area of the system, 
-with the most frequently changed options on the left side. As changes 
-are made, the "Save Changes" button at the bottom of the window becomes 
-active. This allows the user to setup multiple changes in any tab and 
-apply them all at the same time.
 
-.. note:: If you make any changes in any of the tabs, remember to click 
+Under the top search bar are four options to configure different areas 
+of the system. Clicking a category will expand the configuration options
+of that category, and clicking an option will open those configuration 
+options.
+
+.. note:: If you make changes to any of the options, remember to click 
           "Save Changes" before exiting this utility in order to save 
           them.
 
 The rest of this section describes the configurations that are available
-in each tab. 
+in each category.
 
 .. index:: appearance, wallpaper
 .. _Appearance:
@@ -40,20 +37,55 @@ in each tab.
 Appearance
 ==========
 
-This tab is used to change the visual appearance and functionality of 
-the desktop on a per-screen basis. The "Wallpaper" tab, shown in
-:numref:`Figure %s: Lumina Desktop Configuration <lumina3c>`, can be 
-used to add a wallpaper ("+" button) or remove ("-" button) a wallpaper.
-When you click the "+" button, the drop-down menu can be used to select 
-the file(s), a single directory, a directory and all of its 
-subdirectories, or a solid color to use as the wallpaper. If multiple 
-images are selected, the "Rotate Background" button can be selected as 
-well as a specified time interval in minutes to rotate to the next 
-image. 
+This category is used to change the visual appearance and functionality 
+of the desktop on a per-screen basis. The "Change Desktop Theme" option,
+shown in :numref:`Figure %s: Modifying the Theme <lumina17d>`, can be 
+used to change the default font, font size, theme template, color scheme
+, icon pack, and mouse cursors. 
+
+.. _lumina17d:
+
+.. figure:: images/lumina17d.png
+   :scale: 100%
    
+It is possible to create your own "Theme Template" or "Color Scheme" by 
+clicking the "Edit" button next to those options and changing the 
+settings as necessary. :numref:`Figure %s: Using the Theme Editor <lumina18c>`
+shows an example of clicking the "Edit" button with the "Glass (System)"
+theme template selected. This action opened the "Theme Editor" and the 
+user has clicked the color selector (dropper icon) in the upper right 
+corner. After selecting an item in this menu, the template controlling 
+that selection can be edited by changing the values in the theme editor 
+box. Note that the theme templates are written as 
+`Qt stylesheets <http://doc.qt.io/qt-5/stylesheet.html>`_, so some 
+scripting experience may be helpful when configuring a theme. After 
+making your changes, you can either click the "Save" button to save the 
+theme without closing the editor, or click the "Apply" button which will
+both save the theme and close the theme editor.
+
+.. _lumina18c:
+
+.. figure:: images/lumina18c.png
+   :scale: 100%
+
+The "Change Wallpaper" option, shown in 
+:numref:`Figure %s: Lumina Wallpaper Settings <lumina27>`, can be used 
+to add a wallpaper ("+" button) or remove ("-" button) a wallpaper. When
+you click the "+" button, the drop-down menu can be used to select the 
+file(s), a single directory, a directory and all of its subdirectories, 
+or a solid color to use as the wallpaper. If multiple images are 
+selected, the "Rotate Background" button can be selected as well as a 
+specified time interval in minutes to rotate to the next image. 
+
+.. _lumina27:
+
+.. figure:: images/lumina27.png
+   :scale: 100%
+
 Click the "Layout" drop-down menu to change the default layout of 
-"Automatic" to one of the following options: "Tile", "Center", 
-"Top Left", "Top Right", "Bottom Left", or "Bottom Right".
+"Automatic" to one of the following options: "Full Screen", "Fit Screen"
+, "Tile", "Center", "Top Left", "Top Right", "Bottom Left", or 
+"Bottom Right".
 
 The options that are available when you click 
 :menuselection:`+ --> Solid Color` are shown in 
@@ -64,41 +96,57 @@ the wallpaper selection drop-down menu.
 .. _lumina16b:
 
 .. figure:: images/lumina16b.png
-   :width: 537px
-   :height: 436px
    :scale: 100%
 
-The "Theme" tab, shown in :numref:`Figure %s: Modifying the Theme <lumina17c>`,
-can be used to change the default font, font size, theme template, color
-scheme, icon pack, and mouse cursors. 
-
-.. _lumina17c:
-
-.. figure:: images/lumina17c.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
+.. TODO: Go over Window Effects with Kenny to be sure I updated Lumina 
+   properly (screenshot may be missing some options). image: lumina28 
+   can be modified without archival.
    
-It is possible to create your own "Theme Template" or "Color Scheme" by 
-clicking the "Edit" button next to those options and changing the 
-settings as necessary. :numref:`Figure %s: Using the Theme Editor <lumina18b>`
-shows an example of clicking the "Edit" button with the "Lumina-default 
-(System)" theme template selected. This action opened the "Theme Editor"
-and the user has clicked the color selector (dropper icon) in the upper 
-right corner. After selecting an item in this menu, the template 
-controlling that selection can be edited by changing the values in the 
-theme editor box. Note that the theme templates are written as 
-`Qt stylesheets <http://doc.qt.io/qt-5/stylesheet.html>`_, so some 
-scripting experience may be helpful when configuring a theme. After 
-making your changes, you can either click the "Save" button to save the 
-theme without closing the editor, or click the "Apply" button which will
-both save the theme and close the theme editor.
+The "Window Effects" option, shown in 
+:numref:`Figure %s: Window Effects <lumina28>`, is used to add or alter 
+graphical effects or animations applied to your windows. By default, no 
+additional effects are added, and you will need to adjust these 
+manually.
 
-.. _lumina18b:
+.. _lumina28:
 
-.. figure:: images/lumina18b.png
-   :width: 871px
-   :height: 465px
+.. figure:: images/lumina28.png
+   :scale: 100%
+
+.. Window Effects end
+
+The "Window Manager" entry contains all options involving windows, 
+housed within both simple and advanced editors. The simple editor, seen 
+in :numref:`Figure %s: Window Manager - Simple <lumina29>`, offers 
+"Number of Workspaces", "New Window Placement", "Focus Policy", "Window 
+Theme", and "Window Theme Preview" as customization options. A user can 
+designate additional virtual workspaces to the system by manipulating 
+the arrows by "Number of Workspaces" (up to a maximum of ten). You can 
+also choose how new windows appear, from "Align in a Row", "Align in a 
+Column", "Cascade", and "Underneath Mouse" by clicking the drop menu by 
+"New Window Placement". Also adjustable is the manner by which a window 
+becomes the primary viewspace. Clicking the drop menu next to "Focus 
+Policy" gives "Click to Focus", "Active Mouse Focus, and 
+"Strict Mouse Focus" as the options for you to choose the active window. 
+Choosing to alter the window theme via the drop menu will present a wide
+variety of options for window appearance. The Window Theme Preview 
+section will display a simplified image, if available, of the general 
+appearance of the selected theme.
+
+.. _lumina29:
+
+.. figure:: images/lumina29.png
+   :scale: 100%
+
+The Advanced Editor, seen in :numref:`Figure %s: Window Manager - Advanced <lumina30>`
+, allows you to manually adjust every setting related to the display of 
+windows on your system. For example, if you prefer a specific theme, but
+don't care for the theme's transparency, you can use the Advanced Editor
+to adjust the specific transparency value to your preference.
+
+.. _lumina30:
+
+.. figure:: images/lumina30.png
    :scale: 100%
 
 .. index:: menu, panel
@@ -109,7 +157,8 @@ Interface
 =========
 
 The "Interface" tab is used to configure the desktop right-click menu 
-and panel. Its "Desktop" tab, shown in :numref:`Figure %s: Right-Click Menu Configuration <lumina4d>`,
+and panel. Its "Desktop" tab, shown in 
+:numref:`Figure %s: Right-Click Menu Configuration <lumina4d>`,
 is used to configure which items appear in the right-click menu and 
 which items are embedded onto the desktop.
 

@@ -723,7 +723,7 @@ Manager at the home directory. Clicking the binoculars and gear icon
 will launch the search utility. 
 
 Finally, selecting the screwdriver and wrench icon on the sidebar will 
-open the "Desktop Preferences" section, seen in :numref:`Figure %s: User Menu 6 <luminapanelplugin16>`
+open the "Desktop Preferences" section, seen in :numref:`Figure %s: Desktop Preferences <luminapanelplugin16>`
 
 .. _luminapanelplugin16:
 
