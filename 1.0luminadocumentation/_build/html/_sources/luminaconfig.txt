@@ -149,69 +149,161 @@ to adjust the specific transparency value to your preference.
 .. figure:: images/lumina30.png
    :scale: 100%
 
-.. index:: menu, panel
+.. index:: application startup shortcuts
+
+.. _Desktop Session:
+
+Desktop Session Options
+=======================
+
+.. TODO: Reconcile Desktop Session Options with previous "Applications"
+   section. Screenshots likely need to be all be replaced and text 
+   updated.
+   
+The "Desktop Sessions Options" menu, seen in 
+:numref:`Figure %s: Lumina Desktop Configuration <lumina3d>`
+is used to configure which applications automatically start when you 
+login to Lumina, default applications and file types, and keyboard 
+shortcuts
+
+Click "Default Applications for File Type" to see the "Basic Settings" 
+tab, shown in :numref:`Figure %s: Lumina Default Applications - Basic <lumina24a>`
+. This tab can be used to configure default applications.
+
+.. _lumina24a:
+
+.. figure:: images/lumina24a.png
+   :scale: 100%
+
+You can configure the default web browser, email client, file manager, 
+and virtual terminal. Simply click the application you wish to change, 
+and a new window will appear allowing you to select a new default 
+application. If you wish to go back to the default application, click 
+the current application's name, then click "Restore Defaults".
+
+.. note:: Some applications, such as web browsers, keep their own 
+          internal lists of default applications for opening particular 
+          types of files. If you set that application to use the 
+          :command:`lumina-open` or :command:`xdg-open` utilities, it 
+          will use the default applications that are set here so that 
+          there is only a single list of default applications for the 
+          system.
+
+The "Advanced" tab allows you to configure the default application used 
+for particular file types, as seen in 
+:numref:`Figure %s: Lumina Default Applications - Advanced <lumina7e>`. 
+
+.. _lumina7e:
+
+.. figure:: images/lumina7e.png
+   :scale: 100%
+   
+To add an application, select the file type and specific group and 
+either click "Set App", which will open a drop-down menu of common 
+applications, or "Set Binary", which will open a file browser so that 
+you can browse to the path of the application. Alternately, selecting 
+only a file type and then clicking "Set App" or "Set Binary" will 
+register your application for all the groups within the selected type.
+Selecting "Clear" will remove the default application from the 
+associated file type or group.
+
+The "Keyboard Shortcuts" option, shown in 
+:numref:`Figure %s: Lumina Keyboard Shortcuts - Basic <lumina8c>`, 
+is used to configure various keyboard shortcuts for system or window 
+tasks. Most of these options relate to window and workspace management, 
+such as moving windows between workspaces, but there are also options 
+for changing the system audio volume or screen brightness. 
+
+.. _lumina8c:
+
+.. figure:: images/lumina8c.png
+   :scale: 100%
+      
+To create a shortcut, click the desired entry, then "Change Shortcut", 
+then the key combination you wish to set. Be aware that any entry with 
+an already defined shortcut showing in the "Keyboard Shortcut" column 
+can **not** be assigned to another action. To free a shortcut for reuse, 
+highlight the shortcut, click "Clear Shortcut", then "Save Changes". You
+can now create a new shortcut.
+
+Click "Advanced Editor", seen in :numref:`Figure %s Lumina Keyboard Shortcuts - Advanced <lumina31>`
+, to manually adjust or create all keyboard shortcuts. By default, 
+syntax codes are shown in their own display area, but this can be hidden
+by unchecking "View Syntax Codes".
+
+.. _lumina31:
+
+.. figure:: images/lumina31.png
+   :scale: 100%
+
+The "Startup Services and Applications" option, displayed in 
+:numref:`Figure %s: Lumina Startup Services <lumina6d>`, allows you to 
+adjust what is automatically started upon logging into Lumina.
+
+.. _lumina6d:
+
+.. figure:: images/lumina6d.png
+   :scale: 100%
+   
+To prevent an application from starting automatically, uncheck its box.
+To add an application to the auto-start configuration , click 
+"Application" to select the application's name from a drop-down menu or 
+click "Binary" or "File" to browse to the location of  the application 
+or file to open. If you select a file name, Lumina will automatically 
+open it in an application that is capable of reading the file type.
+
+.. index:: menu panel
 
 .. _Interface:
 
-Interface
-=========
+Interface Configuration
+=======================
 
-The "Interface" tab is used to configure the desktop right-click menu 
-and panel. Its "Desktop" tab, shown in 
-:numref:`Figure %s: Right-Click Menu Configuration <lumina4d>`,
-is used to configure which items appear in the right-click menu and 
-which items are embedded onto the desktop.
+.. TODO: look into unifying the names for the right-click menu
 
-.. _lumina4d:
+The "Interface Configuration" option, seen here as 
+:numref:`Figure %s: Lumina Interface Configuration <lumina32>`, is used 
+to configure the context (right-click) menu, desktop, and floating 
+panels.
 
-.. figure:: images/lumina4d.png
-   :width: 662px
-   :height: 476px
+.. _lumina32:
+
+.. figure:: images/lumina32.png
    :scale: 100%
 
-To add an item to the right-click menu, click the "+" button under the 
-"Quick-Access Menu". This will open the "Select a Plugin" screen where 
-you can add an application, custom app, an entry for the :ref:`Insight File Manager`,
-a separator, a shortcut to Settings, a terminal, or a listing of 
-currently open applications. To remove an item from the right-click 
-menu, highlight it and click the "-" button. Use the arrow buttons to 
-change the order of the items in the right-click menu.
+.. note:: The options of "Context Menu and Plugins", "Desktop Icons and 
+   Plugins", and "Floating Icons and Plugins" involve modifying and 
+   interacting with plugins, which are described at length in the 
+   :ref:`Lumina Desktop Plugins` chapter of this handbook.
 
-To embed a utility onto the desktop, click the "+" button under the 
-"Embedded Utilities" frame. The following plugins can be added as an 
-icon on the desktop: Application Launcher (opens a menu that lists which
-applications can be launched), Audio Player, Calendar, Desktop Icons 
-View, Note Pad, Sample (an example of a QtQuick/QML plugin), and System 
-Monitor (displays CPU temperature/usage, memory usage, and disk I/O). 
-Once you click the "Save Changes" button, any utilities you added will 
-appear on top of the desktop. To remove an embedded utility from the 
-desktop, highlight its entry under "Embedded Utilities", click the "-" 
-button, and click "Save Changes". Alternately, right-click the icon for 
-the utility and select "Remove Item" from the right-click menu. 
+Click "Context Menu and Plugins" to adjust the appearance of the menu 
+which appears when you right-click the desktop. By default, the <menu> 
+includes the following plugins: Terminal, File Manager, Applications, a 
+Separator, and Settings.
 
-The following options are also available when you right-click an icon on
-the desktop, allowing you to customize the location and appearance of 
-desktop icons: "Start Moving Item" (click the icon to lock it in place 
-once you have moved it to the desired location), "Start Resizing Item" 
-(use the mouse to increase/decrease size and click when you are 
-finished), "Increase Desktop Icon Sizes" (increases all desktop icons, 
-repeat as necessary), and "Decrease Desktop Icon Sizes" (decreases all 
-desktop icons, repeat as necessary).
+Select "Desktop Icons and Plugins" to modify what appears on the current
+primary desktop. By default, the RSS Reader plugin will appear in the 
+lower right corner. The following options are also available when you 
+right-click an icon on the desktop, allowing you to customize the 
+location and appearance of desktop icons: 
 
-The "Display Desktop Folder Contents" option is used to display each 
-item stored in :file:`~/Desktop` as an icon on the desktop. By default, 
-this option is selected as its box is black. If you de-select this 
-option and click "Save Changes", the icons for the contents of 
-:file:`~/Desktop` will be removed from the desktop.
-   
-To configure the panel, click the "Panels" tab which will open the 
-screen shown in :numref:`Figure %s: Panels Tab <lumina5e>`.
+* **Start Moving Item:** Click the icon to lock it in place once you 
+  have moved it to the desired location.
+* **Start Resizing Item:** Use the mouse to increase or decrease size; 
+  click when you are finished adjusting the icon.
+* **Increase Desktop Icon Sizes:** Increases the size of all desktop 
+  icons, repeat as necessary.
+* **Decrease Desktop Icon Sizes:** Decreases the size of all desktop 
+  icons, repeat as necessary.
+* **Remove Item:** Removes the item from the desktop.
 
-.. _lumina5e:
+The "Floating Panels and Plugins" option gives you the ability to create
+and/or customize panels which are attached to the edges of the screen, 
+seen in :numref:`Figure %s Lumina Panel Configuration <lumina5f>`
 
-.. figure:: images/lumina5e.png
-   :width: 662px
-   :height: 476px
+.. _lumina5f:
+
+.. figure:: images/lumina5f.png
    :scale: 100%
 
 This screen can be used to customize the location, alignment, size, 
@@ -230,23 +322,21 @@ transparency.
 
 The "Location" tab (4 arrow icon) contains the following items:
 
-* **Edge:** this drop-down menu can be used to set the location of the 
+* **Edge:** This drop-down menu can be used to set the location of the 
   panel which can be "Top", "Bottom", "Left", or "Right". 
 
-* **Alignment:** this drop-down menu can be used to center the panel on 
+* **Alignment:** This drop-down menu can be used to center the panel on 
   the edge or pin it to one of the corners. 
 
-* **Size:** can be used to specify the panel width in pixels and the 
+* **Size:** Can be used to specify the panel width in pixels and the 
   panel length. 
 
 The "Appearance" tab (monitor icon) is shown in 
-:numref:`Figure %s: Panels Appearance Tab <lumina19c>`.
+:numref:`Figure %s: Panels Appearance Tab <lumina19d>`.
 
-.. _lumina19c:
+.. _lumina19d:
 
-.. figure:: images/lumina19c.png
-   :width: 662px
-   :height: 476px
+.. figure:: images/lumina19d.png
    :scale: 100%
 
 If you would like the panel to be hidden unless the mouse is hovered 
@@ -254,202 +344,65 @@ over it, check the "Auto-hide Panel" box. The "Custom Color" option can
 be used to fine-tune the panel color. Click its box, then the paint icon
 to select the panel color.
 
-The "Plugins" tab (puzzle icon) is shown in :numref:`Figure %s: Panels Plugins Tab <lumina20c>`.
+The "Plugins" tab (puzzle icon) is shown in :numref:`Figure %s: Panels Plugins Tab <lumina20d>`.
 
-.. _lumina20c:
+.. _lumina20d:
 
-.. figure:: images/lumina20c.png
-   :width: 662px
-   :height: 476px
+.. figure:: images/lumina20d.png
    :scale: 100%
 
 To add a plugin as an icon to the panel, click the "+" button below the 
-listed plugins and select a plugin from the list that appears. The 
-available plugins include:
+listed plugins and select a plugin from the list that appears. To remove
+a plugin, highlight it and click the "-" button below the listed plugins
+. The arrow buttons can be used to move the location of the plugin on 
+the panel. The top of an ordered list corresponds to either the top of a
+vertical panel or the left side of a horizontal panel. 
 
-* **Application Launcher:** when you select this plugin, it will prompt 
-  you to select the application to launch. This will add a shortcut for 
-  launching the selected application to the panel.
-  
-* **Application Menu:** adds an application menu that contains a 
-  shortcut to your home directory, a shortcut to the operating system's 
-  graphical software management utility (if there is one), a shortcut to
-  the operating system's Control Panel (if it provides one), and a list 
-  of installed software sorted by categories.
+By default, Lumina will have one panel which stretches across the 
+entirety of the bottom of the primary screen and another auto-hiding 
+panel which displays across the center 10% of the top edge. The bottom 
+panel incorporates the Start Menu, Task Manager (No Groups), a Spacer, 
+System Tray, Time/Date, and Battery Monitor plugins. The top panel 
+includes the Desktop Bar plugin sandwiched between two spacers. 
 
-* **Battery Monitor:** hover over this icon to view the current charge 
-  status of the battery. When the charge reaches 15% or below, the low 
-  battery icon will flash intermittently and will change to a low 
-  battery icon when there is less than 5% charge left.
+.. index:: user settings
 
-* **Desktop Bar:** adds a "star" button for automatically displaying 
-  entries for anything in the :file:`~/Desktop` folder and alternately 
-  launching the selected entry.
+.. _User Settings:
 
-* **Line:** adds a separator line to the panel.
+User Settings
+=============
 
-* **Show Desktop:** this button will hide all open windows so that only 
-  the desktop is visible. This is useful for touch screens or small 
-  devices.
+The "User Settings" option governs the general settings for the desktop 
+session. These settings are usually not changed on a frequent basis.
 
-* **Spacer:** adds a blank area to the panel.
+The "General Options" entry, seen in :numref:`Figure %s: Lumina General Options <lumina12f>`
+, is used to govern numerous settings for the desktop experience.
 
-* **Start Menu:** adds a classic start menu as seen on other operating 
-  systems.
+.. _lumina12f:
 
-* **System Dashboard:** used to view/modify audio volume, screen 
-  brightness, battery life, and virtual desktops.
-
-* **System Tray:** provides a display area for dockable applications.
-
-* **Task Manager (No Groups):** ensures that every window gets its own 
-  button. This uses a lot more space on the panel since it needs to put 
-  part of the window title on each button.
-  
-* **Task Manager:** is added by default. Its behavior is to group 
-  windows by application.
-
-* **Time/Date:** displays the current time and date.
-
-* **User Button:** main button for accessing applications, directories, 
-  settings, and log out.
-
-* **Workspace Switcher:** used to switch between virtual desktops.
-
-To remove a plugin, highlight it and click the "-" button below the 
-listed plugins. The arrow buttons can be used to move the location of 
-the plugin on the panel. The top of an ordered list corresponds to 
-either the top of a vertical panel or the left side of a horizontal 
-panel. 
-
-.. index:: application startup
-.. _Applications:
-
-Applications
-============
-
-The "Applications" tab, shown in :numref:`Figure %s: Lumina Applications Configuration <lumina6c>`,
-is used to configure which applications start when you login to Lumina 
-as well as the default applications and file types.
-
-.. _lumina6c:
-
-.. figure:: images/lumina6c.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
-   
-To prevent an application from starting automatically, uncheck its box.
-
-To add an application to the auto-start configuration , click 
-"Application" to select the application's name from a drop-down menu or 
-click "Binary" or "File" to browse to the location of  the application 
-or file to open. If you select a file name, Lumina will automatically 
-open it in an application that is capable of reading the file type.
-
-To configure the default application used for particular file types, 
-click the "File Defaults" tab, shown in :numref:`Figure %s: Lumina Defaults Configuration <lumina7d>`. 
-
-.. _lumina7d:
-
-.. figure:: images/lumina7d.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
-   
-To add an application, select the file type and specific group and 
-either click "Set App", which will open a drop-down menu of common 
-applications, or "Set Binary", which will open a file browser so that 
-you can browse to the path of the application. Alternately, selecting 
-only a file type and then clicking "Set App" or "Set Binary" will 
-register your application for all the groups within the selected type.
-
-The "Common Applications" tab, shown in :numref:`Figure %s: Lumina Common Applications Configuration <lumina24>`,
-can be used to configure default applications.
-
-.. _lumina24:
-
-.. figure:: images/lumina24.png
-   :width: 662px
-   :height: 476px
+.. figure:: images/lumina12f.png
    :scale: 100%
 
-You can configure the default web browser, email client, file manager, 
-and virtual terminal. Simply click the application you wish to change, 
-and a new window will appear allowing you to select a new default 
-application. If you wish to go back to the default application, click 
-the current application's name, then click "Restore Defaults".
-
-.. note:: Some applications, such as web browsers, keep their own 
-          internal lists of default applications for opening particular 
-          types of files. If you set that application to use the 
-          :command:`lumina-open` or :command:`xdg-open` utilities, it 
-          will use the default applications that are set here so that 
-          there is only a single list of default applications for the 
-          system.
-
-.. index:: shortcuts
-.. _Shortcuts:
-
-Shortcuts
-=========
-  
-The "Shortcuts" tab, shown in :numref:`Figure %s: Lumina Shortcuts Configuration <lumina8b>`,
-is used to configure various keyboard shortcuts for system or window 
-tasks. Most of these options relate to window and workspace management, 
-such as moving windows between workspaces, but there are also options 
-for changing the system audio volume or screen brightness. 
-
-.. _lumina8b:
-
-.. figure:: images/lumina8b.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
-      
-To create a shortcut, click the desired entry, then "Change Shortcut", 
-then the key combination you wish to set. Note that any entry that 
-already has a defined shortcut showing in the "Keyboard Shortcut" column
-can **not** be assigned to another action. First, highlight that 
-shortcut, click "Clear Shortcut", then "Save Changes". You can now 
-create a new shortcut.
-
-.. index:: session
-.. _Session:
-
-Session
-=======
-
-The "Session" tab, shown in :numref:`Figure %s: Session General Options Tab <lumina12e>`,
-governs the general settings for the desktop session. These settings are
-usually not changed on a frequent basis.
-
-.. _lumina12e:
-
-.. figure:: images/lumina12e.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
-
-The "General Options" tab can be used to automatically enable numlock, 
-to play chimes when Lumina starts or exits, and to change the icon that 
-appears  in the login menu and the start menu button. It also has 
-options to set the time format, date format, and time display format. 
+The user can select to automatically enable numlock, play chimes when 
+Lumina starts or exits, and change the icon that appears in the login 
+menu and the start menu button. There are also options to set the time 
+and date format, as well as the time display format (via drop menu). 
 Buttons are available to reset these options to either the system 
 defaults or Lumina defaults.
 
-The "Locale" tab is shown in :numref:`Figure %s: Session Locale Tab <lumina21b>`.
+The "Localization Settings" option is shown in 
+:numref:`Figure %s: Session Locale Tab <lumina21c>`.
 
-.. _lumina21b:
+.. _lumina21c:
 
-.. figure:: images/lumina21b.png
-   :width: 662px
-   :height: 476px
+.. figure:: images/lumina21c.png
    :scale: 100%
+
+.. >>>>>>>>>>---------------Continue editing from here------------------<<<<<<<<<<<<<<<<
 
 The lumina-i18n package provides localization files. Once installed, 
 this allows you to customize which locale is used for the various items 
-listed in :numref:`Figure %s: Session Locale Tab <lumina21b>`. To 
+listed in :numref:`Figure %s: Session Locale Tab <lumina21c>`. To 
 install this package on a PC-BSD or FreeBSD system, use 
 :command:`sudo pkg install lumina-i18n`. On other operating systems, use
 the software management tool that comes with the operating system. If 

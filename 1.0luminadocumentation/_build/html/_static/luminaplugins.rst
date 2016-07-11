@@ -10,10 +10,6 @@ Lumina offers a wide variety of plugins which allow the user to
 customize their desktop experience. Plugins are divided between desktop,
 menu, and panel plugins.
 
-.. TODO: Create descriptions of every plugin: menu, and panel
-   entry. Be sure to describe how to navigate to the plugins menu for 
-   each category and begin modifying the plugins, maybe some screenshots
-
 .. _desktop plugins:
 
 Desktop Plugins

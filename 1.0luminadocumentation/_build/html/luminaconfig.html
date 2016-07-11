@@ -75,10 +75,9 @@
 <li class="toctree-l1"><a class="reference internal" href="testintro.html">1. Introduction to Lumina</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. Lumina Configuration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#appearance">2.1. Appearance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#interface">2.2. Interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#applications">2.3. Applications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#shortcuts">2.4. Shortcuts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#session">2.5. Session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#desktop-session-options">2.2. Desktop Session Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interface-configuration">2.3. Interface Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-settings">2.4. User Settings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="luminaplugins.html">3. Lumina Plugins</a></li>
@@ -235,51 +234,124 @@ to adjust the specific transparency value to your preference.</p>
 <a class="reference internal image-reference" href="_images/lumina30.png"><img alt="_images/lumina30.png" src="_images/lumina30.png" style="width: 506.0px; height: 415.0px;" /></a>
 </div>
 </div>
-<div class="section" id="interface">
-<span id="index-2"></span><span id="id3"></span><h2>2.2. Interface<a class="headerlink" href="#interface" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;Interface&#8221; tab is used to configure the desktop right-click menu
-and panel. Its &#8220;Desktop&#8221; tab, shown in
-<a class="reference internal" href="#lumina4d"><span class="std std-numref">Figure 2.2.1: Right-Click Menu Configuration</span></a>,
-is used to configure which items appear in the right-click menu and
-which items are embedded onto the desktop.</p>
-<div class="figure" id="lumina4d">
-<a class="reference internal image-reference" href="_images/lumina4d.png"><img alt="_images/lumina4d.png" src="_images/lumina4d.png" style="width: 662.0px; height: 476.0px;" /></a>
+<div class="section" id="desktop-session-options">
+<span id="desktop-session"></span><span id="index-2"></span><h2>2.2. Desktop Session Options<a class="headerlink" href="#desktop-session-options" title="Permalink to this headline">¶</a></h2>
+<p>The &#8220;Desktop Sessions Options&#8221; menu, seen in
+<a class="reference internal" href="#lumina3d"><span class="std std-numref">Figure 2.1: Lumina Desktop Configuration</span></a>
+is used to configure which applications automatically start when you
+login to Lumina, default applications and file types, and keyboard
+shortcuts</p>
+<p>Click &#8220;Default Applications for File Type&#8221; to see the &#8220;Basic Settings&#8221;
+tab, shown in <a class="reference internal" href="#lumina24a"><span class="std std-numref">Figure 2.2.1: Lumina Default Applications - Basic</span></a>
+. This tab can be used to configure default applications.</p>
+<div class="figure" id="lumina24a">
+<a class="reference internal image-reference" href="_images/lumina24a.png"><img alt="_images/lumina24a.png" src="_images/lumina24a.png" style="width: 575.0px; height: 415.0px;" /></a>
 </div>
-<p>To add an item to the right-click menu, click the &#8220;+&#8221; button under the
-&#8220;Quick-Access Menu&#8221;. This will open the &#8220;Select a Plugin&#8221; screen where
-you can add an application, custom app, an entry for the <a class="reference internal" href="luminautl.html#insight-file-manager"><span class="std std-ref">Insight File Manager</span></a>,
-a separator, a shortcut to Settings, a terminal, or a listing of
-currently open applications. To remove an item from the right-click
-menu, highlight it and click the &#8220;-&#8221; button. Use the arrow buttons to
-change the order of the items in the right-click menu.</p>
-<p>To embed a utility onto the desktop, click the &#8220;+&#8221; button under the
-&#8220;Embedded Utilities&#8221; frame. The following plugins can be added as an
-icon on the desktop: Application Launcher (opens a menu that lists which
-applications can be launched), Audio Player, Calendar, Desktop Icons
-View, Note Pad, Sample (an example of a QtQuick/QML plugin), and System
-Monitor (displays CPU temperature/usage, memory usage, and disk I/O).
-Once you click the &#8220;Save Changes&#8221; button, any utilities you added will
-appear on top of the desktop. To remove an embedded utility from the
-desktop, highlight its entry under &#8220;Embedded Utilities&#8221;, click the &#8220;-&#8221;
-button, and click &#8220;Save Changes&#8221;. Alternately, right-click the icon for
-the utility and select &#8220;Remove Item&#8221; from the right-click menu.</p>
-<p>The following options are also available when you right-click an icon on
-the desktop, allowing you to customize the location and appearance of
-desktop icons: &#8220;Start Moving Item&#8221; (click the icon to lock it in place
-once you have moved it to the desired location), &#8220;Start Resizing Item&#8221;
-(use the mouse to increase/decrease size and click when you are
-finished), &#8220;Increase Desktop Icon Sizes&#8221; (increases all desktop icons,
-repeat as necessary), and &#8220;Decrease Desktop Icon Sizes&#8221; (decreases all
-desktop icons, repeat as necessary).</p>
-<p>The &#8220;Display Desktop Folder Contents&#8221; option is used to display each
-item stored in <code class="file docutils literal"><span class="pre">~/Desktop</span></code> as an icon on the desktop. By default,
-this option is selected as its box is black. If you de-select this
-option and click &#8220;Save Changes&#8221;, the icons for the contents of
-<code class="file docutils literal"><span class="pre">~/Desktop</span></code> will be removed from the desktop.</p>
-<p>To configure the panel, click the &#8220;Panels&#8221; tab which will open the
-screen shown in <a class="reference internal" href="#lumina5e"><span class="std std-numref">Figure 2.2.2: Panels Tab</span></a>.</p>
-<div class="figure" id="lumina5e">
-<a class="reference internal image-reference" href="_images/lumina5e.png"><img alt="_images/lumina5e.png" src="_images/lumina5e.png" style="width: 662.0px; height: 476.0px;" /></a>
+<p>You can configure the default web browser, email client, file manager,
+and virtual terminal. Simply click the application you wish to change,
+and a new window will appear allowing you to select a new default
+application. If you wish to go back to the default application, click
+the current application&#8217;s name, then click &#8220;Restore Defaults&#8221;.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some applications, such as web browsers, keep their own
+internal lists of default applications for opening particular
+types of files. If you set that application to use the
+<strong class="command">lumina-open</strong> or <strong class="command">xdg-open</strong> utilities, it
+will use the default applications that are set here so that
+there is only a single list of default applications for the
+system.</p>
+</div>
+<p>The &#8220;Advanced&#8221; tab allows you to configure the default application used
+for particular file types, as seen in
+<a class="reference internal" href="#lumina7e"><span class="std std-numref">Figure 2.2.2: Lumina Default Applications - Advanced</span></a>.</p>
+<div class="figure" id="lumina7e">
+<a class="reference internal image-reference" href="_images/lumina7e.png"><img alt="_images/lumina7e.png" src="_images/lumina7e.png" style="width: 575.0px; height: 415.0px;" /></a>
+</div>
+<p>To add an application, select the file type and specific group and
+either click &#8220;Set App&#8221;, which will open a drop-down menu of common
+applications, or &#8220;Set Binary&#8221;, which will open a file browser so that
+you can browse to the path of the application. Alternately, selecting
+only a file type and then clicking &#8220;Set App&#8221; or &#8220;Set Binary&#8221; will
+register your application for all the groups within the selected type.
+Selecting &#8220;Clear&#8221; will remove the default application from the
+associated file type or group.</p>
+<p>The &#8220;Keyboard Shortcuts&#8221; option, shown in
+<a class="reference internal" href="#lumina8c"><span class="std std-numref">Figure 2.2.3: Lumina Keyboard Shortcuts - Basic</span></a>,
+is used to configure various keyboard shortcuts for system or window
+tasks. Most of these options relate to window and workspace management,
+such as moving windows between workspaces, but there are also options
+for changing the system audio volume or screen brightness.</p>
+<div class="figure" id="lumina8c">
+<a class="reference internal image-reference" href="_images/lumina8c.png"><img alt="_images/lumina8c.png" src="_images/lumina8c.png" style="width: 575.0px; height: 415.0px;" /></a>
+</div>
+<p>To create a shortcut, click the desired entry, then &#8220;Change Shortcut&#8221;,
+then the key combination you wish to set. Be aware that any entry with
+an already defined shortcut showing in the &#8220;Keyboard Shortcut&#8221; column
+can <strong>not</strong> be assigned to another action. To free a shortcut for reuse,
+highlight the shortcut, click &#8220;Clear Shortcut&#8221;, then &#8220;Save Changes&#8221;. You
+can now create a new shortcut.</p>
+<p>Click &#8220;Advanced Editor&#8221;, seen in <a class="reference internal" href="#lumina31"><span class="std std-numref">Figure 2.2.4 Lumina Keyboard Shortcuts - Advanced</span></a>
+, to manually adjust or create all keyboard shortcuts. By default,
+syntax codes are shown in their own display area, but this can be hidden
+by unchecking &#8220;View Syntax Codes&#8221;.</p>
+<div class="figure" id="lumina31">
+<a class="reference internal image-reference" href="_images/lumina31.png"><img alt="_images/lumina31.png" src="_images/lumina31.png" style="width: 575.0px; height: 415.0px;" /></a>
+</div>
+<p>The &#8220;Startup Services and Applications&#8221; option, displayed in
+<a class="reference internal" href="#lumina6d"><span class="std std-numref">Figure 2.2.5: Lumina Startup Services</span></a>, allows you to
+adjust what is automatically started upon logging into Lumina.</p>
+<div class="figure" id="lumina6d">
+<a class="reference internal image-reference" href="_images/lumina6d.png"><img alt="_images/lumina6d.png" src="_images/lumina6d.png" style="width: 575.0px; height: 415.0px;" /></a>
+</div>
+<p>To prevent an application from starting automatically, uncheck its box.
+To add an application to the auto-start configuration , click
+&#8220;Application&#8221; to select the application&#8217;s name from a drop-down menu or
+click &#8220;Binary&#8221; or &#8220;File&#8221; to browse to the location of  the application
+or file to open. If you select a file name, Lumina will automatically
+open it in an application that is capable of reading the file type.</p>
+</div>
+<div class="section" id="interface-configuration">
+<span id="interface"></span><span id="index-3"></span><h2>2.3. Interface Configuration<a class="headerlink" href="#interface-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The &#8220;Interface Configuration&#8221; option, seen here as
+<a class="reference internal" href="#lumina32"><span class="std std-numref">Figure 2.3.1: Lumina Interface Configuration</span></a>, is used
+to configure the context (right-click) menu, desktop, and floating
+panels.</p>
+<div class="figure" id="lumina32">
+<a class="reference internal image-reference" href="_images/lumina32.png"><img alt="_images/lumina32.png" src="_images/lumina32.png" style="width: 575.0px; height: 415.0px;" /></a>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The options of &#8220;Context Menu and Plugins&#8221;, &#8220;Desktop Icons and
+Plugins&#8221;, and &#8220;Floating Icons and Plugins&#8221; involve modifying and
+interacting with plugins, which are described at length in the
+<a class="reference internal" href="luminaplugins.html#lumina-desktop-plugins"><span class="std std-ref">Lumina Plugins</span></a> chapter of this handbook.</p>
+</div>
+<p>Click &#8220;Context Menu and Plugins&#8221; to adjust the appearance of the menu
+which appears when you right-click the desktop. By default, the &lt;menu&gt;
+includes the following plugins: Terminal, File Manager, Applications, a
+Separator, and Settings.</p>
+<p>Select &#8220;Desktop Icons and Plugins&#8221; to modify what appears on the current
+primary desktop. By default, the RSS Reader plugin will appear in the
+lower right corner. The following options are also available when you
+right-click an icon on the desktop, allowing you to customize the
+location and appearance of desktop icons:</p>
+<ul class="simple">
+<li><strong>Start Moving Item:</strong> Click the icon to lock it in place once you
+have moved it to the desired location.</li>
+<li><strong>Start Resizing Item:</strong> Use the mouse to increase or decrease size;
+click when you are finished adjusting the icon.</li>
+<li><strong>Increase Desktop Icon Sizes:</strong> Increases the size of all desktop
+icons, repeat as necessary.</li>
+<li><strong>Decrease Desktop Icon Sizes:</strong> Decreases the size of all desktop
+icons, repeat as necessary.</li>
+<li><strong>Remove Item:</strong> Removes the item from the desktop.</li>
+</ul>
+<p>The &#8220;Floating Panels and Plugins&#8221; option gives you the ability to create
+and/or customize panels which are attached to the edges of the screen,
+seen in <a class="reference internal" href="#lumina5f"><span class="std std-numref">Figure 2.3.2 Lumina Panel Configuration</span></a></p>
+<div class="figure" id="lumina5f">
+<a class="reference internal image-reference" href="_images/lumina5f.png"><img alt="_images/lumina5f.png" src="_images/lumina5f.png" style="width: 575.0px; height: 415.0px;" /></a>
 </div>
 <p>This screen can be used to customize the location, alignment, size,
 theme, and plugins for an existing panel. The &#8220;+&#8221; and &#8220;-&#8221; icons towards
@@ -298,155 +370,62 @@ you wish to customize.</p>
 </div>
 <p>The &#8220;Location&#8221; tab (4 arrow icon) contains the following items:</p>
 <ul class="simple">
-<li><strong>Edge:</strong> this drop-down menu can be used to set the location of the
+<li><strong>Edge:</strong> This drop-down menu can be used to set the location of the
 panel which can be &#8220;Top&#8221;, &#8220;Bottom&#8221;, &#8220;Left&#8221;, or &#8220;Right&#8221;.</li>
-<li><strong>Alignment:</strong> this drop-down menu can be used to center the panel on
+<li><strong>Alignment:</strong> This drop-down menu can be used to center the panel on
 the edge or pin it to one of the corners.</li>
-<li><strong>Size:</strong> can be used to specify the panel width in pixels and the
+<li><strong>Size:</strong> Can be used to specify the panel width in pixels and the
 panel length.</li>
 </ul>
 <p>The &#8220;Appearance&#8221; tab (monitor icon) is shown in
-<a class="reference internal" href="#lumina19c"><span class="std std-numref">Figure 2.2.3: Panels Appearance Tab</span></a>.</p>
-<div class="figure" id="lumina19c">
-<a class="reference internal image-reference" href="_images/lumina19c.png"><img alt="_images/lumina19c.png" src="_images/lumina19c.png" style="width: 662.0px; height: 476.0px;" /></a>
+<a class="reference internal" href="#lumina19d"><span class="std std-numref">Figure 2.3.3: Panels Appearance Tab</span></a>.</p>
+<div class="figure" id="lumina19d">
+<a class="reference internal image-reference" href="_images/lumina19d.png"><img alt="_images/lumina19d.png" src="_images/lumina19d.png" style="width: 573.0px; height: 388.0px;" /></a>
 </div>
 <p>If you would like the panel to be hidden unless the mouse is hovered
 over it, check the &#8220;Auto-hide Panel&#8221; box. The &#8220;Custom Color&#8221; option can
 be used to fine-tune the panel color. Click its box, then the paint icon
 to select the panel color.</p>
-<p>The &#8220;Plugins&#8221; tab (puzzle icon) is shown in <a class="reference internal" href="#lumina20c"><span class="std std-numref">Figure 2.2.4: Panels Plugins Tab</span></a>.</p>
-<div class="figure" id="lumina20c">
-<a class="reference internal image-reference" href="_images/lumina20c.png"><img alt="_images/lumina20c.png" src="_images/lumina20c.png" style="width: 662.0px; height: 476.0px;" /></a>
+<p>The &#8220;Plugins&#8221; tab (puzzle icon) is shown in <a class="reference internal" href="#lumina20d"><span class="std std-numref">Figure 2.3.4: Panels Plugins Tab</span></a>.</p>
+<div class="figure" id="lumina20d">
+<a class="reference internal image-reference" href="_images/lumina20d.png"><img alt="_images/lumina20d.png" src="_images/lumina20d.png" style="width: 573.0px; height: 388.0px;" /></a>
 </div>
 <p>To add a plugin as an icon to the panel, click the &#8220;+&#8221; button below the
-listed plugins and select a plugin from the list that appears. The
-available plugins include:</p>
-<ul class="simple">
-<li><strong>Application Launcher:</strong> when you select this plugin, it will prompt
-you to select the application to launch. This will add a shortcut for
-launching the selected application to the panel.</li>
-<li><strong>Application Menu:</strong> adds an application menu that contains a
-shortcut to your home directory, a shortcut to the operating system&#8217;s
-graphical software management utility (if there is one), a shortcut to
-the operating system&#8217;s Control Panel (if it provides one), and a list
-of installed software sorted by categories.</li>
-<li><strong>Battery Monitor:</strong> hover over this icon to view the current charge
-status of the battery. When the charge reaches 15% or below, the low
-battery icon will flash intermittently and will change to a low
-battery icon when there is less than 5% charge left.</li>
-<li><strong>Desktop Bar:</strong> adds a &#8220;star&#8221; button for automatically displaying
-entries for anything in the <code class="file docutils literal"><span class="pre">~/Desktop</span></code> folder and alternately
-launching the selected entry.</li>
-<li><strong>Line:</strong> adds a separator line to the panel.</li>
-<li><strong>Show Desktop:</strong> this button will hide all open windows so that only
-the desktop is visible. This is useful for touch screens or small
-devices.</li>
-<li><strong>Spacer:</strong> adds a blank area to the panel.</li>
-<li><strong>Start Menu:</strong> adds a classic start menu as seen on other operating
-systems.</li>
-<li><strong>System Dashboard:</strong> used to view/modify audio volume, screen
-brightness, battery life, and virtual desktops.</li>
-<li><strong>System Tray:</strong> provides a display area for dockable applications.</li>
-<li><strong>Task Manager (No Groups):</strong> ensures that every window gets its own
-button. This uses a lot more space on the panel since it needs to put
-part of the window title on each button.</li>
-<li><strong>Task Manager:</strong> is added by default. Its behavior is to group
-windows by application.</li>
-<li><strong>Time/Date:</strong> displays the current time and date.</li>
-<li><strong>User Button:</strong> main button for accessing applications, directories,
-settings, and log out.</li>
-<li><strong>Workspace Switcher:</strong> used to switch between virtual desktops.</li>
-</ul>
-<p>To remove a plugin, highlight it and click the &#8220;-&#8221; button below the
-listed plugins. The arrow buttons can be used to move the location of
-the plugin on the panel. The top of an ordered list corresponds to
-either the top of a vertical panel or the left side of a horizontal
-panel.</p>
+listed plugins and select a plugin from the list that appears. To remove
+a plugin, highlight it and click the &#8220;-&#8221; button below the listed plugins
+. The arrow buttons can be used to move the location of the plugin on
+the panel. The top of an ordered list corresponds to either the top of a
+vertical panel or the left side of a horizontal panel.</p>
+<p>By default, Lumina will have one panel which stretches across the
+entirety of the bottom of the primary screen and another auto-hiding
+panel which displays across the center 10% of the top edge. The bottom
+panel incorporates the Start Menu, Task Manager (No Groups), a Spacer,
+System Tray, Time/Date, and Battery Monitor plugins. The top panel
+includes the Desktop Bar plugin sandwiched between two spacers.</p>
 </div>
-<div class="section" id="applications">
-<span id="index-3"></span><span id="id4"></span><h2>2.3. Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;Applications&#8221; tab, shown in <a class="reference internal" href="#lumina6c"><span class="std std-numref">Figure 2.3.1: Lumina Applications Configuration</span></a>,
-is used to configure which applications start when you login to Lumina
-as well as the default applications and file types.</p>
-<div class="figure" id="lumina6c">
-<a class="reference internal image-reference" href="_images/lumina6c.png"><img alt="_images/lumina6c.png" src="_images/lumina6c.png" style="width: 662.0px; height: 476.0px;" /></a>
+<div class="section" id="user-settings">
+<span id="index-4"></span><span id="id3"></span><h2>2.4. User Settings<a class="headerlink" href="#user-settings" title="Permalink to this headline">¶</a></h2>
+<p>The &#8220;User Settings&#8221; option governs the general settings for the desktop
+session. These settings are usually not changed on a frequent basis.</p>
+<p>The &#8220;General Options&#8221; entry, seen in <a class="reference internal" href="#lumina12f"><span class="std std-numref">Figure 2.4.1: Lumina General Options</span></a>
+, is used to govern numerous settings for the desktop experience.</p>
+<div class="figure" id="lumina12f">
+<a class="reference internal image-reference" href="_images/lumina12f.png"><img alt="_images/lumina12f.png" src="_images/lumina12f.png" style="width: 575.0px; height: 415.0px;" /></a>
 </div>
-<p>To prevent an application from starting automatically, uncheck its box.</p>
-<p>To add an application to the auto-start configuration , click
-&#8220;Application&#8221; to select the application&#8217;s name from a drop-down menu or
-click &#8220;Binary&#8221; or &#8220;File&#8221; to browse to the location of  the application
-or file to open. If you select a file name, Lumina will automatically
-open it in an application that is capable of reading the file type.</p>
-<p>To configure the default application used for particular file types,
-click the &#8220;File Defaults&#8221; tab, shown in <a class="reference internal" href="#lumina7d"><span class="std std-numref">Figure 2.3.2: Lumina Defaults Configuration</span></a>.</p>
-<div class="figure" id="lumina7d">
-<a class="reference internal image-reference" href="_images/lumina7d.png"><img alt="_images/lumina7d.png" src="_images/lumina7d.png" style="width: 662.0px; height: 476.0px;" /></a>
-</div>
-<p>To add an application, select the file type and specific group and
-either click &#8220;Set App&#8221;, which will open a drop-down menu of common
-applications, or &#8220;Set Binary&#8221;, which will open a file browser so that
-you can browse to the path of the application. Alternately, selecting
-only a file type and then clicking &#8220;Set App&#8221; or &#8220;Set Binary&#8221; will
-register your application for all the groups within the selected type.</p>
-<p>The &#8220;Common Applications&#8221; tab, shown in <a class="reference internal" href="#lumina24"><span class="std std-numref">Figure 2.3.3: Lumina Common Applications Configuration</span></a>,
-can be used to configure default applications.</p>
-<div class="figure" id="lumina24">
-<a class="reference internal image-reference" href="_images/lumina24.png"><img alt="_images/lumina24.png" src="_images/lumina24.png" style="width: 662.0px; height: 476.0px;" /></a>
-</div>
-<p>You can configure the default web browser, email client, file manager,
-and virtual terminal. Simply click the application you wish to change,
-and a new window will appear allowing you to select a new default
-application. If you wish to go back to the default application, click
-the current application&#8217;s name, then click &#8220;Restore Defaults&#8221;.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Some applications, such as web browsers, keep their own
-internal lists of default applications for opening particular
-types of files. If you set that application to use the
-<strong class="command">lumina-open</strong> or <strong class="command">xdg-open</strong> utilities, it
-will use the default applications that are set here so that
-there is only a single list of default applications for the
-system.</p>
-</div>
-</div>
-<div class="section" id="shortcuts">
-<span id="index-4"></span><span id="id5"></span><h2>2.4. Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;Shortcuts&#8221; tab, shown in <a class="reference internal" href="#lumina8b"><span class="std std-numref">Figure 2.4.1: Lumina Shortcuts Configuration</span></a>,
-is used to configure various keyboard shortcuts for system or window
-tasks. Most of these options relate to window and workspace management,
-such as moving windows between workspaces, but there are also options
-for changing the system audio volume or screen brightness.</p>
-<div class="figure" id="lumina8b">
-<a class="reference internal image-reference" href="_images/lumina8b.png"><img alt="_images/lumina8b.png" src="_images/lumina8b.png" style="width: 662.0px; height: 476.0px;" /></a>
-</div>
-<p>To create a shortcut, click the desired entry, then &#8220;Change Shortcut&#8221;,
-then the key combination you wish to set. Note that any entry that
-already has a defined shortcut showing in the &#8220;Keyboard Shortcut&#8221; column
-can <strong>not</strong> be assigned to another action. First, highlight that
-shortcut, click &#8220;Clear Shortcut&#8221;, then &#8220;Save Changes&#8221;. You can now
-create a new shortcut.</p>
-</div>
-<div class="section" id="session">
-<span id="index-5"></span><span id="id6"></span><h2>2.5. Session<a class="headerlink" href="#session" title="Permalink to this headline">¶</a></h2>
-<p>The &#8220;Session&#8221; tab, shown in <a class="reference internal" href="#lumina12e"><span class="std std-numref">Figure 2.5.1: Session General Options Tab</span></a>,
-governs the general settings for the desktop session. These settings are
-usually not changed on a frequent basis.</p>
-<div class="figure" id="lumina12e">
-<a class="reference internal image-reference" href="_images/lumina12e.png"><img alt="_images/lumina12e.png" src="_images/lumina12e.png" style="width: 662.0px; height: 476.0px;" /></a>
-</div>
-<p>The &#8220;General Options&#8221; tab can be used to automatically enable numlock,
-to play chimes when Lumina starts or exits, and to change the icon that
-appears  in the login menu and the start menu button. It also has
-options to set the time format, date format, and time display format.
+<p>The user can select to automatically enable numlock, play chimes when
+Lumina starts or exits, and change the icon that appears in the login
+menu and the start menu button. There are also options to set the time
+and date format, as well as the time display format (via drop menu).
 Buttons are available to reset these options to either the system
 defaults or Lumina defaults.</p>
-<p>The &#8220;Locale&#8221; tab is shown in <a class="reference internal" href="#lumina21b"><span class="std std-numref">Figure 2.5.2: Session Locale Tab</span></a>.</p>
-<div class="figure" id="lumina21b">
-<a class="reference internal image-reference" href="_images/lumina21b.png"><img alt="_images/lumina21b.png" src="_images/lumina21b.png" style="width: 662.0px; height: 476.0px;" /></a>
+<p>The &#8220;Localization Settings&#8221; option is shown in
+<a class="reference internal" href="#lumina21c"><span class="std std-numref">Figure 2.4.2: Session Locale Tab</span></a>.</p>
+<div class="figure" id="lumina21c">
+<a class="reference internal image-reference" href="_images/lumina21c.png"><img alt="_images/lumina21c.png" src="_images/lumina21c.png" style="width: 575.0px; height: 415.0px;" /></a>
 </div>
 <p>The lumina-i18n package provides localization files. Once installed,
 this allows you to customize which locale is used for the various items
-listed in <a class="reference internal" href="#lumina21b"><span class="std std-numref">Figure 2.5.2: Session Locale Tab</span></a>. To
+listed in <a class="reference internal" href="#lumina21c"><span class="std std-numref">Figure 2.4.2: Session Locale Tab</span></a>. To
 install this package on a PC-BSD or FreeBSD system, use
 <strong class="command">sudo pkg install lumina-i18n</strong>. On other operating systems, use
 the software management tool that comes with the operating system. If
@@ -471,7 +450,7 @@ not been translated to the selected language yet. You can
 assist the Lumina Project in translating menu items using the
 instructions in <a class="reference internal" href="luminactbt.html#interface-translation"><span class="std std-ref">Interface Translation</span></a>.</p>
 </div>
-<p>The &#8220;Window System&#8221; tab, shown in <a class="reference internal" href="#lumina22b"><span class="std std-numref">Figure 2.5.3: Session Window System Tab</span></a>,
+<p>The &#8220;Window System&#8221; tab, shown in <a class="reference internal" href="#lumina22b"><span class="std std-numref">Figure 2.4.3: Session Window System Tab</span></a>,
 contains various configuration options for the window manager.</p>
 <div class="figure" id="lumina22b">
 <a class="reference internal image-reference" href="_images/lumina22b.png"><img alt="_images/lumina22b.png" src="_images/lumina22b.png" style="width: 662.0px; height: 476.0px;" /></a>
