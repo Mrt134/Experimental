@@ -113,52 +113,48 @@ manually.
 .. figure:: images/lumina28.png
    :scale: 100%
 
-.. Window Effects end
+The "Window System" tab, shown in :numref:`Figure %s: Session Window System Tab <lumina22c>`,
+contains various configuration options for the window manager.
 
-The "Window Manager" entry contains all options involving windows, 
-housed within both simple and advanced editors. The simple editor, seen 
-in :numref:`Figure %s: Window Manager - Simple <lumina29>`, offers 
-"Number of Workspaces", "New Window Placement", "Focus Policy", "Window 
-Theme", and "Window Theme Preview" as customization options. A user can 
-designate additional virtual workspaces to the system by manipulating 
-the arrows by "Number of Workspaces" (up to a maximum of ten). You can 
-also choose how new windows appear, from "Align in a Row", "Align in a 
-Column", "Cascade", and "Underneath Mouse" by clicking the drop menu by 
-"New Window Placement". Also adjustable is the manner by which a window 
-becomes the primary viewspace. Clicking the drop menu next to "Focus 
-Policy" gives "Click to Focus", "Active Mouse Focus, and 
-"Strict Mouse Focus" as the options for you to choose the active window. 
-Choosing to alter the window theme via the drop menu will present a wide
-variety of options for window appearance. The Window Theme Preview 
-section will display a simplified image, if available, of the general 
-appearance of the selected theme.
+.. _lumina22c:
+
+.. figure:: images/lumina22c.png
+   :scale: 100%
+
+Drop-down menus are provided for configuring the following:
+
+* **Number of Workspaces:** up to *10* workspaces can be defined, with a
+  default of *2*.
+
+* **New Window Placement:** indicates where new windows are placed on 
+  the screen. Choices are "Align in a Row", "Align in a Column", 
+  "Cascade", or "Underneath Mouse".
+
+* **Focus Policy:** indicates when windows receive focus. Choices are 
+  "Click to Focus", "Active Mouse Focus", or "Strict Mouse Focus".
+
+* **Window Theme:** controls the appearance of the frame around 
+  application windows. The "Window Theme Preview" screen can be used to 
+  preview the selected theme.
+
+The Advanced Editor, seen in :numref:`Figure %s: Window Manager - Advanced <lumina29>`
+, allows you to manually adjust every setting related to the display of 
+windows on your system. For example, if you prefer a particular theme, 
+but don't care for the theme's transparency effects, you can use the 
+Advanced Editor to adjust the specific transparency value to your 
+preference.
 
 .. _lumina29:
 
 .. figure:: images/lumina29.png
    :scale: 100%
 
-The Advanced Editor, seen in :numref:`Figure %s: Window Manager - Advanced <lumina30>`
-, allows you to manually adjust every setting related to the display of 
-windows on your system. For example, if you prefer a specific theme, but
-don't care for the theme's transparency, you can use the Advanced Editor
-to adjust the specific transparency value to your preference.
-
-.. _lumina30:
-
-.. figure:: images/lumina30.png
-   :scale: 100%
-
 .. index:: application startup shortcuts
 
-.. _Desktop Session:
+.. _DesktopSession Options:
 
 Desktop Session Options
 =======================
-
-.. TODO: Reconcile Desktop Session Options with previous "Applications"
-   section. Screenshots likely need to be all be replaced and text 
-   updated.
    
 The "Desktop Sessions Options" menu, seen in 
 :numref:`Figure %s: Lumina Desktop Configuration <lumina3d>`
@@ -226,14 +222,14 @@ can **not** be assigned to another action. To free a shortcut for reuse,
 highlight the shortcut, click "Clear Shortcut", then "Save Changes". You
 can now create a new shortcut.
 
-Click "Advanced Editor", seen in :numref:`Figure %s Lumina Keyboard Shortcuts - Advanced <lumina31>`
+Click "Advanced Editor", seen in :numref:`Figure %s Lumina Keyboard Shortcuts - Advanced <lumina30>`
 , to manually adjust or create all keyboard shortcuts. By default, 
 syntax codes are shown in their own display area, but this can be hidden
 by unchecking "View Syntax Codes".
 
-.. _lumina31:
+.. _lumina30:
 
-.. figure:: images/lumina31.png
+.. figure:: images/lumina30.png
    :scale: 100%
 
 The "Startup Services and Applications" option, displayed in 
@@ -262,13 +258,13 @@ Interface Configuration
 .. TODO: look into unifying the names for the right-click menu
 
 The "Interface Configuration" option, seen here as 
-:numref:`Figure %s: Lumina Interface Configuration <lumina32>`, is used 
+:numref:`Figure %s: Lumina Interface Configuration <lumina31>`, is used 
 to configure the context (right-click) menu, desktop, and floating 
 panels.
 
-.. _lumina32:
+.. _lumina31:
 
-.. figure:: images/lumina32.png
+.. figure:: images/lumina31.png
    :scale: 100%
 
 .. note:: The options of "Context Menu and Plugins", "Desktop Icons and 
@@ -398,7 +394,7 @@ The "Localization Settings" option is shown in
 .. figure:: images/lumina21c.png
    :scale: 100%
 
-.. >>>>>>>>>>---------------Continue editing from here------------------<<<<<<<<<<<<<<<<
+.. TODO: Determine if lumina-i18n is still used is Lumina 1.0.
 
 The lumina-i18n package provides localization files. Once installed, 
 this allows you to customize which locale is used for the various items 
@@ -426,29 +422,3 @@ have to log back into the Lumina session.
           not been translated to the selected language yet. You can 
           assist the Lumina Project in translating menu items using the
           instructions in :ref:`Interface Translation`.
-
-The "Window System" tab, shown in :numref:`Figure %s: Session Window System Tab <lumina22b>`,
-contains various configuration options for the window manager. 
-
-.. _lumina22b:
-
-.. figure:: images/lumina22b.png
-   :width: 662px
-   :height: 476px
-   :scale: 100%
-   
-Drop-down menus are provided for configuring the following:
-
-* **Number of Workspaces:** up to *10* workspaces can be defined, with a
-  default of *2*.
-
-* **New Window Placement:** indicates where new windows are placed on 
-  the screen. Choices are "Align in a Row", "Align in a Column", 
-  "Cascade", or "Underneath Mouse".
-
-* **Focus Policy:** indicates when windows receive focus. Choices are 
-  "Click to Focus", "Active Mouse Focus", or "Strict Mouse Focus".
-
-* **Window Theme:** controls the appearance of the frame around 
-  application windows. The "Window Theme Preview" screen can be used to 
-  preview the selected theme.

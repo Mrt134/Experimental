@@ -181,8 +181,8 @@ open the start menu.
   * **Locale:** this will only appear if the lumina-i18n package is 
     installed. The current locale will be displayed as the title of the 
     drop-down menu. Click the drop-down menu to select another locale 
-    for this session. Refer to :ref:`Session` for more information on 
-    fine-tuning the locale settings.
+    for this session. Refer to :ref:`User Settings` for more information
+    on fine-tuning the locale settings.
 
   * **Back:** click to return to the start menu.
   
