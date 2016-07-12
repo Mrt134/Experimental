@@ -9,7 +9,7 @@ Introduction to Lumina
 The Lumina Desktop Environment (Lumina for short) is a lightweight, 
 XDG-compliant, BSD-licensed desktop environment that focuses 
 specifically on streamlining the ability to get work done while 
-minimizing system overhead. It is specifically designed for PC-BSD® and 
+minimizing system overhead. It is specifically designed for TrueOS® and 
 FreeBSD, but has also been ported to many other BSD and Linux operating 
 systems. It is based on the Qt graphical toolkit and the Fluxbox window 
 manager, and uses a small number of X utilities for various tasks, such 
@@ -82,20 +82,20 @@ Once installed, add :command:`start-lumina-desktop` as the name of the
 binary in your :file:`.startx`, :file:`.xinitrc`, or similar X startup 
 file.
 
-.. note:: No startup configuration is needed when installed on a PC-BSD®
+.. note:: No startup configuration is needed when installed on a TrueOS®
           system as the PCDM login manager will automatically display 
           Lumina in the login menu. Simply log out, select Lumina,
           and log back in.
    
-The rest of this Handbook describes the Lumina Configuration utility and
-the various utilities which are built into Lumina. It then describes how
-you can contribute to the Lumina Project and lists the changelogs for 
-each version of Lumina.
+The rest of this Handbook describes the Lumina Configuration utility, 
+other various utilities built into Lumina, and Lumina plugins. It then 
+describes how you can contribute to the Lumina Project and lists the 
+changelogs for each version of Lumina.
 
-.. _Test Start Menu:
+.. _Initial Settings:
 
-First Boot
-==========
+Initial Settings
+================
 
 When freshly installed, Lumina will implement a number of default 
 plugins and options for the user. All these first time defaults are 
@@ -103,12 +103,12 @@ configurable, with the numerous options covered in the
 :ref:`Lumina Desktop Plugins` section of the handbook.
 
 .. note:: The screenshots used in the handbook are the defaults used by
-          the lumina desktop project. Your default desktop appearance 
+          the Lumina Desktop Project. Your default desktop appearance 
           may vary if using a distrubution other than the one provided 
           by the Lumina Desktop Project.
   
 :numref:`Figure %s: Lumina Desktop <lumina1d>` A screenshot of Lumina on
-a PC-BSD® system. The user has clicked the "fireball" icon in order to 
+a TrueOS® system. The user has clicked the "fireball" icon in order to 
 open the start menu.
 
 .. _lumina1d:
@@ -118,27 +118,26 @@ open the start menu.
    :height: 1080px
    :scale: 50%
    
-
-* **Start menu:** provides quick access for user interaction with the 
+* **Start menu:** Provides quick access for user interaction with the 
   system. The top frame indicates which user is logged in. If the system
   has a battery, you can hover over the battery icon (not pictured) to 
   display the current status of the battery and the estimated time 
   remaining if that battery is discharging.
 
-* **Favorites:** this element is the largest section of the menu. Click 
+* **Favorites:** This element is the largest section of the menu. Click 
   an entry to launch that application. Right-click an entry to "Remove 
   from Favorites" or to "Add to Quicklaunch". In Lumina, "Favorites"
   appear in this section of the start menu and "QuickLaunch" adds a 
   button for the application to the panel that is next to the start menu
   button.
 
-* **Browse Files:** used to browse for files and directories using the 
+* **Browse Files:** Used to browse for files and directories using the 
   :ref:`Insight File Manager`. One of the actions available in this file
   manager is the ability to add a file or directory to the list of 
   Favorites. Simply select the file or directory and click the star icon
   in Insight.
 
-* **Browse Applications:** click this entry to browse all the 
+* **Browse Applications:** Click this entry to browse all the 
   applications currently registered on the system. Applications are 
   listed alphabetically by category and the "Show Categories" button has
   three modes. Click "Show Categories" to toggle between showing just 
@@ -147,53 +146,53 @@ open the start menu.
   (1/2 black 1/2 white icon). Click an application's name to start that 
   application. If you right-click an application's name, you can "Pin to
   Desktop", "Add to Favorites", or "Add to Quicklaunch". If you are 
-  running PC-BSD® or another operating system that has a pre-defined 
+  running TrueOS® or another operating system that has a pre-defined 
   application store, click "Manage Applications" at the top of the list 
   of applications in order to open that application store. For example, 
-  on a PC-BSD® system, "Manage Applications" opens AppCafe®. Click the 
+  on a TrueOS® system, "Manage Applications" opens AppCafe®. Click the 
   "Back" button to return to the start menu.
 
-* **Control Panel:** if you are on PC-BSD®, or an operating system which
+* **Control Panel:** If you are on TrueOS®, or an operating system which
   provides a control panel, click this entry to open that operating 
   system's control panel.
 
-* **Preferences:** click this entry to access the following:
+* **Preferences:** Click this entry to access the following:
 
-* **Configure Desktop:** click this entry to open the 
-  :ref:`Lumina Configuration` utility.
+    * **Configure Desktop:** Click this entry to open the 
+      :ref:`Lumina Configuration` utility.
 
-  * **Lumina Desktop Information:** click the "?" icon to determine the 
-    installed version of Lumina.
+    * **Lumina Desktop Information:** Click the "?" icon to determine 
+      the installed version of Lumina.
 
-  * **System Volume:** use your mouse to move the volume control slider 
-    to change the system audio volume from 0% to 100%. Click the sound 
-    icon on the left to mute or unmute the speaker. If the operating 
-    system provides a mixer utility, click the speaker icon on the right
-    to launch that mixer utility for advanced control of the audio 
-    system.
+    * **System Volume:** Use your mouse to move the volume control 
+      slider to change the system audio volume from 0% to 100%. Click 
+      the sound icon on the left to mute or unmute the speaker. If the 
+      operating system provides a mixer utility, click the speaker icon 
+      on the right to launch that mixer utility for advanced control of 
+      the audio system.
 
-  * **Screen Brightness:** use your mouse to move the brightness control
-    slider from 10% to 100%.
+    * **Screen Brightness:** Use your mouse to move the brightness 
+      control slider from 10% to 100%.
 
-  * **Workspace:** the number of available virtual workspaces are 
-    listed. Click the right or left arrow to switch between workspaces.
+    * **Workspace:** The number of available virtual workspaces are 
+      listed. Click the right or left arrow to switch between workspaces.
 
-  * **Locale:** this will only appear if the lumina-i18n package is 
-    installed. The current locale will be displayed as the title of the 
-    drop-down menu. Click the drop-down menu to select another locale 
-    for this session. Refer to :ref:`User Settings` for more information
-    on fine-tuning the locale settings.
+    * **Locale:** This will only appear if the lumina-i18n package is 
+      installed. The current locale will be displayed as the title of 
+      the drop-down menu. Click the drop-down menu to select another 
+      locale for this session. Refer to :ref:`User Settings` for more 
+      information on fine-tuning the locale settings.
 
-  * **Back:** click to return to the start menu.
+    * **Back:** Click to return to the start menu.
   
-* **Leave:** click this entry in order to "Suspend System" (if the 
+* **Leave:** Click this entry in order to "Suspend System" (if the 
   operating system supports it, press the system's power button to login
   and resume operation) "Restart System" (if the user has permission), 
   "Power Off system" (if the user has permission), "Sign Out User", or 
   to go "Back" to the system menu. Alternately, click the "lock" icon 
   next to "Leave" to lock the system and return it to a login prompt.
 
-.. note:: On a PC-BSD system which is in the middle of applying updates,
+.. note:: On a TrueOS system which is in the middle of applying updates,
           the shutdown and restart options will be disabled until the 
           updates are complete and a note will indicate that updates are
           in progress.
@@ -227,7 +226,7 @@ close the window.
 
 The system tray is located in the right portion of the panel. Any 
 applications that register a tray icon will appear in this area. For 
-example, on a PC-BSD system, icons will appear for Life Preserver, Mount
+example, on a TrueOS system, icons will appear for Life Preserver, Mount
 Tray, and Update Manager. Click or right-click an icon to interact with 
 that application directly. The current system time shown by the clock is
 in the default format for the current locale. If you click the clock 
