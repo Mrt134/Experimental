@@ -15,20 +15,22 @@ Lumina Screenshot
    
 This utility can be used to take screenshots of the desktop or selected 
 window and save them as PNG image files. To launch this utility, click 
-the start menu and select :menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
-right-click the desktop and select :menuselection:`Applications --> Utility --> Lumina Screenshot`,
-type :command:`lumina-screenshot` from a terminal window, or press the 
+the start menu and select 
+:menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
+right-click the desktop and select 
+:menuselection:`Applications --> Utility --> Lumina Screenshot`, type 
+:command:`lumina-screenshot` from a terminal window, or press the 
 :kbd:`Print Screen` button.
 
-On the "New Screenshot" tab, seen here in :numref:`Figure %s: New Screenshot Tab <lumina9a>`
-the following settings can be used to fine-tune the screenshot:
+On the "New Screenshot" tab, seen here in 
+:numref:`Figure %s: New Screenshot Tab <lumina25>`, you can adjust the 
+following settings to fine-tune the screenshot:
 
-.. _lumina9a:
+.. _lumina25:
 
-.. figure:: images/lumina9a.png
-   :width: 351px
-   :height: 310px
+.. figure:: images/lumina25.png
    :scale: 100%
+
    
 * **Entire Session:** will take a screenshot of the entire screen.
 
@@ -48,14 +50,13 @@ There are three options for taking a screenshot: clicking the "Take
 Screenshot" button in the lower-right corner of Lumina Screenshot, 
 pressing :kbd:`Ctrl+N`, or clicking :menuselection:`File --> Take Screenshot`. 
 
-After capturing a screenshot, the "View/Edit", seen here in :numref:`Figure %s: View/Edit Tab <lumina25>`
-tab provides additional options for manipulating the screenshot:
+After capturing a screenshot, the "View/Edit" tab, seen here in 
+:numref:`Figure %s: View/Edit Tab <lumina9a>`, provides additional 
+options for manipulating the screenshot:
 
-.. _lumina25:
+.. _lumina9a:
 
-.. figure:: images/lumina25.png
-   :width: 351px
-   :height: 310px
+.. figure:: images/lumina9a.png
    :scale: 100%
    
 * **Image Preview:** displays the captured screenshot. Right clicking 
@@ -125,7 +126,7 @@ A few additional options may be available at the bottom of the window,
 depending on the directory being viewed and the types of files that are 
 in it:
 
-* **New file:** the ability to create a new file is available if the 
+* **New File:** the ability to create a new file is available if the 
   user has permission to modify the contents of the current directory.
 
 * **New Dir:** the ability to create a new directory is available if the
@@ -163,20 +164,19 @@ in it:
 Lumina Open
 ===========
    
-To open a file, directory, or URL from the command line, use 
+To open a file, directory, or URL from the command line, type 
 :command:`lumina-open` followed by the full path to the file or the URL.
 This utility will look for an appropriate application to use to open the
 specified file or URL. If there is no default application registered for
 the input type, a small dialog will prompt the user to select which 
 application to use, and optionally set it as the default application for
-this file type. As seen in the example shown in :numref:`Figure %s: Lumina Open <lumina11b>`,
+this file type. As seen in the example shown in 
+:numref:`Figure %s: Lumina Open <lumina11b>`,
 this dialog organizes the available applications into three types: 
 
 .. _lumina11b:
 
 .. figure:: images/lumina11b.png
-   :width: 309px
-   :height: 257px
    :scale: 100%
    
 * **Preferred:** these applications have registered their Mime type with
@@ -213,8 +213,6 @@ screenshot of this utility.
 .. _lumina13b:
 
 .. figure:: images/lumina13b.png
-   :width: 290px
-   :height: 274px
    :scale: 100%
    
 To open an application, begin to enter its name. The box below the 
@@ -228,8 +226,6 @@ slightly, as seen in :numref:`Figure %s: Search for Files <lumina26>`.
 .. _lumina26:
 
 .. figure:: images/lumina26.png
-   :width: 290px
-   :height: 274px
    :scale: 100%
    
 By default, a "Files or Directories" search is limited to the user's 
@@ -242,8 +238,6 @@ wrench icon to see the screen shown in :numref:`Figure %s: Configuring the Searc
 .. _lumina14a:
 
 .. figure:: images/lumina14a.png
-   :width: 352px
-   :height: 264px
    :scale: 100%
    
 Click the blue folder icon to change the starting search directory. For 
@@ -272,12 +266,12 @@ directory.
 .. _file1a:
 
 .. figure:: images/file1a.png
-   :width: 413px
-   :height: 419px
    :scale: 100%
 
 .. index:: Lumina Information
 .. _Lumina Information:
+
+.. >>>>>>>>>>>>>>>>>>>>>>>>>>>>BEGIN EDITING BELOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 Lumina Information
 =======================

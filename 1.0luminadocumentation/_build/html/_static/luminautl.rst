@@ -15,20 +15,22 @@ Lumina Screenshot
    
 This utility can be used to take screenshots of the desktop or selected 
 window and save them as PNG image files. To launch this utility, click 
-the start menu and select :menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
-right-click the desktop and select :menuselection:`Applications --> Utility --> Lumina Screenshot`,
-type :command:`lumina-screenshot` from a terminal window, or press the 
+the start menu and select 
+:menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
+right-click the desktop and select 
+:menuselection:`Applications --> Utility --> Lumina Screenshot`, type 
+:command:`lumina-screenshot` from a terminal window, or press the 
 :kbd:`Print Screen` button.
 
-On the "New Screenshot" tab, seen here in :numref:`Figure %s: New Screenshot Tab <lumina9a>`
-the following settings can be used to fine-tune the screenshot:
+On the "New Screenshot" tab, seen here in 
+:numref:`Figure %s: New Screenshot Tab <lumina25>`, you can adjust the 
+following settings to fine-tune the screenshot:
 
-.. _lumina9a:
+.. _lumina25:
 
-.. figure:: images/lumina9a.png
-   :width: 351px
-   :height: 310px
+.. figure:: images/lumina25.png
    :scale: 100%
+
    
 * **Entire Session:** will take a screenshot of the entire screen.
 
@@ -48,14 +50,13 @@ There are three options for taking a screenshot: clicking the "Take
 Screenshot" button in the lower-right corner of Lumina Screenshot, 
 pressing :kbd:`Ctrl+N`, or clicking :menuselection:`File --> Take Screenshot`. 
 
-After capturing a screenshot, the "View/Edit", seen here in :numref:`Figure %s: View/Edit Tab <lumina25>`
-tab provides additional options for manipulating the screenshot:
+After capturing a screenshot, the "View/Edit" tab, seen here in 
+:numref:`Figure %s: View/Edit Tab <lumina9a>`, provides additional 
+options for manipulating the screenshot:
 
-.. _lumina25:
+.. _lumina9a:
 
-.. figure:: images/lumina25.png
-   :width: 351px
-   :height: 310px
+.. figure:: images/lumina9a.png
    :scale: 100%
    
 * **Image Preview:** displays the captured screenshot. Right clicking 
