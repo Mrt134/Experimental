@@ -12,11 +12,200 @@ Lumina, with the most recent version of Lumina listed first.
 Lumina 1.0
 ==========
 
-.. TODO: dump diffs here, clean later
+.. TODO: dump diffs here, clean later separate bugfixes and additions
 
 * Only native qt5 apps as default - web browser QupZilla, email Trojitá
   , 
+Ensure the checkbox for loading desktop icons properly reflects the 
+ setting in the file.
 
+* Fixed a bug with the xterm title generating gibberish.
+ 
+* Fixed a crash when right-clicking a non-applauncher desktop plugin and 
+  removing it.
+
+* Fixed the loading of non-integer values for the panel height.
+
+* Fixed a crash within the userbutton plugin which would happen after 
+  clearing out one of the scroll areas.
+
+* Updated a number of TrueOS default settings:
+
+    * Default desktop fontsize = 10pt. This value can be altered to use 
+      a percentage of the screen height (ex. 10%).
+    * Desktop visible panels has been changed to a default of 1 (was 2).
+    * desktop.backgroundfiles= #list of absolute file paths for image files (disable for Lumina default)
+    * Desktop background rotation is now 5 minutes (if applicable).
+    * The desktop plugin "rssreader" is enabled by default.
+
+* Fixed the symlink creation routine so it works properly if INSTALL_ROOT
+  is setup.
+
+* Fixed the resizeMenu's mouse event handling to ensure it keeps 
+  control of the mouse during resize events.
+  
+* Fixed the symlink creation routine in "lumina-textedit" to work with 
+  package systems.
+  
+* Localization files are now installed via the main source tree, which  
+  accounts for the change to :file:`SHARE/lumina-desktop` rather than 
+  :file:`SHARE/Lumina-DE`. Also fixed the wallpaper directory detection 
+  routine within "lumina-config" (same issue - install dir change broke 
+  the path detection).
+  
+* The desktopbar plugin will now work with the updated file locations 
+  for configs.
+
+* Fixed the replacement of the "~/" prefix on a file path with the 
+  user's home dir.
+
+* Fixed the detection and usage of the "mailto:" option in "lumina-open"
+  . This also changes the default mimetype used for email applications 
+  to "application/email".
+  
+* The Documents, Downloads, Pictures, and Videos directories are now 
+  added to the "Favorites" by default.
+
+* Quicklaunch apps can now be specified within :file:`luminaDesktop.conf`
+  in a similar manner to the "favorites" options.
+
+* A new theme titled "Glass" has been added.
+
+* Non-applauncher desktop plugins now fill in from the bottom-right
+  of the screen. This provides easily visible separation between the 
+  auto-generated launchers and other plugins.
+
+* Added a second, auto-hiding panel at the top of the primary screen by 
+  default with the desktopbar plugin as an inobtrusive alternative for 
+  instant access to favorites & ~/Desktop files and directories.
+
+* Reset which directories are watched for apps to be installed into 
+  every time the watcher updates (this fixes the detection of KDE apps 
+  getting installed/removed).
+
+* Add a new LuminaUtils function for converting a .desktop or binary 
+  name into a full path (searching all the various system dirs until it 
+  finds the file).
+
+* Convert the :file:`luminaDesktop.conf` parser to allow relative 
+  paths/filenames for favorite or default applications.
+
+* The default :file:`luminaDesktop.conf` has been altered to include a 
+  number of first-install applications.
+
+* The :file:`luminaDesktop.conf` parser will now properly set mimetypes 
+  as needed.
+
+* The install location of the "lumina-fm" icon has been fixed.
+
+* :command:`lumina-config` can now handle non-integer values for the 
+  panel settings as needed.
+
+* Updated the FreeBSD OS class a slightly:
+
+    * Update the control panel link to point to "SysAdm-client" 
+      (the old control panel is now obsolete).
+    * Ensure the system validity checks during the screen brightness 
+      routine are only run once per session rather than every time 
+      (since the type of system will not change over time).
+
+.. TODO: document COMPTON and add to handbook where necessary--------------------------------
+
+* Add a note that "Compton" settings will require a restart to take 
+  effect.
+
+* Add a new page to "lumina-config". This page allows the user to 
+  view or change settings for "Compton" as needed.
+
+* Setup the Compton init system to use a special config file just for L…
+…umina. This allows use to integrate an editor for that config file into lumina-config later.
+ 
+Also add the "Advanced/Simple" editors to the fluxbox keys page.
+
+Add a full fluxbox init file editor to lumina-config as an "advanced" 
+editor mode.
+
+ Setup Lumina to use "compton" for the compositing manager instead of
+xcompmgr (if it is installed)
+
+ Ensure that lumina-config defaults to looking in the system-installed
+ scripts directory for menu scripts.
+
+ Add the new JSON menu generation scripts to the "core" files installed 
+ (since they are basically another type of plugin).
+
+ Setup lumina-fileinfo that that it can be used to create brand-new 
+ application registrations within the user's local applications dir. 
+ Also have it install it's own .desktop registrations on the system at 
+ install time.
+
+ Ensure that the quick command run routine will never hang the system
+ for more than 1 second of inactivity from the subprocess.
+
+ Add the new jsonmenu menu plugin to lumina-config, with a new dialog 
+ for setting it up.
+
+Add a new type of menu plugin: jsonmenu:
+This is a recursive, auto-generating menu which runs an external utility
+(a script of some kind usually), which generates a JSON document/object 
+which is used to populate the menu.
+
+Add options for grouped windows in the task manager:
+Show All Windows
+Minimize All Windows
+Close All Windows
+
+Add Control+[shift]+Tab shortcuts for cycling between open windows in
+grouped-order rather than open order (alt+[shift]+tab will do open order).
+
+Allow the "save file as" option to always be available (not dependant
+on changes to the file).
+
+Add the ability for custom, system-wide environment variable settings
+within L_ETCDIR/lumina-environment.conf[.dist] This allows a system 
+admin the ability to setup customized build env settings on a global 
+basis - and the user settings are treated as overrides for the system 
+settings.
+ 
+Add support for running generic user setup scripts/tools after parsing
+luminaDesktop.conf.
+
+Setup a recursive xinit call within the start-lumina-desktop binary as 
+needed. This should detect if an X session is already active, and 
+startup X if not.
+
+Have the lumina-open dialog show applications on the main list which 
+also have the hidden flag set (since this is for using the app to launch
+something else - these apps are now valid to show).
+
+Add the ability to search for apps/utilities directly within the start 
+menu.
+
+Change the install directory where Lumina puts all it's files at install
+time (L_SHAREDIR/lumina-desktop/ instead of L_SHAREDIR/Lumina-DE/). This
+required some adjustments to the LuminaOS templates just to mirror the 
+change.
+
+Move the "runtime" directory in the users home to the 
+XDG_CONFIG_HOME/lumina-desktop rather than ~/.lumina
+
+Move from "NO_I18N" to "WITH_I18N". This will ensure that the source 
+version of the localizations are not installed unless explicitly 
+requested (since the "real" localization files are in the lumina-i18n 
+repo - these source files are theauto-generated ones before getting sent
+up to the pootle localization system).
+
+Change the name of the main desktop binary from "Lumina-DE" to 
+"lumina-desktop" for consistency. This also should catch/fix all those 
+old xsessions/.desktop files floating around which did not make the 
+transition to using the new start-lumina-desktop binary for launching 
+the desktop.
+
+Add the ability to specify mimetype defaults within luminaDesktop.conf,
+and also allow regex wildard matching when looking for default 
+applications ("text/*" will grab all text mimetypes for instance).
+
+Add the beginnings of a new desktop plugin: rssreader 
 .. index:: changelog
 .. _Lumina 0.9.0:
 
