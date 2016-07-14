@@ -271,23 +271,22 @@ directory.
 .. index:: Lumina Information
 .. _Lumina Information:
 
-.. >>>>>>>>>>>>>>>>>>>>>>>>>>>>BEGIN EDITING BELOW<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
 Lumina Information
 =======================
   
 This utility provides information about the version of Lumina, as well 
 as the license, acknowledgements, and Project links. To launch this 
-utility, right-click the desktop and select :menuselection:`Preferences --> About Lumina`,
-click the start menu then the question mark icon in "Preferences", or 
-type :command:`lumina-info` in a terminal window. An example is shown in
+utility, right-click the desktop and select 
+:menuselection:`Preferences --> About Lumina`, click the start menu then
+the question mark icon in "Preferences", or type :command:`lumina-info` 
+in a terminal window. An example is shown in 
 :numref:`Figure %s: About Lumina <about1b>`.
+
+.. TODO: update about1b to reflect lumina v1.0.
 
 .. _about1b:
 
 .. figure:: images/about1b.png
-   :width: 421px
-   :height: 482px
    :scale: 100%
    
 The "General" tab contains the following information:
@@ -304,7 +303,7 @@ The "General" tab contains the following information:
   `<http://lumina-desktop.org/>`_ in the default web browser.
 
 * **Source Repository:** click the "Open in web browser" link to open 
-  `<https://github.com/pcbsd/lumina>`_ in the default web browser.
+  `<https://github.com/trueos/lumina>`_ in the default web browser.
 
 * **Report a Bug:** click the "Open in web browser" link to open 
   `<https://bugs.pcbsd.org/projects/pcbsd>`_ in the default web browser.
@@ -341,8 +340,6 @@ a screen similar to the one shown in :numref:`Figure %s: Configuring Monitors <l
 .. _lumina15a:
 
 .. figure:: images/lumina15a.png
-   :width: 410px
-   :height: 343px
    :scale: 100%
    
 In this example, two display inputs are attached to the system and their
@@ -360,15 +357,19 @@ it should be the default input.
 Lumina Text Editor
 ==================
  
-The :command:`lumina-textedit` utility, seen in :numref:`Figure %s: Lumina Text Edit <lumina23>`
-is a simple plaintext editor which features four primary elements: 
-optional syntax highlighting, find/replace functionality, line 
-numbering, and bracket highlighting. Additionally, colors can be 
-customized by selecting :menuselection:`View --> Customize Colors`.
+The :command:`lumina-textedit` utility, seen in 
+:numref:`Figure %s: Lumina Text Edit <lumina23>`, is a simple plaintext 
+editor which features four primary elements: 
+
+* **Optional syntax highlighting**
+* **Find/replace functionality**
+* **Line numbering**
+* **Bracket highlighting**
+
+Additionally, colors can be customized by selecting 
+:menuselection:`View --> Customize Colors`.
 
 .. _lumina23:
 
 .. figure:: images/lumina23.png
-   :width: 507px
-   :height: 532px
    :scale: 100%

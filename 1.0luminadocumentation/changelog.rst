@@ -7,6 +7,17 @@ This section describes the major features and changes to each version of
 Lumina, with the most recent version of Lumina listed first.
 
 .. index:: changelog
+.. _Lumina 1.0:
+
+Lumina 1.0
+==========
+
+.. TODO: dump diffs here, clean later
+
+* Only native qt5 apps as default - web browser QupZilla, email Trojitá
+  , 
+
+.. index:: changelog
 .. _Lumina 0.9.0:
 
 Lumina 0.9.0
