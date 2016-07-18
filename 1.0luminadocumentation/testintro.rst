@@ -7,35 +7,35 @@ Introduction to Lumina
 **********************
 
 The Lumina Desktop Environment (Lumina for short) is a lightweight, 
-XDG-compliant, BSD-licensed desktop environment that focuses 
-specifically on streamlining the ability to get work done while 
-minimizing system overhead. It is specifically designed for TrueOS® and 
-FreeBSD, but has also been ported to many other BSD and Linux operating 
-systems. It is based on the Qt graphical toolkit and the Fluxbox window 
-manager, and uses a small number of X utilities for various tasks, such 
-as :command:`numlockx` and :command:`xscreensaver`.
+XDG-compliant, BSD-licensed desktop environment focused on streamlining 
+work efficiency with minimal system overhead. It is specifically 
+designed for TrueOS® and FreeBSD, but has also been ported to many other
+BSD and Linux operating systems. It is based on the Qt graphical toolkit
+and the Fluxbox window manager, and uses a small number of X utilities 
+for various tasks, such as :command:`numlockx` and :command:`xscreensaver`.
 
 Lumina's features include: 
 
 * Very little system overhead.
 
-* Does not require any of desktop implementation frameworks such as 
+* Does not require any of the desktop implementation frameworks such as 
   DBUS, policykit, consolekit, systemd, or HALD.
 
 * Does not come bundled with any applications such as web browsers, 
   email clients, multimedia software, or office suites. Instead, it 
   provides utilities for configuring the desktop environment.
 
-* Uses a simple, `text-based configuration file for setting system-wide defaults <https://github.com/pcbsd/lumina/blob/master/src-qt5/core/lumina-desktop/defaults/luminaDesktop.conf>`_. 
-  This allows Lumina distributors to easily preset the Lumina defaults 
-  and interface for their distribution.
+* Uses a simple, `text-based configuration file <https://github.com/pcbsd/lumina/blob/master/src-qt5/core/lumina-desktop/defaults/luminaDesktop.conf>`_
+  for setting system-wide defaults. Lumina distributors can use this 
+  file to easily preset the Lumina defaults and interface for their 
+  distribution.
 
-* Provides a plugin-based interface design. This allows the user to make
-  the desktop as light or heavy as desired by choosing which plugins to 
+* Provides a plugin-based interface design. The user can make their 
+  desktop as light or heavy as they wish by choosing which plugins to 
   have running on their desktop and panels. This plugin-based system is 
   similar to Android or other modern operating systems.
   
-* Single, easy-to-use :ref:`Lumina Configuration` utility controls all 
+* A single, easy-to-use :ref:`Lumina Configuration` utility controls all 
   the different configuration options for the desktop in one location.
 
 * Intelligent "favorites" system for creating quick shortcuts to 
@@ -56,7 +56,7 @@ Lumina's features include:
 * Total system search capabilities through :ref:`Lumina Search`, without
   a daemon eating memory in the background.
 
-* Screenshot functionality through :ref:`Lumina Screenshot` which is 
+* Screenshot functionality through :ref:`Lumina Screenshot`, which is 
   also tied to the “Print Screen” key by default.
 
 .. _Test How to Get Lumina:
@@ -73,9 +73,9 @@ In addition to pre-built packages, the
 `Lumina source repository <https://github.com/pcbsd/lumina>`_ 
 is available on GitHub so that developers can contribute code or create
 packages for other distributions. If you plan to compile Lumina from 
-source, refer to `DEPENDENCIES <https://github.com/pcbsd/lumina/blob/master/DEPENDENCIES>`_ 
+source, refer to `DEPENDENCIES <https://github.com/trueos/lumina/blob/master/DEPENDENCIES>`_ 
 and ensure all dependent software is installed and to 
-`README <https://github.com/pcbsd/lumina/blob/master/README.md>`_ for 
+`README <https://github.com/trueos/lumina/blob/master/README.md>`_ for 
 build instructions.
 
 Once installed, add :command:`start-lumina-desktop` as the name of the 
@@ -103,9 +103,9 @@ configurable, with the numerous options covered in the
 :ref:`Lumina Desktop Plugins` section of the handbook.
 
 .. note:: The screenshots used in the handbook are the defaults used by
-          the Lumina Desktop Project. Your default desktop appearance 
-          may vary if using a distrubution other than the one provided 
-          by the Lumina Desktop Project.
+          the Lumina Desktop Project. The default desktop appearance 
+          can vary if using another distrubution's custom configuration
+          of the Lumina Desktop Project.
   
 :numref:`Figure %s: Lumina Desktop <lumina1d>` A screenshot of Lumina on
 a TrueOS® system. The user has clicked the "fireball" icon in order to 
@@ -114,15 +114,16 @@ open the start menu.
 .. _lumina1d:
 
 .. figure:: images/lumina1d.png
-   :width: 1920px
-   :height: 1080px
    :scale: 50%
    
-* **Start menu:** Provides quick access for user interaction with the 
-  system. The top frame indicates which user is logged in. If the system
-  has a battery, you can hover over the battery icon (not pictured) to 
-  display the current status of the battery and the estimated time 
-  remaining if that battery is discharging.
+The Start Menu provides quick access for user interaction with the 
+system. The top frame is a quick search bar for rapidly finding specific 
+items. Just underneath the search bar is a small field indicating which 
+user is logged in. Also, If the system has a battery, you can hover over
+the battery icon on the opposite side of the user name (not pictured) to
+display the current status of the battery and the estimated time 
+remaining if that battery is discharging. The remaining space of the 
+start menu is divided into several categories:
 
 * **Favorites:** This element is the largest section of the menu. Click 
   an entry to launch that application. Right-click an entry to "Remove 
@@ -132,33 +133,32 @@ open the start menu.
   button.
 
 * **Browse Files:** Used to browse for files and directories using the 
-  :ref:`Insight File Manager`. One of the actions available in this file
-  manager is the ability to add a file or directory to the list of 
-  Favorites. Simply select the file or directory and click the star icon
-  in Insight.
+  :ref:`Insight File Manager`. One available action in this file manager
+  is the ability to add a file or directory to the list of Favorites. 
+  Simply select the file or directory and click the star icon in Insight.
 
-* **Browse Applications:** Click this entry to browse all the 
-  applications currently registered on the system. Applications are 
-  listed alphabetically by category and the "Show Categories" button has
-  three modes. Click "Show Categories" to toggle between showing just 
-  the category names (black box icon), just the contents of the 
-  categories (white box icon), or the categories and their contents 
-  (1/2 black 1/2 white icon). Click an application's name to start that 
-  application. If you right-click an application's name, you can "Pin to
-  Desktop", "Add to Favorites", or "Add to Quicklaunch". If you are 
-  running TrueOS® or another operating system that has a pre-defined 
-  application store, click "Manage Applications" at the top of the list 
-  of applications in order to open that application store. For example, 
-  on a TrueOS® system, "Manage Applications" opens AppCafe®. Click the 
-  "Back" button to return to the start menu.
+* **Browse Applications:** Click this entry to browse all applications 
+  currently registered on the system. Applications are listed 
+  alphabetically by category and the "Show Categories" button has
+  three modes. Click "Show Categories" to toggle between showing the 
+  category names (white box icon), just the contents of the categories 
+  (black box icon), or the categories and their contents (1/2 black, 
+  1/2 white icon). Click an application's name to start the application.
+  By right-clicking an application's name, you can select "Pin to
+  Desktop", "Add to Favorites", or "Add to Quicklaunch". Using TrueOS® 
+  or another operating system with a pre-defined application store will 
+  add a "Manage Applications" button at the top of the applications list.
+  Click it to open the specific operating system's application store. 
+  For example, on a TrueOS® system, "Manage Applications" opens AppCafe®.
+  Click the "Back" button to return to the start menu.
 
-* **Control Panel:** If you are on TrueOS®, or an operating system which
-  provides a control panel, click this entry to open that operating 
-  system's control panel.
+* **Control Panel:** If using TrueOS® or an operating system with
+  a control panel, click this entry to open the operating system's 
+  control panel.
 
 * **Preferences:** Click this entry to access the following:
 
-    * **Configure Desktop:** Click this entry to open the 
+    * **Configure Desktop:** This entry opens the 
       :ref:`Lumina Configuration` utility.
 
     * **Lumina Desktop Information:** Click the "?" icon to determine 
@@ -168,10 +168,10 @@ open the start menu.
       slider to change the system audio volume from 0% to 100%. Click 
       the sound icon on the left to mute or unmute the speaker. If the 
       operating system provides a mixer utility, click the speaker icon 
-      on the right to launch that mixer utility for advanced control of 
+      on the right to launch the mixer utility for advanced control of 
       the audio system.
 
-    * **Screen Brightness:** Use your mouse to move the brightness 
+    * **Screen Brightness:** Use the mouse to move the brightness 
       control slider from 10% to 100%.
 
     * **Workspace:** The number of available virtual workspaces are 
@@ -185,17 +185,17 @@ open the start menu.
 
     * **Back:** Click to return to the start menu.
   
-* **Leave:** Click this entry in order to "Suspend System" (if the 
-  operating system supports it, press the system's power button to login
-  and resume operation) "Restart System" (if the user has permission), 
-  "Power Off system" (if the user has permission), "Sign Out User", or 
-  to go "Back" to the system menu. Alternately, click the "lock" icon 
-  next to "Leave" to lock the system and return it to a login prompt.
+* **Leave:** Click this entry to view options to "Suspend System" (if 
+  supported by the operating system, press the system's power button to 
+  login and resume operation), "Restart System" (if the user has 
+  permission), "Power Off System" (if the user has permission), "Sign 
+  Out User", or press "Back" to return to the start menu. Alternately, 
+  click the "lock" icon next to "Leave" to lock the system, returning to
+  a login prompt.
 
-.. note:: On a TrueOS system which is in the middle of applying updates,
-          the shutdown and restart options will be disabled until the 
-          updates are complete and a note will indicate that updates are
-          in progress.
+.. note:: On a TrueOS system which is applying updates, the shutdown and
+          restart options will be disabled until the updates are 
+          complete, with a note indicating updates are in progress.
 
 .. _Test Panel and System Tray:
 
@@ -208,7 +208,7 @@ default layout. For instructions on how to configure the panel to suit
 your needs, refer to the "Panels" tab :ref:`Interface` section.
   
 As you open windows or applications, a button will be added to the 
-section of the panel near the system menu. If the application provides 
+section of the panel near the start menu. If the application provides 
 an icon, the button will appear as that icon and if you mouse over it, 
 the tooltip will show the name of the application. If you have multiple 
 copies of an application running, it will combine all those entries into
@@ -227,24 +227,24 @@ close the window.
 The system tray is located in the right portion of the panel. Any 
 applications that register a tray icon will appear in this area. For 
 example, on a TrueOS system, icons will appear for Life Preserver, Mount
-Tray, and Update Manager. Click or right-click an icon to interact with 
+Tray, and SysAdm™. Click or right-click an icon to interact with 
 that application directly. The current system time shown by the clock is
 in the default format for the current locale. If you click the clock 
 icon and then click "Time Zone", a menu will open where you can select 
 to either "Use System Time" or click a country name in order to select a
 city to change to that city's time zone.
 
-.. index:: right-click menu
-.. _Test Right Click Menu:
+.. index:: desktop context menu
+.. _Desktop Context Menu:
 
-Right-Click Menu
-================
+Desktop Context Menu
+====================
 
-If you right-click the desktop, a menu of quick shortcuts will appear 
-and the title of the menu will indicate the name of the current 
-workspace. This section describes the default menu items. For 
-instructions on how to configure the right-click panel to suit your 
-needs, refer to the "Desktop" tab :ref:`Interface` section.
+Right-clicking the desktop will open a menu of quick shortcuts and the 
+title of the menu will indicate the name of the current workspace. This 
+section describes the default menu items. For instructions on how to 
+configure the right-click panel to suit your needs, refer to the 
+:ref:`Interface` Configuration section of this handbook.
 
 By default, the right-click menu contains the following items:
 
