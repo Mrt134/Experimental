@@ -100,7 +100,7 @@ Initial Settings
 When freshly installed, Lumina will implement a number of default 
 plugins and options for the user. All these first time defaults are 
 configurable, with the numerous options covered in the 
-:ref:`Lumina Desktop Plugins` section of the handbook.
+:ref:`Lumina Plugins` section of the handbook.
 
 .. note:: The screenshots used in the handbook are the defaults used by
           the Lumina Desktop Project. The default desktop appearance 

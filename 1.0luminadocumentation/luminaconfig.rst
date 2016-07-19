@@ -1,6 +1,4 @@
-
 .. index:: configuration
-
 .. _Lumina Configuration:
 
 Lumina Configuration
@@ -255,8 +253,6 @@ open it in an application that is capable of reading the file type.
 Interface Configuration
 =======================
 
-.. TODO: look into unifying the names for the right-click menu
-
 The "Interface Configuration" option, seen here as 
 :numref:`Figure %s: Lumina Interface Configuration <lumina31>`, is used 
 to configure the context (right-click) menu, desktop, and floating 
@@ -270,12 +266,12 @@ panels.
 .. note:: The options of "Context Menu and Plugins", "Desktop Icons and 
    Plugins", and "Floating Icons and Plugins" involve modifying and 
    interacting with plugins, which are described at length in the 
-   :ref:`Lumina Desktop Plugins` chapter of this handbook.
+   :ref:`Lumina Plugins` chapter of this handbook.
 
 Click "Context Menu and Plugins" to adjust the appearance of the menu 
-which appears when you right-click the desktop. By default, the <menu> 
-includes the following plugins: Terminal, File Manager, Applications, a 
-Separator, and Settings.
+which appears when right-clicking the desktop. By default, the context 
+menu includes the following plugins: Terminal, File Manager, 
+Applications, a Separator, and Settings.
 
 Select "Desktop Icons and Plugins" to modify what appears on the current
 primary desktop. By default, the RSS Reader plugin will appear in the 

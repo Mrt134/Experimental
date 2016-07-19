@@ -1,7 +1,5 @@
-.. globalindex::
-   :maxdepth: 4
-   
-.. _Lumina Desktop Plugins:
+.. index:: plugins   
+.. _Lumina Plugins:
 
 Lumina Plugins
 **************
@@ -10,6 +8,7 @@ Lumina offers a wide variety of plugins which allow the user to
 customize their desktop experience. Plugins are divided between context 
 menu, desktop, and floating panel plugins.
 
+.. index:: contextmenu plugins
 .. _Context Menu Plugins:
 
 Context Menu Plugins
@@ -188,6 +187,7 @@ info.ID = "windowlist"
 This plugin adds an entry to the right-click menu which, when hovered 
 over with the mouse, will list all open application windows.
 
+.. index:: desktop plugins
 .. _desktop plugins:
 
 Desktop Plugins
@@ -391,7 +391,7 @@ The "Disk I/O" tab of the System Monitor plugin. Displayed are the
 current read and write speeds of the connected hardware, which in this 
 case is a hard drive and cd player. 
 
-
+.. index:: float panel plugins
 .. _floating panel plugins:
 
 Floating Panel Plugins
