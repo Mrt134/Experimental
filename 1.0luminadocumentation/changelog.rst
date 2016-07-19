@@ -7,210 +7,217 @@ This section describes the major features and changes to each version of
 Lumina, with the most recent version of Lumina listed first.
 
 .. index:: changelog
-.. _Lumina 1.0:
+.. _Lumina 1.0.0:
 
-Lumina 1.0
-==========
+Lumina 1.0.0
+============
 
-.. TODO: Early list, with one format pass. Plan for at least another 
-         formatting pass after getting Kenny to look it over.
+* Files moved/renamed:
 
-* Only native qt5 apps as default - web browser QupZilla, email Trojitá
-   
-* Resolved an issue that the checkbox for loading desktop icons properly
-  reflects the setting in the file.
+    * "Lumina-DE" binary is now "lumina-desktop". Full pathway: 
+      /usr/local/share/Lumina-DE/* -> /usr/local/share/lumina-desktop/*
+    * Moved the "runtime" directory in the user's home directory to 
+      :file:`XDG_CONFIG_HOME/lumina-desktop` (replaced :file:`~/.lumina`).
+    * Changed the install directory where Lumina puts all it's files at 
+      install time (:file:`L_SHAREDIR/lumina-desktop/` instead of 
+      :file:`L_SHAREDIR/Lumina-DE/`). The required LuminaOS templates 
+      have been adjusted to mirror the change.
+    * Localization files are now installed via the main source tree, 
+      which accounts for the change to :file:`SHARE/lumina-desktop` 
+      rather than :file:`SHARE/Lumina-DE`. Also fixed the wallpaper 
+      directory detection routine within :command:`lumina-config` (same 
+      issue - install dir change broke the path detection).
 
-* Fixed a bug with the xterm title generating gibberish.
- 
-* Fixed a crash when right-clicking a non-applauncher desktop plugin and 
-  removing it.
+* Due to the file movement/renaming, all custom settings from previous 
+  versions of Lumina will be wiped. All settings will revert to the 
+  current 1.0.0 defaults.
 
-* Fixed the loading of non-integer values for the panel height.
+* :file:`luminadesktop.conf` changes:
 
-* Fixed a crash within the userbutton plugin which would happen after 
-  clearing out one of the scroll areas.
+    * Quicklaunch apps can now be specified within :file:`luminadesktop.conf`
+      in a similar manner to the "favorites" options.
+    * Convert the :file:`luminadesktop.conf` parser to allow relative 
+      paths/filenames for favorite or default applications.
+    * :file:`luminadesktop.conf` has been altered to include
+      a number of first-install applications.
+    * The :file:`luminadesktop.conf` parser will now properly set 
+      mimetypes as needed.
+    * Add support for running generic user generated scripts or tools 
+      after parsing :file:`luminadesktop.conf`.
+    * Add the ability to specify mimetype defaults within 
+      :file:`luminadesktop.conf` and also allow regex wildcard matching 
+      when looking for default applications (ex. :file:`text/*` will 
+      grab all text mimetypes).
+    * External scripts can be used to set up a new user after Lumina is 
+      initialized.
+    * Allow relative paths within :file:`luminadesktop.conf` and updated
+      the default apps inside :file:`luminadesktop.conf`.
 
-* Updated a number of TrueOS default settings:
+* :command:`lumina-config` reworked:
 
-    * Default desktop fontsize = 10pt. This value can be altered to use 
-      a percentage of the screen height (ex. 10%).
-    * Desktop visible panels has been changed to a default of 1 (was 2).
-    * desktop.backgroundfiles= #list of absolute file paths for image 
-      files (disabled in the Lumina defaults).
-    * If enabled, desktop background rotation defaults to rotate every 
-      5 minutes.
-    * The desktop plugin "rssreader" is enabled by default.
+    * Added search capabilities.
+    * Rebuilt for faster startup.
+    * Added advanced menus to :command:`fluxbox` and :command:`compton` 
+      for finer control.
+    * General cleanup and fluxbox.
+    * Reworked multi-screen selection functionality.
+    * Ensure that :command:`lumina-config` defaults to looking in the 
+      system installed scripts directory for menu scripts.
+    * :command:`lumina-config` can now handle non-integer values for the 
+      panel settings as needed.
 
-* Fixed the symlink creation routine so it works properly if 
-  :file:`INSTALL_ROOT` is setup.
+* The Lumina Desktop binary has been reduced in size.
 
-* Fixed the resizeMenu's mouse event handling to ensure it keeps 
-  control of the mouse during resize events.
+* New application registrations:
+    
+    * lumina-fileinfo.desktop
+    * lumina-config.desktop
+    
+* New optional dependencies:
+    
+    * Compton (recommended compositing manager)
+    * xcompmgr (fallback manager)
+    
+* Compositing can now be disabled entirely by manually editing 
+  :file:`/usr/home/tmoore/.config/lumina-desktop/sessionsettings.conf` 
+  and adding the line :command:`enableCompositing=false`.
   
-* Fixed the symlink creation routine in "lumina-textedit" to work with 
-  package systems.
+* New external script support:
+
+    * Add a new type of menu plugin: "jsonmenu". This is a recursive,
+      auto-generating menu which runs an external utility (a script of 
+      some kind usually), which generates a JSON document/object which 
+      is used to populate the menu.
+    * User created scripts.
+
+* Add the new JSON menu generation scripts to the "core" files installed 
+  as they are listed as another plugin option.
   
-* Localization files are now installed via the main source tree, which  
-  accounts for the change to :file:`SHARE/lumina-desktop` rather than 
-  :file:`SHARE/Lumina-DE`. Also fixed the wallpaper directory detection 
-  routine within "lumina-config" (same issue - install dir change broke 
-  the path detection).
-  
-* The desktopbar plugin will now work with the updated file locations 
-  for configs.
+* Add options for grouped windows in the task manager: "Show All", 
+  "Minimize All", and "Close All".
 
-* Fixed the replacement of the "~/" prefix on a file path with the 
-  user's home dir.
+* :command:`lumina-fileinfo` can now be used to create new application 
+  registrations. By default, applications are registered for the 
+  current user on the system, unless otherwise specified. It can 
+  also install it's own :file:`.desktop` registrations on the system 
+  during installation.
+    
+* Fixed a bug where panels display with only 5 pixels.
 
-* Fixed the detection and usage of the "mailto:" option in "lumina-open"
-  . This also changes the default mimetype used for email applications 
-  to "application/email".
-  
-* The "Documents", "Downloads", "Pictures", and "Videos" directories are
-  now added to the favorites by default.
+* Fixed a crash with the user button logging out the user.
 
-* Quicklaunch apps can now be specified within :file:`luminaDesktop.conf`
-  in a similar manner to the "favorites" options.
+* Fixed the xterm window title displaying nonsense.
 
-* A new theme titled "Glass" has been added.
+* Fixed :command:`fluxbox` config files.
 
-* Non-applauncher desktop plugins now fill in from the bottom-right
-  of the screen. This provides easily visible separation between the 
-  auto-generated launchers and other plugins.
+* Added the "Advanced/Simple" editors to the :command:`fluxbox` keys 
+  page.
 
-* Added a second, auto-hiding panel at the top of the primary screen by 
-  default with the desktopbar plugin as an inobtrusive alternative for 
-  instant access to favorites & :file:`~/Desktop` files and directories.
+* Finding icons has been reworked for better functionality.
+
+* New wallpaper sizing options: "Fit" and "Full".
+
+* Released a new desktop plugin: "rssreader". This plugin displays an 
+  active RSS feed in a configurable window set to the lower right corner
+  of the screen by default. This plugin supports the RSS v0.91 and v2.0 
+  standards.
 
 * Reset which directories are watched for apps to be installed into 
   every time the watcher updates (this fixes the detection of KDE apps 
   getting installed/removed).
+  
+* Improved backend search routine for finding .desktop files or binaries.
 
-* Add a new LuminaUtils function for converting a .desktop or binary 
-  name into a full path (searching all the various system directories 
-  until it finds the file).
+* Calendar plugin will now roll over if system on over 24 hours.
 
-* Convert the :file:`luminaDesktop.conf` parser to allow relative 
-  paths/filenames for favorite or default applications.
+* :command:`lumina-fm` will remove broken symlinks when deleting 
+  directories.
+  
+* load previous screen config on lumina start
 
-* The default :file:`luminaDesktop.conf` has been altered to include a 
-  number of first-install applications.
+* Fixed the detection and usage of the "mailto:" option in :command:`lumina-open`.
+  This also changes the default mimetype used for email applications 
+  to "application/email".
 
-* The :file:`luminaDesktop.conf` parser will now properly set mimetypes 
-  as needed.
+* The start menu now hides duplicate favorites.
 
-* The install location of the "lumina-fm" icon has been fixed.
+* Added a search bar to the start menu to provide users an efficient 
+  method to search for apps or utilities directly.
+  
+* User button - now displays only one entry for applications linked via 
+  both the desktop and favorites category.
+  
+* The nongrouping task manager now uses a uniform size for panel buttons.
 
-* :command:`lumina-config` can now handle non-integer values for the 
-  panel settings as needed.
+* Pressing the :kbd:`Windows button` will open the Start Menu/User 
+  Button/ Application Menu, whichever is the default system button.
 
-* Updated the FreeBSD OS class a slightly:
+* Build systems updates:
 
-    * Update the control panel link to point to "SysAdm-client" 
-      (the old control panel is now obsolete).
-    * Ensure the system validity checks during the screen brightness 
-      routine are only run once per session rather than every time 
-      (since the type of system will not change over time).
+    * Localizations have been moved from `NO_I18N` to `WITH_I18N`. This 
+      will ensure that the source version of the localizations are not
+      installed unless explicitly requested (since the "real" 
+      localization files are in the lumina-i18n repo - these source 
+      files are the autogenerated ones before getting sent up to the 
+      pootle localization system).
+    * Users can add custom :file:`luminadesktop.conf` files for a
+      particular operating system to simplify builds. Customized 
+      :file:`luminadesktop.conf` files can also pull in default 
+      wallpapers for the system.
+    * To bypass OS settings check - use "DEFAULT_SETTINGS=<some OS>" in 
+      :file:`luminadesktop.conf`.
+  
+* A new theme titled "Glass" has been added.
 
-.. TODO: document COMPTON and add to handbook where necessary--------------------------------
+* Added :kbd:`Control+[shift]+Tab` shortcuts for cycling between open 
+  windows in grouped order rather than open order (:kbd:`alt+[shift]+tab`
+  will do open order).
 
-* Added "Compton" as the new default compositing manager in the place 
-  of xcompmgr (if installed):
+* Non-applauncher desktop plugins now fill in from the bottom-right of 
+  the screen. This provides easily visible separation between the 
+  auto-generated launchers and other plugins.
 
-    * Add a new page to "lumina-config". This page allows the user to 
-      view or change settings for "Compton" as needed.
+* Have the :command:`lumina-open` dialog show applications on the main 
+  list which also have the hidden flag set (since this is for using the 
+  app to launch something else - these apps are now valid to show).
 
-    * The "Compton" init system now uses a special config file just 
-      for Lumina. This allows the integration of an editor for the 
-      config file into "lumina-config" later.
- 
-* Added the "Advanced/Simple" editors to the "fluxbox" keys page.
+* Lumina Text Edit has a new symlink :command:`lte` for quick launching 
+  the editor from the command line.
 
-* Added a full fluxbox init file editor to lumina-config as an 
-  "advanced" editor mode.
+* Fixed the symlink creation routine in :command:`lumina-textedit` to 
+  work with package systems.
+  
+* Setup a recursive :command:`xinit` call within the :command:`start-lumina-desktop`
+  binary as needed. This call detects if an "X" session is already 
+  active, and will startup "X" if inactive.
 
-* Ensure that "lumina-config" defaults to looking in the 
-  system installed scripts directory for menu scripts.
+* Added the ability for custom, system-wide environment variable 
+  settings within :file:`/usr/local/etc/lumina-environment.conf` This 
+  allows a system admin the ability to setup customized build 
+  environment settings on a global basis. User settings are treated as 
+  overrides for the system settings.
 
-* Add the new JSON menu generation scripts to the "core" files installed 
-  as they are listed as another plugin option.
+* Disabled autoraise in :command:`fluxbox` by default.
 
-* "lumina-fileinfo" can now be used to create new application 
-  registrations within the user's local applications directory. It can 
-  also install it's own ".desktop" registrations on the system during 
-  installation.
+* Fixed a crash when right-clicking a non-applauncher desktop plugin and 
+  removing it.
+
+* Fixed a crash within the userbutton plugin which would happen after 
+  clearing out one of the scroll areas.
+
+* Fixed the resizeMenu's mouse event handling to ensure it keeps 
+  control of the mouse during resize events.
+
+* Add a new :file:`LuminaUtils` function for converting a .desktop or 
+  binary name into a full path (searching all the various system 
+  directories until it finds the file).
 
 * The quick command run routine will now never hang the system for more 
   than 1 second of inactivity from the subprocess.
 
-* Add a new type of menu plugin: "jsonmenu". This is a recursive,
-  auto-generating menu which runs an external utility (a script of some 
-  kind usually), which generates a JSON document/object which is used to
-  populate the menu.
-
-* Add options for grouped windows in the task manager:
-
-    * Show All Windows
-    * Minimize All Windows
-    * Close All Windows
-
-* Added :kbd:`Control+[shift]+Tab` shortcuts for cycling between open 
-  windows in grouped order rather than open order 
-  (:kbd:`alt+[shift]+tab` will do open order).
-
-* Allow the "save file as" option to always be available and not 
-  dependent on changes to the file.
-
-* Added the ability for custom, system wide environment variable 
-  settings within :file:`L_ETCDIR/lumina-environment.conf[.dist]` This 
-  allows a system admin the ability to setup customized build 
-  environment settings on a global basis - and the user settings are 
-  treated as overrides for the system settings.
- 
-* Add support for running generic user generated scripts or tools after 
-  parsing :file:`luminaDesktop.conf`.
-
-* Setup a recursive "xinit" call within the :command:`start-lumina-desktop`
-  binary as needed. This call detects if an X session is already active,
-  and will startup X if inactive.
-
-* Have the "lumina-open" dialog show applications on the main list which 
-  also have the hidden flag set (since this is for using the app to 
-  launch something else - these apps are now valid to show).
-
-* Added a search bar to the start menu to provide users an efficient 
-  method to search for apps or utilities directly.
-
-* Changed the install directory where Lumina puts all it's files at install
-  time (:file:`L_SHAREDIR/lumina-desktop/` instead of 
-  :file:`L_SHAREDIR/Lumina-DE/`). The required LuminaOS templates have 
-  been adjusted to mirror the change.
-
-* Moved the "runtime" directory in the user's home to the 
-  :file:`XDG_CONFIG_HOME/lumina-desktop` rather than :file:`~/.lumina`.
-
-* Localizations have been moved from :file:`NO_I18N` to :file:`WITH_I18N`
-  .This will ensure that the source version of the localizations are not
-  installed unless explicitly requested (since the "real" localization 
-  files are in the lumina-i18n repo - these source files are the 
-  autogenerated ones before getting sent up to the pootle localization 
-  system).
-
-* Change the name of the main desktop binary from "Lumina-DE" to 
-  "lumina-desktop" for consistency. This will also fix all the old 
-  :file:`xsessions` or :file:`.desktop` files floating around which did 
-  not make the transition to using the "start-lumina-desktop" binary for
-  launching the desktop.
-
-* Add the ability to specify mimetype defaults within 
-  :file:`luminaDesktop.conf` and also allow regex wildard matching when 
-  looking for default applications (ex. :file:`text/*` will grab all text 
-  mimetypes).
-
-* Released a new desktop plugin: "rssreader". This plugin displays an 
-  active RSS feed in a configurable window set to the lower right corner
-  of the screen by default.
-
+* Allow the "save file as" option within lumina-textedit to always be 
+  available and not dependent on changes to the file.
+    
 .. index:: changelog
 .. _Lumina 0.9.0:
 
