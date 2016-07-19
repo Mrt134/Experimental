@@ -7,8 +7,186 @@ Lumina Plugins
 **************
 
 Lumina offers a wide variety of plugins which allow the user to 
-customize their desktop experience. Plugins are divided between desktop,
-menu, and panel plugins.
+customize their desktop experience. Plugins are divided between context 
+menu, desktop, and floating panel plugins.
+
+.. _Context Menu Plugins:
+
+Context Menu Plugins
+====================
+
+Menu plugins are the options which appear when the user right-clicks on 
+the desktop screen in Lumina. You can customize these options by 
+clicking on the Start Menu, then 
+:menuselection:`Preferences --> Configure Desktop --> Interface Configuration --> Context Menu and Plugins`.
+
+.. _luminamenupluginmenu1:
+
+.. figure:: images/luminamenupluginmenu1.png
+
+:numref:`Figure %s: Lumina Menu Plugins <luminamenupluginmenu1>`
+
+Add or remove plugins by clicking the green "plus" or red "minus" 
+buttons in the bottom left corner of the window. The arrow buttons in 
+the bottom right allow the user to move plugins up or down in the 
+Quick-Access Menu field, which will alter their display order when the 
+desktop is right-clicked. Click the Save button to immediately implement 
+any changes to the menu.
+
+Two elements the right-click menu will always display are the name of 
+the current virtual desktop at the top of the menu and the shutdown 
+options on the bottom, as pictured in :numref:`Figure %s: Default Menu <luminamenuplugin1>`.
+
+.. _luminamenuplugin1:
+
+.. figure:: images/luminamenuplugin1.png
+
+The user can customize what appears between these two elements of the 
+menu however they wish.
+
+.. _Menu Applications:
+
+Applications
+------------
+
+info.ID = "applications"
+
+.. _luminamenuplugin2:
+
+.. figure:: images/luminamenuplugin2.png
+
+:numref:`Figure %s: Applications <luminamenuplugin2>`
+
+This plugin adds an application menu which can be navigated to open any 
+installed application. The Control Panel and Application Management 
+options will always be shown at the top, while the categories of 
+applications are shown underneath.
+
+.. _Custom App:
+
+Custom App
+----------
+
+info.ID = "app"
+
+.. _luminamenuplugin3:
+
+.. figure:: images/luminamenuplugin3.png
+
+:numref:`Figure %s: Custom Application <luminamenuplugin3>`
+
+Adds a specific quickstart icon for a single application to the 
+right-click menu. Pictured is the icon for the "About" application, 
+which displays current system information.
+
+.. _File Manager:
+
+File Manager
+------------
+
+info.ID = "filemanager"
+
+.. _luminamenuplugin4:
+
+.. figure:: images/luminamenuplugin4.png
+
+:numref:`Figure %s: File Manager <luminamenuplugin4>`
+
+Opens the Insight File Manager (Default) to allow the user to browse the
+system files. 
+
+.. _JSON Menu:
+
+JSON Menu
+---------
+
+info.ID = "JSON Menu"
+
+The JSON Menu plugin give a more advanced user the flexibility to create
+their own entries into the right-click menu. Selecting the JSON Menu 
+plugin immediately brings up the 
+:numref:`Figure %s: JSON Menu Configuration Window <luminamenuplugin5>`.
+
+.. _luminamenuplugin5:
+
+.. figure:: images/luminamenuplugin5.png
+
+This window has three fields: Visible Name, Executable, and Icon. The 
+Visible Name field will define the name of the right-click menu entry. 
+Executable is the path to the custom script that is to be run for the 
+entry. The Icon field is optional, but is used to assign a specific 
+icon to the custom script.
+
+.. _luminamenuplugin6:
+
+.. figure:: images/luminamenuplugin6.png
+
+:numref:`Figure %s: JSON Menu Example <luminamenuplugin6>`
+
+After completing the configuration window, the resultant display shows 
+the custom script in action. The Visible Name appears under "Workspace 2",
+while the executable script has generated the menu of files and folders.
+
+.. _Separator:
+
+Separator
+---------
+
+info.ID = "line"
+
+:numref:`Figure %s: Separator <luminamenuplugin1>`
+
+A Separator is simply a horizontal line which can be used to divide 
+entries in the right-click menu. When added to the menu, use the up and
+down arrows in the plugin selection menu to place the Separator plugin 
+between the plugins you wish to place a line between.
+
+.. _Settings:
+
+Preferences
+-----------
+
+info.ID = "Settings"
+
+.. _luminamenuplugin7:
+
+.. figure:: images/luminamenuplugin7.png
+
+:numref:`Figure %s: Preferences <luminamenuplugin7>`
+
+This plugin adds a shortcut to the right-click menu which points to the 
+desktop settings menu.
+
+.. _Terminal:
+
+Terminal
+--------
+
+info.ID = "terminal"
+
+.. _luminamenuplugin8:
+
+.. figure:: images/luminamenuplugin8.png
+
+:numref:`Figure %s: Terminal <luminamenuplugin8>`
+
+A shortcut to the default system terminal.
+
+.. _Window List:
+
+Window List
+-----------
+
+info.ID = "windowlist"
+
+.. _luminamenuplugin9:
+
+.. figure:: images/luminamenuplugin9.png
+
+:numref:`Figure %s: Window List <luminamenuplugin9>`
+
+This plugin adds an entry to the right-click menu which, when hovered 
+over with the mouse, will list all open application windows.
 
 .. _desktop plugins:
 
@@ -213,188 +391,11 @@ The "Disk I/O" tab of the System Monitor plugin. Displayed are the
 current read and write speeds of the connected hardware, which in this 
 case is a hard drive and cd player. 
 
-.. _menu plugins:
 
-Menu Plugins
-============
+.. _floating panel plugins:
 
-Menu plugins are the options which appear when the user right-clicks on 
-the desktop screen in Lumina. You can customize these options by 
-clicking on the Start Menu, then 
-:menuselection:`Preferences --> Configure Desktop --> Interface Configuration --> Context Menu and Plugins`.
-
-.. _luminamenupluginmenu1:
-
-.. figure:: images/luminamenupluginmenu1.png
-
-:numref:`Figure %s: Lumina Menu Plugins <luminamenupluginmenu1>`
-
-Add or remove plugins by clicking the green "plus" or red "minus" 
-buttons in the bottom left corner of the window. The arrow buttons in 
-the bottom right allow the user to move plugins up or down in the 
-Quick-Access Menu field, which will alter their display order when the 
-desktop is right-clicked. Click the Save button to immediately implement 
-any changes to the menu.
-
-Two elements the right-click menu will always display are the name of 
-the current virtual desktop at the top of the menu and the shutdown 
-options on the bottom, as pictured in :numref:`Figure %s: Default Menu <luminamenuplugin1>`.
-
-.. _luminamenuplugin1:
-
-.. figure:: images/luminamenuplugin1.png
-
-The user can customize what appears between these two elements of the 
-menu however they wish.
-
-.. _Menu Applications:
-
-Applications
-------------
-
-info.ID = "applications"
-
-.. _luminamenuplugin2:
-
-.. figure:: images/luminamenuplugin2.png
-
-:numref:`Figure %s: Applications <luminamenuplugin2>`
-
-This plugin adds an application menu which can be navigated to open any 
-installed application. The Control Panel and Application Management 
-options will always be shown at the top, while the categories of 
-applications are shown underneath.
-
-.. _Custom App:
-
-Custom App
-----------
-
-info.ID = "app"
-
-.. _luminamenuplugin3:
-
-.. figure:: images/luminamenuplugin3.png
-
-:numref:`Figure %s: Custom Application <luminamenuplugin3>`
-
-Adds a specific quickstart icon for a single application to the 
-right-click menu. Pictured is the icon for the "About" application, 
-which displays current system information.
-
-.. _File Manager:
-
-File Manager
-------------
-
-info.ID = "filemanager"
-
-.. _luminamenuplugin4:
-
-.. figure:: images/luminamenuplugin4.png
-
-:numref:`Figure %s: File Manager <luminamenuplugin4>`
-
-Opens the Insight File Manager (Default) to allow the user to browse the
-system files. 
-
-.. _JSON Menu:
-
-JSON Menu
----------
-
-info.ID = "JSON Menu"
-
-The JSON Menu plugin give a more advanced user the flexibility to create
-their own entries into the right-click menu. Selecting the JSON Menu 
-plugin immediately brings up the 
-:numref:`Figure %s: JSON Menu Configuration Window <luminamenuplugin5>`.
-
-.. _luminamenuplugin5:
-
-.. figure:: images/luminamenuplugin5.png
-
-This window has three fields: Visible Name, Executable, and Icon. The 
-Visible Name field will define the name of the right-click menu entry. 
-Executable is the path to the custom script that is to be run for the 
-entry. The Icon field is optional, but is used to assign a specific 
-icon to the custom script.
-
-.. _luminamenuplugin6:
-
-.. figure:: images/luminamenuplugin6.png
-
-:numref:`Figure %s: JSON Menu Example <luminamenuplugin6>`
-
-After completing the configuration window, the resultant display shows 
-the custom script in action. The Visible Name appears under "Workspace 2",
-while the executable script has generated the menu of files and folders.
-
-.. _Separator:
-
-Separator
----------
-
-info.ID = "line"
-
-:numref:`Figure %s: Separator <luminamenuplugin1>`
-
-A Separator is simply a horizontal line which can be used to divide 
-entries in the right-click menu. When added to the menu, use the up and
-down arrows in the plugin selection menu to place the Separator plugin 
-between the plugins you wish to place a line between.
-
-.. _Settings:
-
-Preferences
------------
-
-info.ID = "Settings"
-
-.. _luminamenuplugin7:
-
-.. figure:: images/luminamenuplugin7.png
-
-:numref:`Figure %s: Preferences <luminamenuplugin7>`
-
-This plugin adds a shortcut to the right-click menu which points to the 
-desktop settings menu.
-
-.. _Terminal:
-
-Terminal
---------
-
-info.ID = "terminal"
-
-.. _luminamenuplugin8:
-
-.. figure:: images/luminamenuplugin8.png
-
-:numref:`Figure %s: Terminal <luminamenuplugin8>`
-
-A shortcut to the default system terminal.
-
-.. _Window List:
-
-Window List
------------
-
-info.ID = "windowlist"
-
-.. _luminamenuplugin9:
-
-.. figure:: images/luminamenuplugin9.png
-
-:numref:`Figure %s: Window List <luminamenuplugin9>`
-
-This plugin adds an entry to the right-click menu which, when hovered 
-over with the mouse, will list all open application windows.
-
-.. _panel plugins:
-
-Panel Plugins
-=============
+Floating Panel Plugins
+======================
 
 Panels are a completely customizable option for Lumina users. By default,
 Lumina users will have one panel stretched across the bottom of the 
