@@ -25,7 +25,7 @@ Lumina's features include:
   email clients, multimedia software, or office suites. Instead, it 
   provides utilities for configuring the desktop environment.
 
-* Uses a simple, `text-based configuration file <https://github.com/pcbsd/lumina/blob/master/src-qt5/core/lumina-desktop/defaults/luminaDesktop.conf>`_
+* Uses a simple, `text-based configuration file <https://github.com/trueos/lumina/blob/master/src-qt5/core/lumina-desktop/defaults/luminaDesktop.conf>`_
   for setting system-wide defaults. Lumina distributors can use this 
   file to easily preset the Lumina defaults and interface for their 
   distribution.
@@ -70,7 +70,7 @@ section of the webpage includes installation instructions for each
 supported system.
 
 In addition to pre-built packages, the 
-`Lumina source repository <https://github.com/pcbsd/lumina>`_ 
+`Lumina source repository <https://github.com/trueos/lumina>`_ 
 is available on GitHub so that developers can contribute code or create
 packages for other distributions. If you plan to compile Lumina from 
 source, refer to `DEPENDENCIES <https://github.com/trueos/lumina/blob/master/DEPENDENCIES>`_ 
@@ -88,9 +88,9 @@ file.
           and log back in.
    
 The rest of this Handbook describes the Lumina Configuration utility, 
-other various utilities built into Lumina, and Lumina plugins. It then 
-describes how you can contribute to the Lumina Project and lists the 
-changelogs for each version of Lumina.
+other various utilities built into Lumina, and Lumina plugins. Also, the
+handbook shows how you can get involved improving Lumina as well as 
+reproducing the change log for each major release of Lumina.
 
 .. _Initial Settings:
 
@@ -102,25 +102,25 @@ plugins and options for the user. All these first time defaults are
 configurable, with the numerous options covered in the 
 :ref:`Lumina Plugins` section of the handbook.
 
-.. note:: The screenshots used in the handbook are the defaults used by
-          the Lumina Desktop Project. The default desktop appearance 
-          can vary if using another distrubution's custom configuration
-          of the Lumina Desktop Project.
+.. note:: The default desktop appearance can vary if using another 
+          distrubution's custom configuration of the Lumina Desktop 
+          Project. The screenshots used here are using the Lumina 
+          Desktop Project defaults with the TrueOS® operating system.
   
-:numref:`Figure %s: Lumina Desktop <lumina1d>` A screenshot of Lumina on
-a TrueOS® system. The user has clicked the "fireball" icon in order to 
+.. _lumina1e:
+
+.. figure:: images/lumina1e.png
+   :scale: 50%
+
+:numref:`Figure %s: Lumina Desktop <lumina1e>` A screenshot of Lumina on
+a TrueOS® system. The user has clicked the "Lumina" icon in order to 
 open the start menu.
 
-.. _lumina1d:
-
-.. figure:: images/lumina1d.png
-   :scale: 50%
-   
 The Start Menu provides quick access for user interaction with the 
-system. The top frame is a quick search bar for rapidly finding specific 
+system. The top frame is a search bar for rapidly finding specific 
 items. Just underneath the search bar is a small field indicating which 
 user is logged in. Also, If the system has a battery, you can hover over
-the battery icon on the opposite side of the user name (not pictured) to
+the battery icon (not pictured) on the opposite side of the user name to
 display the current status of the battery and the estimated time 
 remaining if that battery is discharging. The remaining space of the 
 start menu is divided into several categories:
@@ -139,18 +139,19 @@ start menu is divided into several categories:
 
 * **Browse Applications:** Click this entry to browse all applications 
   currently registered on the system. Applications are listed 
-  alphabetically by category and the "Show Categories" button has
-  three modes. Click "Show Categories" to toggle between showing the 
-  category names (white box icon), just the contents of the categories 
-  (black box icon), or the categories and their contents (1/2 black, 
-  1/2 white icon). Click an application's name to start the application.
-  By right-clicking an application's name, you can select "Pin to
-  Desktop", "Add to Favorites", or "Add to Quicklaunch". Using TrueOS® 
-  or another operating system with a pre-defined application store will 
-  add a "Manage Applications" button at the top of the applications list.
+  alphabetically by category. The "Show Categories" button has three 
+  modes which are changed by clicking the button: category names (white 
+  box icon), no categories (black box icon), and categories with 
+  contents (black and white icon). 
+  
+  Click an application's name to start the application. By 
+  right-clicking an application's name, you can select "Pin to Desktop",
+  "Add to Favorites", or "Add to Quicklaunch". Using TrueOS® or another 
+  operating system with a pre-defined application store will add a 
+  "Manage Applications" button at the top of the applications list. 
   Click it to open the specific operating system's application store. 
-  For example, on a TrueOS® system, "Manage Applications" opens AppCafe®.
-  Click the "Back" button to return to the start menu.
+  For example, on a TrueOS® system, "Manage Applications" opens the
+  AppCafe®. Click the "Back" button to return to the start menu.
 
 * **Control Panel:** If using TrueOS® or an operating system with
   a control panel, click this entry to open the operating system's 
@@ -204,10 +205,10 @@ Panel and System Tray
 
 By default, Lumina provides a panel at the bottom of the screen with a 
 system tray at the far right of the panel. This section describes the 
-default layout. For instructions on how to configure the panel to suit 
-your needs, refer to the "Panels" tab :ref:`Interface` section.
+default layout. For instructions on how to configure the panel, refer to
+the :ref:`Interface` section.
   
-As you open windows or applications, a button will be added to the 
+When opening windows or applications, a button will be added to the 
 section of the panel near the start menu. If the application provides 
 an icon, the button will appear as that icon and if you mouse over it, 
 the tooltip will show the name of the application. If you have multiple 
@@ -248,23 +249,23 @@ configure the right-click panel to suit your needs, refer to the
 
 By default, the right-click menu contains the following items:
 
-* **Terminal:** used to launch a system terminal. The default is 
+* **Terminal:** Used to launch a system terminal. The default is 
   :command:`xterm`, but this can be customized.
 
-* **Browse Files:** launches the default, and recommended, file manager,
-  the :ref:`Insight File Manager`.
+* **Browse Files:** Launches the default (and recommended) file manager,
+  :ref:`Insight File Manager`.
 
-* **Applications:** provides shortcuts to the operating system's 
+* **Applications:** Provides shortcuts to the operating system's 
   graphical software management utility (if available), the control 
   panel (if the operating system provides one), and the applications 
   currently registered on the system, arranged by system category.
 
-* **Preferences:** contains shortcuts to the screensaver preferences, 
-  :ref:`Lumina Configuration` utility, display configuration 
-  (:ref:`Lumina Xconfig`), the operating system's control panel, and for
-  determining the version of Lumina.
+* **Preferences:** Contains shortcuts to the screensaver preferences, 
+  desktop utility (:ref:`Lumina Configuration`), display configuration 
+  (:ref:`Lumina Xconfig`), the operating system's control panel, and 
+  Lumina version information contained within "About Lumina".
 
-* **Leave:** opens the system log out window, with options to log out of
+* **Leave:** Opens the system log out window, with options to log out of
   the desktop session, restart the system (if the user has permission), 
   shutdown the system (if the user has permission), cancel the log out 
   window, lock the system, or suspend the system (if the operating 

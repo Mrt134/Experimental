@@ -255,7 +255,7 @@ Interface Configuration
 
 The "Interface Configuration" option, seen here as 
 :numref:`Figure %s: Lumina Interface Configuration <lumina31>`, is used 
-to configure the context (right-click) menu, desktop, and floating 
+to configure the context (right-click) menu, desktop icons, and floating 
 panels.
 
 .. _lumina31:

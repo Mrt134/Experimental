@@ -97,13 +97,13 @@ each version of Lumina.
 Start Menu
 ==========
   
-:numref:`Figure %s: Lumina Desktop <lumina1d>` A screenshot of Lumina on
+:numref:`Figure %s: Lumina Desktop <lumina1e>` A screenshot of Lumina on
 a PC-BSD® system. The user has clicked the "fireball" icon in order to 
 open the start menu.
 
-.. _lumina1d:
+.. _lumina1e:
 
-.. figure:: images/lumina1d.png
+.. figure:: images/lumina1e.png
    :width: 1920px
    :height: 1080px
    :scale: 50%
