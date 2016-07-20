@@ -7,6 +7,201 @@ Lumina Utilities
 Lumina provides many built-in utilities, which are described in this 
 chapter.
 
+.. index:: file manager
+.. _Insight File Manager:
+
+Insight File Manager
+====================
+  
+The Insight file manager, shown in :numref:`Figure %s: Insight File Manager <lumina10a>`,
+allows the user to easily browse and modify files on the local system on
+a per-directory basis. To open Insight, click the start menu and select 
+"Browse Files", right-click the desktop and select "Browse Files", or 
+type :command:`lumina-fm` from an xterm.
+
+.. _lumina10a:
+
+.. figure:: images/lumina10a.png
+   :scale: 100%
+   
+It is possible to open up additional directories through the tab system 
+using :kbd:`Ctrl-T` or by clicking :menuselection:`File --> New Browser`,
+allowing the user to easily manage multiple locations on the system. 
+Insight also features the ability to "bookmark" locations on the system 
+for instant access via the "star" button. Once a location has been 
+bookmarked, it will be available via the "Bookmarks" menu at the top of 
+the window. Removable devices plugged into the sytem will appear in the 
+"External Devices" menu, if supported by the operating system. When an 
+item is selected, the icons on the left side of the screen provide the 
+possible actions that may be taken with regards to that item. Possible 
+actions include: "open item", "open item" (will prompt to select the 
+application to use), "add item to personal favorites", "rename item", 
+"cut items (add to the clipboard)", "copy items to the clipboard", 
+"paste items from clipboard", and "delete items". The action
+buttons are visible by default, but can be made invisible by clicking 
+:menuselection:`View --> Show Action Buttons`. To disable thumbnails, 
+uncheck :menuselection:`View --> Load Thumbnails`. Note that this option
+does not remove thumbnails that have already been loaded, it only 
+prevents loading thumbnails in new directories. Hidden files are not 
+shown by default; this can be changed by checking 
+:menuselection:`View --> Show Hidden Files`.
+
+If you select a file or directory and right-click it, the following 
+options become available: "Open", "Open With" (where you select the 
+application to use), "Rename", "View Checksums" (shows the MD5 
+checksum), "Cut Selection", "Copy Selection", "Paste", "Delete 
+Selection", "File Properties" (such as file type, size, permissions, and
+creation date), or "Open Terminal here".
+
+A few additional options may be available at the bottom of the window, 
+depending on the directory being viewed and the types of files that are 
+in it:
+
+* **New File:** The ability to create a new file is available if the 
+  user has permission to modify the contents of the current directory.
+
+* **New Dir:** The ability to create a new directory is available if the
+  user has permission to modify the contents of the current directory.
+
+* **Slideshow:** If there are image files in the directory, this option 
+  will display those image files as a slideshow and provide arrows for 
+  going forward or back by one file or to the very beginning or end of 
+  the file list. Buttons are also provided for deleting the currently 
+  displayed image or to rotate it, and save the rotation, clockwise or 
+  counter-clockwise.
+
+* **Play:** This will appear if there are supported multimedia files in 
+  the directory. The types of files that are supported depends on what 
+  multimedia plugins are installed on the system. If a particular file 
+  is not recognized as a multimedia file, install the associated 
+  multimedia codec using the operating system's application management 
+  software and restart the file manager.
+
+* **Backups:** If the system is formatted with ZFS and snapshots of the 
+  current directory are available, this button will appear. Snapshots 
+  are organized from oldest to newest, with the most recent snapshot 
+  selected by default, and the contents of the directory at the time of 
+  that snapshot are displayed. To restore a file or multiple files, 
+  select them from the list and click the "Restore Selection" button. If
+  those files still exist and you want to overwrite them, make sure the 
+  "Overwrite Existing Files" option is checked first. Otherwise, if a 
+  file with that name exists, the restore will append a number to the
+  end of the filename. For example, the first restored version of 
+  :file:`testfile.txt` will become :file:`testfile-1.txt`.
+
+.. index:: Lumina File Information
+.. _Lumina File Information:
+
+Lumina File Information
+=======================
+
+The :command:`lumina-fileinfo` utility can be used to open a graphical 
+window summarizing the size, permissions and ownership, creation time, 
+and last modification time of the specified file or directory. In the 
+example shown in in :numref:`Figure %s: Sample File Information <file1a>`,
+the user has typed :command:`lumina-fileinfo Downloads` from a terminal 
+window to view the file information of their :file:`~/Downloads` 
+directory.
+
+.. _file1a:
+
+.. figure:: images/file1a.png
+   :scale: 100%  
+
+.. index:: Lumina Information
+.. _Lumina Information:
+
+Lumina Information
+=======================
+  
+This utility provides information about the version of Lumina, as well 
+as the license, acknowledgements, and project links. To launch this 
+utility, right-click the desktop and select 
+:menuselection:`Preferences --> About Lumina`, click the start menu then
+the question mark icon in "Preferences", or type :command:`lumina-info` 
+in a terminal window. An example is shown in 
+:numref:`Figure %s: About Lumina <about1b>`.
+
+.. TODO: update about1b to reflect lumina v1.0. 
+   edit src-qt5/core/libLumina/LuminaUtils.cpp and change the version 
+   tag to 1.0.0-Release - then rebuild/install Lumina, but don't commit 
+   that change. Also see about changing "Open in web browser" link.
+
+.. _about1b:
+
+.. figure:: images/about1b.png
+   :scale: 100%
+   
+The "General" tab contains the following information:
+
+* **Desktop Version:** Indicates the version of Lumina.
+
+* **OS Build:** Indicates the operating system that was used to build 
+  this version of Lumina.
+
+* **Qt Version:** Click the "View Information" button to display the QT 
+  version and its license.
+
+* **Lumina Website:** Click the button to open 
+  `<http://lumina-desktop.org/>`_ in the default web browser.
+
+* **Source Repository:** Click the button to open 
+  `<https://github.com/trueos/lumina>`_ in the default web browser.
+
+* **Report a Bug:** Click the button to open 
+  `<https://bugs.pcbsd.org/projects/pcbsd>`_ in the default web browser.
+  Refer to :ref:`Report a Bug` for instructions on how to submit a bug 
+  report.
+  
+The "License" tab contains the license text for Lumina. Lumina is 
+licensed under a `3-clause BSD license <http://opensource.org/licenses/BSD-3-Clause>`_.
+
+The "Acknowledgements" tab contains the following:
+
+* **Project Lead:** The name of the Project's lead developer. Click the 
+  name to open his or her profile on GitHub in the default web browser.
+
+* **Contributors:** Click the "Open in web browser" link to open 
+  `<https://github.com/trueos/lumina/graphs/contributors>`_.
+
+* **Sponsors:** lists the official sponsors of the Lumina Project.   
+
+.. index:: application launcher
+.. _Lumina Open:
+
+Lumina Open
+===========
+   
+To open a file, directory, or URL from the command line, type 
+:command:`lumina-open` followed by the full path to the file or the URL.
+This utility will look for an appropriate application to use to open the
+specified file or URL. If there is no default application registered for
+the input type, a small dialog will prompt the user to select which 
+application to use, and optionally set it as the default application for
+this file type. As seen in the example shown in 
+:numref:`Figure %s: Lumina Open <lumina11b>`,
+this dialog organizes the available applications into three types: 
+
+.. _lumina11b:
+
+.. figure:: images/lumina11b.png
+   :scale: 100%
+   
+* **Preferred:** These applications have registered their Mime type with
+  the system and can open that type of file. Also included are any 
+  applications that have been used to open this type of file before as 
+  it keeps track of the last three applications used for that file type.
+
+* **Available:** Displays all the applications installed on the system, 
+  organized by category and name.
+
+* **Custom:** The user can manually type in the binary name or path of 
+  the application to use. It also provides a search button to let the 
+  user graphically search the system for the binary. Whenever text is 
+  entered, a check is performed to determine whether that is a valid 
+  binary and the icon will change between a green checkmark or a red X 
+  as appropriate.
+
 .. index:: screenshot
 .. _Lumina Screenshot:
 
@@ -30,21 +225,20 @@ following settings to fine-tune the screenshot:
 
 .. figure:: images/lumina25.png
    :scale: 100%
-
    
-* **Entire Session:** will take a screenshot of the entire screen.
+* **Entire Session:** Captures the entire screen.
 
-* **Single Screen:** in a multi-monitor setup, you can select which 
-  screen number to use for the screenshot.
+* **Single Screen:** In a multi-monitor setup, the screen number can be
+  selected for the screenshot.
 
-* **Single Window:** will screenshot a selected window. Simply choose 
-  "Single Window," then the "Take Screenshot" button, and click on the 
-  desired window. The "Include Borders" checkbox can be used to 
-  determine whether or not the screenshot of the window is surrounded by
-  a black border.
+* **Single Window:** Captures a selected window. Choose "Single Window,"
+  then click the "Take Screenshot" button, and click on the desired 
+  window. The "Include Borders" checkbox can be used to determine 
+  whether or not the screenshot of the window is surrounded by a black 
+  border.
   
-* **Delay:** in seconds. This can be used to give you time to setup the 
-  screenshot.
+* **Delay:** Choose the number of seconds to delay the screenshot. This 
+  can be used to give more time to prepare the screenshot.
 
 There are three options for taking a screenshot: clicking the "Take 
 Screenshot" button in the lower-right corner of Lumina Screenshot, 
@@ -59,143 +253,25 @@ options for manipulating the screenshot:
 .. figure:: images/lumina9a.png
    :scale: 100%
    
-* **Image Preview:** displays the captured screenshot. Right clicking 
-  the image will provide options for zooming in or out. Left click and 
+* **Image Preview:** Displays the captured screenshot. Right-clicking 
+  the image will provide options for zooming in or out. Clicking and 
   dragging across the image will highlight an area which can be cropped 
   by pressing the "Crop" button in the lower-right corner.
   
-* **"Save As":** button to open a window where you can specify the 
+* **"Save As":** Button to open a window where you can specify the 
   filename and location for saving the screenshot.
 
-* **Launch Editor:** button to launch a selectable image manipulation 
+* **Launch Editor:** Button to launch a selectable image manipulation 
   program.
 
 Additionally, clicking :menuselection:`File --> Quick Save` will 
 automatically save the screenshot to the default "Pictures" directory 
 and open a window to select an image manipulation program.
 
-.. index:: file manager
-.. _Insight File Manager:
-
-Insight File Manager
-====================
-  
-The Insight file manager, shown in :numref:`Figure %s: Insight File Manager <lumina10a>`,
-allows the user to easily browse and modify files on the local system on
-a per-directory basis. To open Insight, click the start menu and select 
-"Browse Files", right-click the desktop and select "Browse Files", or 
-type :command:`lumina-fm` from an xterm.
-
-.. _lumina10a:
-
-.. figure:: images/lumina10a.png
-   :width: 569px
-   :height: 442px
-   :scale: 100%
-   
-It is possible to open up additional directories through the tab system 
-using :kbd:`Ctrl-T` or by clicking :menuselection:`File --> New Browser`,
-allowing the user to easily manage multiple locations on the system. 
-Insight also features the ability to "bookmark" locations on the system 
-for instant access via the "star" button. Once a location has been 
-bookmarked, it will be available via the "Bookmarks" menu at the top of 
-the window. Any removable devices that are available on the system will 
-show up in the "External Devices" menu, if supported by the operating
-system. When an item is selected, the icons on the left side of the 
-screen provide the possible actions that may be taken with regards to 
-that item. Possible actions include: "open item", "open item" (will 
-prompt to select the application to use), "add item to personal 
-favorites", "rename item", "cut items (add to the clipboard)", "copy 
-items to the clipboard", "paste items from clipboard", and "delete 
-items". By default, the action buttons are visible. They can be made 
-invisible by clicking :menuselection:`View --> Show Action Buttons`. To 
-disable thumbnails, uncheck :menuselection:`View --> Load Thumbnails`. 
-Note that this option does not remove thumbnails that have already been 
-loaded, it only prevents loading thumbnails in new directories. Hidden 
-files are not shown by default; this can be changed by checking 
-:menuselection:`View --> Show Hidden Files`.
-
-If you select a file or directory and right-click it, the following 
-options become available: "Open", "Open With" (where you select the 
-application to use), "Rename", "View Checksums" (shows the MD5 
-checksum), "Cut Selection", "Copy Selection", "Paste", "Delete 
-Selection", "File Properties" (such as file type, size, permissions, and
-creation date), or "Open Terminal here".
-
-A few additional options may be available at the bottom of the window, 
-depending on the directory being viewed and the types of files that are 
-in it:
-
-* **New File:** the ability to create a new file is available if the 
-  user has permission to modify the contents of the current directory.
-
-* **New Dir:** the ability to create a new directory is available if the
-  user has permission to modify the contents of the current directory.
-
-* **Slideshow:** if there are image files in the directory, this option 
-  will display those image files as a slideshow and provide arrows for 
-  going forward or back by one file or to the very beginning or end of 
-  the file list. Buttons are also provided for deleting the currently 
-  displayed image or to rotate it, and save the rotation, clockwise or 
-  counter-clockwise.
-
-* **Play:** will appear if there are supported multimedia files in the 
-  directory. The types of files that are supported depends on what 
-  multimedia plugins are installed on the system. If a particular file 
-  is not recognized as a multimedia file, install the associated 
-  multimedia codec using the operating system's application management 
-  software and restart the file manager.
-
-* **Backups:** if the system is formatted with ZFS and snapshots of the 
-  current directory are available, this button will appear. Snapshots 
-  are organized from oldest to newest, with the most recent snapshot 
-  selected by default, and the contents of the directory at the time of 
-  that snapshot are displayed. To restore a file or multiple files, 
-  select them from the list and click the "Restore Selection" button. If
-  those files still exist and you want to overwrite them, make sure the 
-  "Overwrite Existing Files" option is checked first. Otherwise, if a 
-  file with that name exists, the restore will append a number to the
-  end of the filename. For example, the first restored version of 
-  :file:`testfile.txt` will become :file:`testfile-1.txt`.
-  
-.. index:: application launcher
-.. _Lumina Open:
-
-Lumina Open
-===========
-   
-To open a file, directory, or URL from the command line, type 
-:command:`lumina-open` followed by the full path to the file or the URL.
-This utility will look for an appropriate application to use to open the
-specified file or URL. If there is no default application registered for
-the input type, a small dialog will prompt the user to select which 
-application to use, and optionally set it as the default application for
-this file type. As seen in the example shown in 
-:numref:`Figure %s: Lumina Open <lumina11b>`,
-this dialog organizes the available applications into three types: 
-
-.. _lumina11b:
-
-.. figure:: images/lumina11b.png
-   :scale: 100%
-   
-* **Preferred:** these applications have registered their Mime type with
-  the system and can open that type of file. Also included are any 
-  applications that have been used to open this type of file before as 
-  it keeps track of the last three applications used for that file type.
-
-* **Available:** displays all the applications installed on the system, 
-  organized by category and name.
-
-* **Custom:** lets the user manually type in the binary name or path of 
-  the application to use. It also provides a search button to let the 
-  user graphically search the system for the binary. Whenever text is 
-  entered, a check is performed to determine whether that is a valid 
-  binary and the icon will change between a green checkmark or a red X 
-  as appropriate.
-
 .. index:: search
 .. _Lumina Search:
+
+..   Continue editing below---------------------------------------------
 
 Lumina Search
 =============
@@ -249,80 +325,28 @@ highlighting it and clicking the "-" button. By default, the "Save as
 Defaults" option is selected. Unselect this option if you only wish to 
 temporarily modify your search settings.
       
-.. index:: Lumina File Information
-.. _Lumina File Information:
+.. index:: textedit
+.. _Lumina Text Editor:
 
-Lumina File Information
-=======================
+Lumina Text Editor
+==================
+ 
+The :command:`lumina-textedit` utility, seen in 
+:numref:`Figure %s: Lumina Text Edit <lumina23>`, is a simple plaintext 
+editor which features four primary elements: 
 
-The :command:`lumina-fileinfo` utility can be used to open a graphical 
-window summarizing the size, permissions and ownership, creation time, 
-and last modification time of the specified file or directory. In the 
-example shown in in :numref:`Figure %s: Sample File Information <file1a>`,
-the user has typed :command:`lumina-fileinfo Downloads` from a terminal 
-window to view the file information of their :file:`~/Downloads` 
-directory.
+* **Optional syntax highlighting**
+* **Find/replace functionality**
+* **Line numbering**
+* **Bracket highlighting**
 
-.. _file1a:
+Additionally, colors can be customized by selecting 
+:menuselection:`View --> Customize Colors`.
 
-.. figure:: images/file1a.png
+.. _lumina23:
+
+.. figure:: images/lumina23.png
    :scale: 100%
-
-.. index:: Lumina Information
-.. _Lumina Information:
-
-Lumina Information
-=======================
-  
-This utility provides information about the version of Lumina, as well 
-as the license, acknowledgements, and Project links. To launch this 
-utility, right-click the desktop and select 
-:menuselection:`Preferences --> About Lumina`, click the start menu then
-the question mark icon in "Preferences", or type :command:`lumina-info` 
-in a terminal window. An example is shown in 
-:numref:`Figure %s: About Lumina <about1b>`.
-
-.. TODO: update about1b to reflect lumina v1.0.
-
-.. _about1b:
-
-.. figure:: images/about1b.png
-   :scale: 100%
-   
-The "General" tab contains the following information:
-
-* **Desktop Version:** indicates the version of Lumina.
-
-* **OS Build:** indicates the operating system that was used to build 
-  this version of Lumina.
-
-* **Qt Version:** click the "View Information" button to display the QT 
-  version and its license.
-
-* **Lumina Website:** click the "Open in web browser" link to open 
-  `<http://lumina-desktop.org/>`_ in the default web browser.
-
-* **Source Repository:** click the "Open in web browser" link to open 
-  `<https://github.com/trueos/lumina>`_ in the default web browser.
-
-* **Report a Bug:** click the "Open in web browser" link to open 
-  `<https://bugs.pcbsd.org/projects/pcbsd>`_ in the default web browser.
-  Refer to :ref:`Report a Bug` for instructions on how to submit a bug 
-  report.
-  
-The "License" tab contains the license text for Lumina. Lumina is 
-licensed under a `3-clause BSD license <http://opensource.org/licenses/BSD-3-Clause>`_.
-
-The "Acknowledgements" tab contains the following:
-
-* **Project Lead:** the name of the Project's lead developer. Click the 
-  name to open his profile on GitHub in the default web browser.
-
-* **Contributors:** click the "Open in web browser" link to open 
-  `<https://github.com/pcbsd/lumina/graphs/contributors>`_.
-
-* **Sponsors:** lists the project and corporate sponsors of the Lumina 
-  Project.
 
 .. index:: Xconfig
 .. _Lumina Xconfig:
@@ -350,26 +374,3 @@ menu so that you can select a different resolution.
 If you attach another display input, the "Add Screen" tab is activated 
 so that you can configure the new input's resolution and whether or not 
 it should be the default input.
-
-.. index:: textedit
-.. _Lumina Text Editor:
-
-Lumina Text Editor
-==================
- 
-The :command:`lumina-textedit` utility, seen in 
-:numref:`Figure %s: Lumina Text Edit <lumina23>`, is a simple plaintext 
-editor which features four primary elements: 
-
-* **Optional syntax highlighting**
-* **Find/replace functionality**
-* **Line numbering**
-* **Bracket highlighting**
-
-Additionally, colors can be customized by selecting 
-:menuselection:`View --> Customize Colors`.
-
-.. _lumina23:
-
-.. figure:: images/lumina23.png
-   :scale: 100%
