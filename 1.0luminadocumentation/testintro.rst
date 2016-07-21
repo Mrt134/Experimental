@@ -1,6 +1,8 @@
 .. globalindex::
    :maxdepth: 4
-   
+
+:guilabel:`Test sentence` goes here.
+
 .. _Test Introduction to Lumina:
 
 Introduction to Lumina
