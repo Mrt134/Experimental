@@ -271,15 +271,13 @@ and open a window to select an image manipulation program.
 .. index:: search
 .. _Lumina Search:
 
-..   Continue editing below---------------------------------------------
-
 Lumina Search
 =============
   
-Lumina Search provides the ability to easily search for and launch 
-applications or to quickly search for file and directories. The "*" 
-wildcard can be used in the search terms and the search will include 
-hidden files if the search term starts with a dot ("."). 
+Lumina Search provides options to find and launch applications or to 
+quickly search for files and directories. The "*" wildcard can be used 
+in the search terms and the search will include hidden files if the 
+search term starts with a dot ("."). 
 
 To start this utility, type :command:`lumina-search` or go to the start 
 menu :menuselection:`Browse Applications --> Utility --> Lumina Search`.
@@ -291,10 +289,10 @@ screenshot of this utility.
 .. figure:: images/lumina13b.png
    :scale: 100%
    
-To open an application, begin to enter its name. The box below the 
-selected "Applications" button will display any matching application 
-names. Select the desired application and click the "Launch Item" button
-to open it.
+To open an application, begin to type its name into the search field 
+(selected by default). The box below the selected "Applications" 
+button will display any matching application names. Select the desired 
+application and click the "Launch Item" button to open it.
 
 If you click the "Files or Directories" button, the screen changes 
 slightly, as seen in :numref:`Figure %s: Search for Files <lumina26>`.
@@ -306,10 +304,12 @@ slightly, as seen in :numref:`Figure %s: Search for Files <lumina26>`.
    
 By default, a "Files or Directories" search is limited to the user's 
 home directory, as indicated by the "Search: ~" at the bottom of the 
-screen. The "Smart: Off" indicates that every subdirectory is included 
-in the search; in other words, there are no excluded directories. To add
-additional search directories or to exclude subdirectories, click the 
-wrench icon to see the screen shown in :numref:`Figure %s: Configuring the Search Directories <lumina14a>`.
+screen. The "Smart: Off" indicates every subdirectory is included 
+in the search, with no exlusions. Once subdirectories have been added to
+the exclusion list, "Smart:" will switch to "On", and the excluded 
+subdirectories will be shown on the "Search:" section of the menu. To 
+add additional search directories or to exclude subdirectories, click 
+the wrench icon to see the screen shown in :numref:`Figure %s: Search Configuration <lumina14a>`. 
 
 .. _lumina14a:
 
@@ -317,35 +317,45 @@ wrench icon to see the screen shown in :numref:`Figure %s: Configuring the Searc
    :scale: 100%
    
 Click the blue folder icon to change the starting search directory. For 
-example, you can select "Computer" then "/" from the "Select Search 
-Directory" screen to search the entire contents of the computer. You can
-also add directories to exclude from searches by clicking the "+" 
-button. If you add any excludes, you can delete an exclude by 
-highlighting it and clicking the "-" button. By default, the "Save as 
-Defaults" option is selected. Unselect this option if you only wish to 
-temporarily modify your search settings.
+example, select "Computer", then "/" from the "Select Search 
+Directory" screen to search the entire contents of the computer. Click 
+the "+" button to add directories to an exclusion list for searching. 
+Delete an exclusion by highlighting its entry and clicking the "-" 
+button. The "Save as Defaults" option is selected by default. Uncheck 
+this option to return the all customized search settings back to their 
+default after closing the menu.
       
 .. index:: textedit
 .. _Lumina Text Editor:
 
 Lumina Text Editor
 ==================
- 
-The :command:`lumina-textedit` utility, seen in 
-:numref:`Figure %s: Lumina Text Edit <lumina23>`, is a simple plaintext 
-editor which features four primary elements: 
-
-* **Optional syntax highlighting**
-* **Find/replace functionality**
-* **Line numbering**
-* **Bracket highlighting**
-
-Additionally, colors can be customized by selecting 
-:menuselection:`View --> Customize Colors`.
+   
+The :command:`lumina-textedit` utility is a plaintext editor with a 
+number of basic options. :numref:`Figure %s: Lumina Text Edit <lumina23>`
+shows the editor with no file opened.
 
 .. _lumina23:
 
 .. figure:: images/lumina23.png
+   :scale: 100%
+   
+.. note:: Typing :command:`lte` in the command line will also open the 
+          Lumina Text Editor.
+
+Clicking "File" will present options to create "New File", "Open File", 
+"Close File", "Save file", "Save File As", and "Close". Click "Edit" to 
+open options to "Find" and "Replace", also usable with :kbd:`Ctrl-F` and
+:kbd:`Ctrl-R`, respectively. The "View" tab can be used to alter "Syntax
+Highlighting", "Line Numbers", "Wrap Lines", and "Customize Colors". By 
+default, brackets are highlighted, lines are numbered, and words will 
+wrap dynamically with the edge of the window. Additionally, selecting 
+"Customize "Colors" gives the option to alter all the default text and 
+highlight colors, seen in :numref:`Figure %s: Customize Colors <lumina32>`
+
+.. _lumina32:
+
+.. figure:: images/lumina32.png
    :scale: 100%
 
 .. index:: Xconfig
