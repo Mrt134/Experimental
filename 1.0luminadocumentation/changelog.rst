@@ -14,7 +14,7 @@ Lumina 1.0.0
 
 * Files moved/renamed:
 
-    * "Lumina-DE" binary is now "lumina-desktop". Full pathway: 
+    * "Lumina-DE" binary is now "lumina-desktop". Full pathway change: 
       /usr/local/share/Lumina-DE/* -> /usr/local/share/lumina-desktop/*
     * Moved the "runtime" directory in the user's home directory to 
       :file:`XDG_CONFIG_HOME/lumina-desktop` (replaced :file:`~/.lumina`).
@@ -84,7 +84,7 @@ Lumina 1.0.0
   
 * New external script support:
 
-    * Add a new type of menu plugin: "jsonmenu". This is a recursive,
+    * Added a new type of menu plugin: "jsonmenu". This is a recursive,
       auto-generating menu which runs an external utility (a script of 
       some kind usually), which generates a JSON document/object which 
       is used to populate the menu.
@@ -113,7 +113,8 @@ Lumina 1.0.0
 * Added the "Advanced/Simple" editors to the :command:`fluxbox` keys 
   page.
 
-* Finding icons has been reworked for better functionality.
+* The process of finding icons has been reworked for better 
+  functionality.
 
 * New wallpaper sizing options: "Fit" and "Full".
 
@@ -122,24 +123,25 @@ Lumina 1.0.0
   of the screen by default. This plugin supports the RSS v0.91 and v2.0 
   standards.
 
-* Reset which directories are watched for apps to be installed into 
+* Reset which directories are monitored for apps to be installed into 
   every time the watcher updates (this fixes the detection of KDE apps 
-  getting installed/removed).
+  being installed/removed).
   
 * Improved backend search routine for finding .desktop files or binaries.
 
-* Calendar plugin will now roll over if system on over 24 hours.
+* The calendar plugin will now move to next day if the system remains on
+  over 24 hours.
 
 * :command:`lumina-fm` will remove broken symlinks when deleting 
   directories.
   
-* load previous screen config on lumina start
+* Load previous screen config on Lumina start.
 
 * Fixed the detection and usage of the "mailto:" option in :command:`lumina-open`.
   This also changes the default mimetype used for email applications 
   to "application/email".
 
-* The start menu now hides duplicate favorites.
+* The start menu now hides duplicate "favorite" entries.
 
 * Added a search bar to the start menu to provide users an efficient 
   method to search for apps or utilities directly.
