@@ -638,7 +638,7 @@ section of the menu, seen in :numref:`Figure %s: User Applications <luminapanelp
 
 This section displays all applications by default, with the drop down 
 menu at the top allowing you to view applications by category. The 
-"AppCafe" button in the top right will open the SysAdm AppCafe, allowing
+"AppCafe" button in the top right will open the SysAdm AppCafe®, allowing
 you to quickly search for and download more applications.
 
 .. _luminapanelplugin15:

@@ -14,7 +14,7 @@ Introduction to Lumina
 The Lumina Desktop Environment (Lumina for short) is a lightweight, 
 XDG-compliant, BSD-licensed desktop environment focused on streamlining 
 work efficiency with minimal system overhead. It is specifically 
-designed for TrueOS® and FreeBSD, but has also been ported to many other
+designed for TrueOS®® and FreeBSD, but has also been ported to many other
 BSD and Linux operating systems. It is based on the Qt graphical toolkit
 and the Fluxbox window manager, and uses a small number of X utilities 
 for various tasks, such as :command:`numlockx` and :command:`xscreensaver`.
@@ -194,7 +194,7 @@ start menu is divided into several categories:
   click the "lock" icon next to "Leave" to lock the system, which will 
   start the screensaver and password prompt to resume the session.
 
-.. note:: On a TrueOS system which is applying updates, the shutdown and
+.. note:: On a TrueOS® system which is applying updates, the shutdown and
           restart options will be disabled until the updates are 
           complete, with a note indicating updates are in progress.
 
@@ -220,7 +220,7 @@ including stick, layer/dock, and set transparency, among other options.
 
 The system tray is located in the right portion of the panel. Any 
 applications that register a tray icon will appear in this area. For 
-example, on a TrueOS system, icons will appear for Life Preserver, Mount
+example, on a TrueOS® system, icons will appear for Life Preserver, Mount
 Tray, and SysAdm™. Refer to :ref:`Interface` for instructions on 
 modifying which applications appear in the system tray. Click or 
 right-click an icon to interact with an application directly. The 
@@ -908,7 +908,7 @@ section of the menu, seen in :numref:`Figure %s: User Applications <luminapanelp
 
 This section displays all applications by default, with the drop down 
 menu at the top allowing you to view applications by category. The 
-"AppCafe" button in the top right will open the SysAdm AppCafe, allowing
+"AppCafe" button in the top right will open the SysAdm™ AppCafe®, allowing
 you to quickly search for and download more applications.
 
 .. _luminapanelplugin15:

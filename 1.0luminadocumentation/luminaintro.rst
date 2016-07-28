@@ -189,7 +189,7 @@ start menu is divided into several categories:
   click the "lock" icon next to "Leave" to lock the system, which will 
   start the screensaver and password prompt to resume the session.
 
-.. note:: On a TrueOS system which is applying updates, the shutdown and
+.. note:: On a TrueOS® system which is applying updates, the shutdown and
           restart options will be disabled until the updates are 
           complete, with a note indicating updates are in progress.
 
@@ -215,7 +215,7 @@ including stick, layer/dock, and set transparency, among other options.
 
 The system tray is located in the right portion of the panel. Any 
 applications that register a tray icon will appear in this area. For 
-example, on a TrueOS system, icons will appear for Life Preserver, Mount
+example, on a TrueOS® system, icons will appear for Life Preserver, Mount
 Tray, and SysAdm™. Refer to :ref:`Interface` for instructions on 
 modifying which applications appear in the system tray. Click or 
 right-click an icon to interact with an application directly. The 
