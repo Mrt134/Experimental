@@ -23,7 +23,7 @@ few guidelines to ensure a speedy response:
 
 * Lumina is part of the TrueOS® Project, with Lumina bugs reported to 
   the TrueOS® bug tracker. To get begin reporting bugs, navigate to 
-  `bugs.pcbsd.org<https://bugs.pcbsd.org>`_, click :guilabel:`Register`,
+  `bugs.pcbsd.org <https://bugs.pcbsd.org>`_, click :guilabel:`Register`,
   fill in the required fields, and reply to the automatic email to 
   confirm creating a new account.
   
@@ -225,10 +225,11 @@ paths may differ on other operating systems: ::
 
     make
 
+
 .. note:: If you encounter an issue trying to compile the source on a 
-	      system other than TrueOS®, refer to the "How to build from source" 
-          section of the `README <https://github.com/pcbsd/lumina/blob/master/README.md>`_ 
-          for additional instructions.
+	      system other than TrueOS®, refer to the "How to build from 
+	      source" section of the `README <https://github.com/pcbsd/lumina/blob/master/README.md>`_ 
+	      for additional instructions.
  
 To also install the compiled applications, type :command:`sudo make install`. 
 Note this command requires superuser privileges.
