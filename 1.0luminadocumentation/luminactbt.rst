@@ -28,7 +28,7 @@ few guidelines to ensure a speedy response:
   confirm creating a new account.
   
 .. important:: Use a valid email address when registering, or the new 
-			   account will be unable to be validated.
+			   account will be unable to be confirmed.
 
 * Use the "Search" bar at `bugs.pcbsd.org <https://bugs.pcbsd.org>`_ to 
   see if a similar bug report has already been reported. If a similar 
@@ -176,9 +176,7 @@ welcome! To participate in core development, please subscribe to the
 All Lumina utilities are developed with C++ using Qt Libraries, but 
 other Qt-based languages are used in the project too. For example, the 
 CSS-like `Qt Stylesheet language <http://doc.qt.io/qt-4.8/stylesheet.html>`_ 
-is used for theme templates, and the JavaScript styled 
-`QML <http://doc.qt.io/qt-5/qtqml-index.html>`_ may be optionally used 
-for desktop interface plugins.
+is used for theme templates.
 
 .. index:: development
 .. _Getting the Source Code:
@@ -197,7 +195,7 @@ To download the source code, use the command line to navigate to (or
 create) the desired storage directory and from within the directory, 
 type::
 
-    git clone git://github.com/pcbsd/lumina.git
+    git clone git://github.com/trueos/lumina.git
     git pull
 
 These commands will create a directory named :file:`lumina/`, which 
@@ -228,7 +226,7 @@ paths may differ on other operating systems: ::
 
 .. note:: If you encounter an issue trying to compile the source on a 
 	      system other than TrueOS®, refer to the "How to build from 
-	      source" section of the `README <https://github.com/pcbsd/lumina/blob/master/README.md>`_ 
+	      source" section of the `README <https://github.com/trueos/lumina/blob/master/README.md>`_ 
 	      for additional instructions.
  
 To also install the compiled applications, type :command:`sudo make install`. 
@@ -269,7 +267,7 @@ programs. For example, while programs have had the titles of "File",
 "File", as it is the most common option for the first category on a menu 
 bar.
 
-The `Developer Guidelines <https://github.com/pcbsd/lumina/blob/5beb2730a9e8230d2377ea89e9728504ea88de9c/DeveloperGuidelines.txt>`_ 
+The `Developer Guidelines <https://github.com/trueos/lumina/blob/5beb2730a9e8230d2377ea89e9728504ea88de9c/DeveloperGuidelines.txt>`_ 
 contain some coding practices for creating effective updates or 
 utilities. For menu and program design in Lumina, there is a small list 
 guidelines that volunteer developers are encouraged to follow.

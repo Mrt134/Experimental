@@ -48,8 +48,6 @@ menu however they wish.
 Applications
 ------------
 
-info.ID = "applications"
-
 .. _luminamenuplugin2:
 
 .. figure:: images/luminamenuplugin2.png
@@ -66,8 +64,6 @@ applications are shown underneath.
 Custom App
 ----------
 
-info.ID = "app"
-
 .. _luminamenuplugin3:
 
 .. figure:: images/luminamenuplugin3.png
@@ -76,14 +72,12 @@ info.ID = "app"
 
 Adds a specific quickstart icon for a single application to the 
 right-click menu. Pictured is the icon for the "About" application, 
-which displays current system information.
+which is displaying current TrueOS® system information.
 
 .. _File Manager:
 
 File Manager
 ------------
-
-info.ID = "filemanager"
 
 .. _luminamenuplugin4:
 
@@ -91,19 +85,16 @@ info.ID = "filemanager"
 
 :numref:`Figure %s: File Manager <luminamenuplugin4>`
 
-Opens the Insight File Manager (Default) to allow the user to browse the
-system files. 
+Opens the user's home directory within the default file manager.
 
 .. _JSON Menu:
 
 JSON Menu
 ---------
 
-info.ID = "JSON Menu"
-
 The JSON Menu plugin give a more advanced user the flexibility to create
 their own entries into the right-click menu. Selecting the JSON Menu 
-plugin immediately brings up the 
+plugin immediately brings up the menu configuration window, seen in 
 :numref:`Figure %s: JSON Menu Configuration Window <luminamenuplugin5>`.
 
 .. _luminamenuplugin5:
@@ -131,8 +122,6 @@ while the executable script has generated the menu of files and folders.
 Separator
 ---------
 
-info.ID = "line"
-
 :numref:`Figure %s: Separator <luminamenuplugin1>`
 
 A Separator is simply a horizontal line which can be used to divide 
@@ -145,23 +134,19 @@ between the plugins you wish to place a line between.
 Preferences
 -----------
 
-info.ID = "Settings"
-
 .. _luminamenuplugin7:
 
 .. figure:: images/luminamenuplugin7.png
 
 :numref:`Figure %s: Preferences <luminamenuplugin7>`
 
-This plugin adds a shortcut to the right-click menu which points to the 
-desktop settings menu.
+This plugin adds a shortcut to the right-click menu which opens a new 
+menu of configuration quicklinks.
 
 .. _Terminal:
 
 Terminal
 --------
-
-info.ID = "terminal"
 
 .. _luminamenuplugin8:
 
@@ -176,8 +161,6 @@ A shortcut to the default system terminal.
 Window List
 -----------
 
-info.ID = "windowlist"
-
 .. _luminamenuplugin9:
 
 .. figure:: images/luminamenuplugin9.png
@@ -185,7 +168,8 @@ info.ID = "windowlist"
 :numref:`Figure %s: Window List <luminamenuplugin9>`
 
 This plugin adds an entry to the right-click menu which, when hovered 
-over with the mouse, will list all open application windows.
+over with the mouse, will list all open application windows. This plugin 
+is comparable to a task manager plugin for panels.
 
 .. index:: desktop plugins
 .. _desktop plugins:
@@ -203,19 +187,18 @@ lower left of the main desktop screen, then click
 .. figure:: images/luminadesktoppluginmenu1.png
 
 :numref:`Figure %s: Desktop Plugin Menu <luminadesktoppluginmenu1>` This 
-is the primary menu for configuring desktop plugins. For multi-monitor 
-systems, you can switch between monitors by clicking the icon in the 
-upper right corner of the window and choosing the desired monitor. 
-Clicking the green "plus" button will open a "Select Plugin" window. The
-user can choose between the available plugins by opening the drop-down 
-menu and clicking the desired plugin. Once a plugin has been selected, 
-your choice will appear in the "Embedded Utilities" window. 
+is the primary menu for configuring desktop plugins. Clicking the green 
+"plus" button will open a "Select Plugin" window. The user can choose 
+between the available plugins by opening the drop-down menu and clicking
+the desired plugin. Once a plugin has been selected, your choice will 
+appear in the "Embedded Utilities" window. 
 
 The “Display Desktop Folder Contents” option is used to display each 
 item stored in ~/Desktop as an icon on the desktop. By default, this 
 option is selected as its box is black. If you de-select this option and
 click “Save Changes”, the icons for the contents of ~/Desktop will be 
-removed from the desktop.
+removed from the desktop. To define a smaller area on the desktop for 
+displaying icons, use the :ref:`Desktop Icons View` plugin.
 
 Once all the desired plugins have been added, click the "Save" button 
 that appears in the upper right section. The menu will automatically 
@@ -229,25 +212,19 @@ alphabetical order.
 Application Launcher
 --------------------
 
-info.ID = "applauncher"
-
 .. _luminadesktopplugin1:
 
 .. figure:: images/luminadesktopplugin1.png
 
-:numref:`Figure %s: Application Launcher <luminadesktopplugin1>` 
-
-This icon is the result of using the Application Launcher to add a link 
-to the "Lumina Desktop Information" application on the desktop. Clicking 
-the Application Launcher option allows the user to select a single 
-application to add to the desktop area as a "quick launch" icon. 
+Choosing the Application Launcher plugin opens the window seen in 
+:numref:`Figure %s: Application Launcher <luminadesktopplugin1>`. This 
+drop down menu allows the user to choose a specific application to add 
+to the desktop.
 
 .. _Audio Player:
 
 Audio Player
 ------------
-
-info.ID = "audioplayer"
 
 .. _luminadesktopplugin2:
 
@@ -271,8 +248,6 @@ open a drop down menu of all added audio files.
 Calendar
 --------
 
-info.ID = "calendar"
-
 .. _luminadesktopplugin3:
 
 .. figure:: images/luminadesktopplugin3.png
@@ -290,8 +265,6 @@ scroll up or down through the calendar.
 Desktop Icons View
 ------------------
 
-info.ID = "desktopview"
-
 .. _luminadesktopplugin4:
 
 .. figure:: images/luminadesktopplugin4.png
@@ -306,8 +279,6 @@ user to scroll through all available icons.
 
 Note Pad
 --------
-
-info.ID = "notepad"
 
 .. _luminadesktopplugin5:
 
@@ -331,8 +302,6 @@ corner displays a number of options:
 
 RSS Reader
 ----------
-
-info.ID = "rssreader"
 
 .. _luminadesktopplugin6:
 
@@ -367,8 +336,6 @@ associated website.
 
 System Monitor
 --------------
-
-info.ID = "systemmonitor"
 
 .. _luminadesktopplugin7:
 
@@ -411,7 +378,7 @@ The settings for this panel are pictured in :numref:`Figure %s: Panel Settings <
 .. figure:: images/luminapanelpluginmenu1.png
 
 As you can see, Panel 1 is configured to the top center of Monitor 1 
-(plugged into DVI-I-O). To add or adjust plugins for this panel, click 
+(plugged into DVI-I-0). To add or adjust plugins for this panel, click 
 on the green puzzle piece icon to open the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu2>`.
 
 .. _luminapanelpluginmenu2:
@@ -421,15 +388,14 @@ on the green puzzle piece icon to open the :numref:`Figure %s: Panel Plugins Men
 The large field shows currently active plugins. Click the red minus or 
 green plus buttons to add or remove plugins to the panel. Use the arrow 
 keys to alter the display order of attached plugins. By default, plugins
-will populate the panel from left to right. All the plugins available 
-for panel plugins are listed below.
+will populate horizontal panels from left to right, and vertical panels 
+from top to bottom. All the plugins available for panel plugins are 
+listed below.
 
 .. _panel application launcher:
 
 Panel Application Launcher
 --------------------------
-
-info.ID = "applauncher"
 
 .. _luminapanelplugin1:
 
@@ -446,8 +412,6 @@ selected application to the panel.
 Application Menu
 ----------------
 
-info.ID = "appmenu"
-
 .. _luminapanelplugin2:
 
 .. figure:: images/luminapanelplugin2.png
@@ -458,14 +422,13 @@ Adds an application menu that contains a shortcut to your home directory,
 a shortcut to the operating system’s graphical software management 
 utility (if there is one), a shortcut to the operating system’s Control 
 Panel (if it provides one), and a list of installed software sorted by 
-categories.
+categories. This plugin is also considered a primary menu, like the 
+start button, and will open when the :kbd:`Windows` key is pressed.
 
 .. _Battery Monitor:
 
 Battery Monitor
 ---------------
-
-info.ID = "battery"
 
 Hover over this icon (not pictured) to view the current charge status of
 the battery. When the charge reaches 15% or below, the low battery icon 
@@ -477,40 +440,29 @@ there is less than 5% charge left.
 Desktop Bar
 -----------
 
-info.ID = "desktopbar"
-
 .. _luminapanelplugin3:
 
 .. figure:: images/luminapanelplugin3.png
 
-:numref:`Figure %s: Desktop Bar <luminapanelplugin3>` The "Favorite 
-Applications" button is pressed.
+:numref:`Figure %s: Desktop Bar <luminapanelplugin3>` :guilabel:`Favorite Applications` 
+is pressed.
 
 This plugin adds shortcuts to the panel for applications or files 
 contained within the ~/Desktop folder or favorited by the user. The 
 “star” button displays applications, the "folder" button displays 
 folders, and the "file" button shows favorite files.
 
-.. note:: Duplicate entries may appear when you click any one of the 
-          favorites icons. This is due to the plugin populating the menu
-          with both the items inside ~/Desktop and the user selected 
-          "favorites", which are located in two separate places on the 
-          system. The plugin brings both elements together to show the 
-          most complete list of user desired applications or files, but 
-          can result in duplicate entries.
-
 .. _Line:
 
 Line
 ----
 
-info.ID = "line"
-
 .. _luminapanelplugin4:
 
 .. figure:: images/luminapanelplugin4.png
 
-:numref:`Figure %s: Line <luminapanelplugin4>`
+:numref:`Figure %s: Line <luminapanelplugin4>` The line is highlighted 
+in red.
 
 Adds a separator line to the panel to provide visual separation between 
 plugins. When adding a line plugin in the :numref:`Figure %s: Panel Plugins Menu <luminapanelpluginmenu2>`,
@@ -522,8 +474,6 @@ separate.
 
 Show Desktop
 ------------
-
-info.ID = "homebutton"
 
 .. _luminapanelplugin5:
 
@@ -540,8 +490,6 @@ screens or small devices.
 Spacer
 ------
 
-info.ID = "spacer"
-
 .. _luminapanelplugin6:
 
 .. figure:: images/luminapanelplugin6.png
@@ -557,8 +505,6 @@ in order to achieve the desired separation.
 Start Menu
 ----------
 
-info.ID = "systemstart"
-
 .. _luminapanelplugin7:
 
 .. figure:: images/luminapanelplugin7.png
@@ -572,8 +518,6 @@ added by default to the primary desktop panel in the lower left corner.
 
 System Dashboard
 ----------------
-
-info.ID = "systemdashboard"
 
 .. _luminapanelplugin8:
 
@@ -597,8 +541,6 @@ battery, its current charge will also be displayed.
 System Tray
 -----------
 
-info.ID = "systemtray"
-
 .. _luminapanelplugin9:
 
 .. figure:: images/luminapanelplugin9.png
@@ -611,7 +553,7 @@ can be sent to this area on a per-application basis, but only one system
 tray plugin can be active at a time. By default, the active system tray 
 will be the one on the **lowest number** monitor and panel. For example,
 when adding the system tray plugin to monitor zero, panel one and again 
-to monitor one, panel one, only the system tray on on monitor zero will 
+to monitor one, panel one, only the system tray on monitor zero will 
 be active. Disabling the system tray on monitor zero will activate the 
 tray on monitor one, automatically migrating any docked applications to 
 the other panel.
@@ -621,8 +563,6 @@ the other panel.
 Task Manager (No Groups)
 ------------------------
 
-info.ID = "taskmanager-nogroups"
-
 .. _luminapanelplugin10:
 
 .. figure:: images/luminapanelplugin10.png
@@ -630,7 +570,7 @@ info.ID = "taskmanager-nogroups"
 :numref:`Figure %s: Task Manager (No Groups) <luminapanelplugin10>`
 
 Ensures that every window gets its own button on the panel. This plugin 
-will use a large amount of space on the plugin, as every window will 
+will use a large amount of space on the panel, as every window will 
 need to display a part of its title. This plugin is added to the default
 panel for Lumina.
 
@@ -638,8 +578,6 @@ panel for Lumina.
 
 Task Manager
 ------------
-
-info.ID = "taskmanager"
 
 .. _luminapanelplugin11:
 
@@ -659,8 +597,6 @@ on the panel, a further space savings.
 Time/Date
 ---------
 
-info.ID = "clock"
-
 .. _luminapanelplugin12:
 
 .. figure:: images/luminapanelplugin12.png
@@ -678,8 +614,6 @@ to adjust the displayed time.
 
 User Menu
 ---------
-
-info.ID = "userbutton"
 
 The User Menu is a more complicated plugin that provides an array of 
 shortcuts to files and applications on the system, essentially as an 
@@ -733,8 +667,6 @@ utilities, as well as the system information window.
 
 Workspace Switcher
 ------------------
-
-info.ID = "desktopswitcher"
 
 .. _luminapanelplugin17:
 

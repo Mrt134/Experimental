@@ -391,7 +391,7 @@ The "Localization Settings" option is shown in
 The lumina-i18n package provides localization files. Once installed, 
 this allows you to customize which locale is used for the various items 
 listed in :numref:`Figure %s: Session Locale Tab <lumina21c>`. To 
-install this package on a PC-BSD or FreeBSD system, use 
+install this package on a TrueOS® or FreeBSD system, use 
 :command:`sudo pkg install lumina-i18n`. On other operating systems, use
 the software management tool that comes with the operating system. Since
 each setting has its own drop-down menu, you have the flexibility to 

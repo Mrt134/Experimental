@@ -120,16 +120,11 @@ utility, right-click the desktop and select
 :menuselection:`Preferences --> About Lumina`, click the start menu then
 the question mark icon in "Preferences", or type :command:`lumina-info` 
 in a terminal window. An example is shown in 
-:numref:`Figure %s: About Lumina <about1b>`.
+:numref:`Figure %s: About Lumina <about1c>`.
 
-.. TODO: update about1b to reflect lumina v1.0. 
-   edit src-qt5/core/libLumina/LuminaUtils.cpp and change the version 
-   tag to 1.0.0-Release - then rebuild/install Lumina, but don't commit 
-   that change. Also see about changing "Open in web browser" link.
+.. _about1c:
 
-.. _about1b:
-
-.. figure:: images/about1b.png
+.. figure:: images/about1c.png
    :scale: 100%
    
 The "General" tab contains the following information:
@@ -139,22 +134,26 @@ The "General" tab contains the following information:
 * **OS Build:** Indicates the operating system that was used to build 
   this version of Lumina.
 
-* **Qt Version:** Click the "View Information" button to display the QT 
+* **Qt Version:** Click :guilabel:`View Information` to display the QT 
   version and its license.
 
-* **Lumina Website:** Click the button to open 
+* **Lumina Website:** Click :guilabel:`Lumina Website` to open 
   `<http://lumina-desktop.org/>`_ in the default web browser.
 
-* **Source Repository:** Click the button to open 
+* **Ask the Community:** Click :guilabel:`Ask the Community` to open 
+  `<https://webchat.freenode.net/?channels=%23lumina-desktop>`_, a 
+  chat channel dedicated to Lumina with many friendly and helpful users.
+  
+* **Source Repository:** Click :guilabel:`Source Repository` to open 
   `<https://github.com/trueos/lumina>`_ in the default web browser.
 
-* **Report a Bug:** Click the button to open 
+* **Report a Bug:** Click :guilabel:`Bug Reports` to open 
   `<https://bugs.pcbsd.org/projects/pcbsd>`_ in the default web browser.
   Refer to :ref:`Report a Bug` for instructions on how to submit a bug 
   report.
   
 The "License" tab contains the license text for Lumina. Lumina is 
-licensed under a `3-clause BSD license <http://opensource.org/licenses/BSD-3-Clause>`_.
+licensed under a `3-clause BSD license <https://github.com/trueos/lumina/blob/master/LICENSE>`_.
 
 The "Acknowledgements" tab contains the following:
 
@@ -214,12 +213,11 @@ the start menu and select
 :menuselection:`Browse Applications --> Utility --> Lumina Screenshot`,
 right-click the desktop and select 
 :menuselection:`Applications --> Utility --> Lumina Screenshot`, type 
-:command:`lumina-screenshot` from a terminal window, or press the 
-:kbd:`Print Screen` button.
+:command:`lumina-screenshot` from a terminal window, or press :kbd:`Print Screen`.
 
 On the "New Screenshot" tab, seen here in 
 :numref:`Figure %s: New Screenshot Tab <lumina25>`, you can adjust the 
-following settings to fine-tune the screenshot:
+following settings to fine tune the screenshot:
 
 .. _lumina25:
 
@@ -231,14 +229,17 @@ following settings to fine-tune the screenshot:
 * **Single Screen:** In a multi-monitor setup, the screen number can be
   selected for the screenshot.
 
-* **Single Window:** Captures a selected window. Choose "Single Window,"
-  then click the "Take Screenshot" button, and click on the desired 
+* **Single Window:** Captures a selected window. Choose "Single Window," 
+  click :guilabel:`Take Screenshot`, and click on the desired 
   window. The "Include Borders" checkbox can be used to determine 
-  whether or not the screenshot of the window is surrounded by a black 
-  border.
+  whether or not the utility will take a screenshot of the window with 
+  its border frame.
   
 * **Delay:** Choose the number of seconds to delay the screenshot. This 
-  can be used to give more time to prepare the screenshot.
+  can be used to give more time to prepare the screenshot. For example, 
+  designating a five second delay on a screenshot will give the user 
+  time to open a temporary menu or hover over an icon, allowing the 
+  screenshot to include otherwise difficult elements to capture.
 
 There are three options for taking a screenshot: clicking the "Take 
 Screenshot" button in the lower-right corner of Lumina Screenshot, 
@@ -279,8 +280,8 @@ quickly search for files and directories. The "*" wildcard can be used
 in the search terms and the search will include hidden files if the 
 search term starts with a dot ("."). 
 
-To start this utility, type :command:`lumina-search` or go to the start 
-menu :menuselection:`Browse Applications --> Utility --> Lumina Search`.
+To start this utility, type :command:`lumina-search`, press :kbd:`Alt + F2`,
+or go to the start menu and press :menuselection:`Browse Applications --> Utility --> Lumina Search`.
 :numref:`Figure %s: Search for Applications <lumina13b>` shows a 
 screenshot of this utility.
 
