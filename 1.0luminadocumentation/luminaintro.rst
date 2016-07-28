@@ -1,7 +1,7 @@
 .. globalindex::
    :maxdepth: 4
 
-.. _Test Introduction to Lumina:
+.. _Introduction to Lumina:
 
 Introduction to Lumina
 **********************
@@ -43,9 +43,6 @@ Lumina's features include:
 
 * ZFS file restore functionality through the :ref:`Insight File Manager`.
 
-* Simple access to operating system-specific functionality such as 
-  screen brightness, audio volume, and battery status.
-
 * Multi-monitor support includes the :ref:`Lumina Xconfig` graphical 
   utility for adding or removing monitors from the Lumina session.
 
@@ -53,16 +50,16 @@ Lumina's features include:
   volume, screen brightness, battery status/notifications, and workspace
   switching.
 
-* Total system search capabilities through :ref:`Lumina Search`, without
-  a daemon eating memory in the background.
+* Total system search capabilities through the resource friendly 
+  :ref:`Lumina Search` utility.
 
 * Screenshot functionality through :ref:`Lumina Screenshot`, which is 
   also tied to the “Print Screen” key by default.
 
-.. _Test How to Get Lumina:
+.. _Install and Start Lumina:
 
-How to Get Lumina
-=================
+Install and Start Lumina
+========================
 
 Lumina is available as a pre-built package for numerous operating 
 systems. The `Get Lumina <http://lumina-desktop.org/get-lumina/>`_ 
@@ -73,19 +70,18 @@ In addition to pre-built packages, the
 `Lumina source repository <https://github.com/trueos/lumina>`_ 
 is available on GitHub so that developers can contribute code or create
 packages for other distributions. If you plan to compile Lumina from 
-source, refer to `DEPENDENCIES <https://github.com/trueos/lumina/blob/master/DEPENDENCIES>`_ 
-and ensure all dependent software is installed and to 
-`README <https://github.com/trueos/lumina/blob/master/README.md>`_ for 
-build instructions.
+source, refer to the `DEPENDENCIES <https://github.com/trueos/lumina/blob/master/DEPENDENCIES>`_ 
+file and ensure all dependent software is installed and to the 
+`README <https://github.com/trueos/lumina/blob/master/README.md>`_ file 
+for build instructions.
 
-Once installed, add :command:`start-lumina-desktop` as the name of the 
-binary in your :file:`.startx`, :file:`.xinitrc`, or similar X startup 
-file.
+After installing Lumina, no startup configuration is needed when 
+installed on a TrueOS® system as the PCDM login manager will 
+automatically display Lumina in the login menu. Simply log out, select 
+Lumina, and log back in.
 
-.. note:: No startup configuration is needed when installed on a TrueOS®
-          system as the PCDM login manager will automatically display 
-          Lumina in the login menu. Simply log out, select Lumina,
-          and log back in.
+.. note:: When using a system with no graphical login manager, type 
+          :command:`start-lumina-desktop` to start Lumina. 
    
 The rest of this Handbook describes the Lumina Configuration utility, 
 other various utilities built into Lumina, and Lumina plugins. Also, the
@@ -104,17 +100,16 @@ configurable, with the numerous options covered in the
 
 .. note:: The default desktop appearance can vary if using another 
           distrubution's custom configuration of the Lumina Desktop 
-          Project. The screenshots used here are using the Lumina 
-          Desktop Project defaults with the TrueOS® operating system.
+          Project.
   
 .. _lumina1e:
 
 .. figure:: images/lumina1e.png
    :scale: 50%
 
-:numref:`Figure %s: Lumina Desktop <lumina1e>` A screenshot of Lumina on
-a TrueOS® system. The user has clicked the "Lumina" icon in order to 
-open the start menu.
+:numref:`Figure %s: Lumina Desktop <lumina1e>` A screenshot of Lumina 
+using its default settings. The user has clicked the "Lumina" icon in 
+order to open the start menu.
 
 The Start Menu provides quick access for user interaction with the 
 system. The top frame is a search bar for rapidly finding specific 
@@ -140,9 +135,9 @@ start menu is divided into several categories:
 * **Browse Applications:** Click this entry to browse all applications 
   currently registered on the system. Applications are listed 
   alphabetically by category. The "Show Categories" button has three 
-  modes which are changed by clicking the button: category names (white 
-  box icon), no categories (black box icon), and categories with 
-  contents (black and white icon). 
+  modes which are changed by clicking the button: category names 
+  (checked box), no categories (unchecked box), and categories with 
+  contents (half-checked box). 
   
   Click an application's name to start the application. By 
   right-clicking an application's name, you can select "Pin to Desktop",
@@ -191,14 +186,14 @@ start menu is divided into several categories:
   login and resume operation), "Restart System" (if the user has 
   permission), "Power Off System" (if the user has permission), "Sign 
   Out User", or press "Back" to return to the start menu. Alternately, 
-  click the "lock" icon next to "Leave" to lock the system, returning to
-  a login prompt.
+  click the "lock" icon next to "Leave" to lock the system, which will 
+  start the screensaver and password prompt to resume the session.
 
 .. note:: On a TrueOS system which is applying updates, the shutdown and
           restart options will be disabled until the updates are 
           complete, with a note indicating updates are in progress.
 
-.. _Test Panel and System Tray:
+.. _Panel and System Tray:
 
 Panel and System Tray
 =====================
@@ -210,30 +205,25 @@ the :ref:`Interface` section.
   
 When opening windows or applications, a button will be added to the 
 section of the panel near the start menu. If the application provides 
-an icon, the button will appear as that icon and if you mouse over it, 
-the tooltip will show the name of the application. If you have multiple 
-copies of an application running, it will combine all those entries into
-a single button and list the number of windows after the icon. If you 
-click on a button, it will automatically make that window active and if 
-you click it again, it will automatically minimize it. If there are 
-multiple windows, you can select the particular window you want to 
-activate from a drop-down menu.
+an icon, the button will appear with the icon and descriptive text. 
+Mouse over the button to show the full name of the application. Each 
+open window or application will have its own button on the panel. Click 
+a button to make that window active; click it again to minimize it.
 
-If you right-click the title of an open window, a menu of options will 
-appear so that you can shade, stick, maximize, iconify, raise, lower, 
-set the window title, send the window to a workspace, layer/dock the 
-window, set the window's transparency, remember a specified setting, or 
-close the window.
+Right-click the title of an open window to open a menu of options, 
+including stick, layer/dock, and set transparency, among other options.
 
 The system tray is located in the right portion of the panel. Any 
 applications that register a tray icon will appear in this area. For 
 example, on a TrueOS system, icons will appear for Life Preserver, Mount
-Tray, and SysAdm™. Click or right-click an icon to interact with 
-that application directly. The current system time shown by the clock is
-in the default format for the current locale. If you click the clock 
-icon and then click "Time Zone", a menu will open where you can select 
-to either "Use System Time" or click a country name in order to select a
-city to change to that city's time zone.
+Tray, and SysAdm™. Refer to :ref:`Interface` for instructions on 
+modifying which applications appear in the system tray. Click or 
+right-click an icon to interact with an application directly. The 
+current system time shown by the clock is in the default format for the 
+current locale. If you click the clock icon and then click "Time Zone", 
+a menu will open where you can select to either "Use System Time" or 
+click a country name in order to select a city to change to that city's 
+time zone.
 
 .. index:: desktop context menu
 .. _Desktop Context Menu:
@@ -241,19 +231,19 @@ city to change to that city's time zone.
 Desktop Context Menu
 ====================
 
-Right-clicking the desktop will open a menu of quick shortcuts and the 
-title of the menu will indicate the name of the current workspace. This 
+Right-clicking the desktop will open a menu of quick shortcuts with the 
+title of the menu indicating the name of the current workspace. This 
 section describes the default menu items. For instructions on how to 
-configure the right-click panel to suit your needs, refer to the 
-:ref:`Interface` Configuration section of this handbook.
+configure the right-click menu to suit your needs, refer to the 
+:ref:`Interface` section of this handbook.
 
 By default, the right-click menu contains the following items:
 
 * **Terminal:** Used to launch a system terminal. The default is 
   :command:`xterm`, but this can be customized.
 
-* **Browse Files:** Launches the default (and recommended) file manager,
-  :ref:`Insight File Manager`.
+* **Browse Files:** Launches the default file manager. 
+  (:ref:`Insight File Manager` for Lumina)
 
 * **Applications:** Provides shortcuts to the operating system's 
   graphical software management utility (if available), the control 
