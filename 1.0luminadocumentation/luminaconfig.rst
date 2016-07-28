@@ -10,7 +10,9 @@ used to configure every aspect of the desktop and is the recommended way
 to make changes. To launch this utility, click the start menu then 
 :menuselection:`Preferences --> Configure Desktop`, right-click the 
 desktop and click :menuselection:`Preferences --> Desktop`, or type 
-:command:`lumina-config` from an xterm.
+:command:`lumina-config` from an xterm. If all those options are 
+unavailable, the "Desktop Configuration" application (under the 
+"Utilities" category) will also open the configuration utility.
 
 .. _lumina3d:
 
@@ -95,10 +97,6 @@ the wallpaper selection drop-down menu.
 
 .. figure:: images/lumina16b.png
    :scale: 100%
-
-.. TODO: Go over Window Effects with Kenny to be sure I updated Lumina 
-   properly (screenshot may be missing some options). image: lumina28 
-   can be modified without archival.
    
 The "Window Effects" option, shown in 
 :numref:`Figure %s: Window Effects <lumina28>`, is used to add or alter 
@@ -111,7 +109,7 @@ manually.
 .. figure:: images/lumina28.png
    :scale: 100%
 
-The "Window System" tab, shown in :numref:`Figure %s: Session Window System Tab <lumina22c>`,
+The "Window Manager", shown in :numref:`Figure %s: Session Window Manager <lumina22c>`,
 contains various configuration options for the window manager.
 
 .. _lumina22c:
@@ -137,10 +135,7 @@ Drop-down menus are provided for configuring the following:
 
 The Advanced Editor, seen in :numref:`Figure %s: Window Manager - Advanced <lumina29>`
 , allows you to manually adjust every setting related to the display of 
-windows on your system. For example, if you prefer a particular theme, 
-but don't care for the theme's transparency effects, you can use the 
-Advanced Editor to adjust the specific transparency value to your 
-preference.
+windows on your system.
 
 .. _lumina29:
 
@@ -255,7 +250,7 @@ Interface Configuration
 
 The "Interface Configuration" option, seen here as 
 :numref:`Figure %s: Lumina Interface Configuration <lumina31>`, is used 
-to configure the context (right-click) menu, desktop icons, and floating 
+to configure the context (right-click menu), desktop icons, and floating 
 panels.
 
 .. _lumina31:
@@ -275,9 +270,10 @@ Applications, a Separator, and Settings.
 
 Select "Desktop Icons and Plugins" to modify what appears on the current
 primary desktop. By default, the RSS Reader plugin will appear in the 
-lower right corner. The following options are also available when you 
-right-click an icon on the desktop, allowing you to customize the 
-location and appearance of desktop icons: 
+lower right corner. 
+
+Many customization options are available after right-clicking an icon on
+the desktop: 
 
 * **Start Moving Item:** Click the icon to lock it in place once you 
   have moved it to the desired location.
@@ -379,8 +375,10 @@ The user can select to automatically enable numlock, play chimes when
 Lumina starts or exits, and change the icon that appears in the login 
 menu and the start menu button. There are also options to set the time 
 and date format, as well as the time display format (via drop menu). 
-Buttons are available to reset these options to either the system 
-defaults or Lumina defaults.
+Additionally, a user can reset **all** their desktop settings via 
+:guilabel:`Return to system defaults`, which returns Lumina to the 
+defaults created by the OS, while :guilabel:`Return to Lumina defaults` 
+returns to the Lumina created settings.
 
 The "Localization Settings" option is shown in 
 :numref:`Figure %s: Session Locale Tab <lumina21c>`.
@@ -390,21 +388,16 @@ The "Localization Settings" option is shown in
 .. figure:: images/lumina21c.png
    :scale: 100%
 
-.. TODO: Determine if lumina-i18n is still used is Lumina 1.0.
-
 The lumina-i18n package provides localization files. Once installed, 
 this allows you to customize which locale is used for the various items 
 listed in :numref:`Figure %s: Session Locale Tab <lumina21c>`. To 
 install this package on a PC-BSD or FreeBSD system, use 
 :command:`sudo pkg install lumina-i18n`. On other operating systems, use
-the software management tool that comes with the operating system. If 
-the Lumina Configuration utility was open before the installation, 
-restart it so that the list of localizations can be loaded into the 
-drop-down menus of this screen. Since each setting has its own drop-down
-menu, you have the flexibility to select different locales for each item
-shown in this screen. Note that if you make any changes in the "Locale" 
-tab, click the "Save Changes" button and restart Lumina so the 
-configured locales can be loaded.
+the software management tool that comes with the operating system. Since
+each setting has its own drop-down menu, you have the flexibility to 
+select different locales for each item shown in this screen. Note that 
+if you make any changes in the "Locale" tab, click the "Save Changes" 
+button and restart Lumina so the configured locales can be loaded.
 
 Installing the lumina-i18n package will also add a drop-down menu to the
 "Preferences" of the start menu, though you will need to restart Lumina 
@@ -412,9 +405,9 @@ after the package installation in order for the locale menu to appear in
 "Preferences". This drop-down menu can be used to temporarily change the
 locale for this session only. This will immediately change the 
 localization of any translated menu items on the fly so that you do not 
-have to log back into the Lumina session.
+have to log back into the current session.
 
-.. note:: Any menu items that continue to be displayed in English have 
-          not been translated to the selected language yet. You can 
-          assist the Lumina Project in translating menu items using the
-          instructions in :ref:`Interface Translation`.
+.. note:: If using Lumina with a language other than English, any menu 
+          items that continue to be displayed in English have not yet 
+          been translated to the selected language. To assist the Lumina
+          Project in translating menu items, see :ref:`Interface Translation`.
