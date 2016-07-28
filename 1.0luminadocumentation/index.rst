@@ -5,7 +5,7 @@ Lumina Handbook |release|
    :numbered:
    :maxdepth: 4
 
-   testintro
+   luminaintro
    luminaconfig
    luminaplugins
    luminautl
