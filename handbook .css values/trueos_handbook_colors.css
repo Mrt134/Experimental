@@ -1,0 +1,60 @@
+/*line 2696: selected level 1 menu entry colors and indentation*/
+.wy-menu-vertical li.current>a {
+    color: #f5f5f5;
+    padding: 0.4045em 1.618em;
+    font-weight: bold;
+    position: relative;
+    background: rgba(176,0,0,1);
+	background: -moz-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(176,0,0,1)), color-stop(6%, rgba(176,0,0,1)), color-stop(44%, rgba(181,7,7,1)), color-stop(95%, rgba(237,14,14,1)), color-stop(100%, rgba(237,14,14,1)));
+	background: -webkit-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -o-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -ms-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: linear-gradient(to right, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', endColorstr='#ed0e0e', GradientType=1 );
+	border: none;
+    border-bottom: none;
+    border-top: none;
+    padding-left: 1.618em -4px
+}
+/*line 2737: selected level 2 menu entry colors and indentation*/
+.wy-menu-vertical li.toctree-l2.current>a {
+    background: rgba(176,0,0,1);
+	background: -moz-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(176,0,0,1)), color-stop(6%, rgba(176,0,0,1)), color-stop(44%, rgba(181,7,7,1)), color-stop(95%, rgba(237,14,14,1)), color-stop(100%, rgba(237,14,14,1)));
+	background: -webkit-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -o-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -ms-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: linear-gradient(to right, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', endColorstr='#ed0e0e', GradientType=1 );
+    padding: 0.4045em 2.427em
+}
+/*line 2763: selected level 3 menu entry colors and indentation*/
+.wy-menu-vertical li.toctree-l3.current>a {
+    background: rgba(176,0,0,1);
+	background: -moz-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(176,0,0,1)), color-stop(6%, rgba(176,0,0,1)), color-stop(44%, rgba(181,7,7,1)), color-stop(95%, rgba(237,14,14,1)), color-stop(100%, rgba(237,14,14,1)));
+	background: -webkit-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -o-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: -ms-linear-gradient(left, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+	background: linear-gradient(to right, rgba(176,0,0,1) 0%, rgba(176,0,0,1) 6%, rgba(181,7,7,1) 44%, rgba(237,14,14,1) 95%, rgba(237,14,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', endColorstr='#ed0e0e', GradientType=1 );
+	color:#f5f5f5;
+	padding: 0.4045em 3.2em
+}
+/*line 2818: hover color !important applies to all levels of sidebar menu when hovering*/
+.wy-menu-vertical a:hover {
+    background: rgba(115,0,0,1)!important;
+	background: -moz-linear-gradient(left, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(115,0,0,1)), color-stop(6%, rgba(115,0,0,1)), color-stop(44%, rgba(145,2,2,1)), color-stop(95%, rgba(191,0,0,1)), color-stop(100%, rgba(191,0,0,1)))!important;
+	background: -webkit-linear-gradient(left, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
+	background: -o-linear-gradient(left, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
+	background: -ms-linear-gradient(left, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
+	background: linear-gradient(to right, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', endColorstr='#bf0000', GradientType=1 )!important;
+    cursor: pointer
+}
+/*line 2830: changes color of + box to expand tree when hovering*/
+.wy-menu-vertical a:hover span.toctree-expand {
+    color: #f5f5f5
+}
