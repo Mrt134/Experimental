@@ -7,12 +7,27 @@ testing custom .css formatting.
 Level 2
 =======
 
-Image file here
+:numref:`Figure %s: Test Logo <trueoslogo>`
 
-special directives here
+ TrueOS logo for testing.
+
+.. _trueoslogo:
+
+.. figure:: images/trueoslogo.png
+   :scale: 100%
 
 Level 3
 ---------
+
+Directives:
+
+:file:`testfile`
+
+:command:`testcommand`
+
+:kbd:`keystroke`
+
+:guilabel:`testguilabel`
 
 Experiment with monospace formats for file and command
 directives.
@@ -20,4 +35,17 @@ directives.
 Level 4
 ^^^^^^^
 
-Testing special text characters and emphasis.
+Testing special text characters and emphasis:
+
+Testing **bold**.
+
+Testing *italics*.
+
+* Test list 1
+* Test list 2
+   
+   * Test nesting list 1
+
+* Test list 3
+
+Add additional themeing elements as they appear.

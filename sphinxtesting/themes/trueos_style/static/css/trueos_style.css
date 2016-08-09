@@ -239,7 +239,7 @@ td {
     display: none
 }
 .hidden {
-    display: none !important;
+    display: none;
     visibility: hidden
 }
 .visuallyhidden {

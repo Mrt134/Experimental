@@ -51,7 +51,7 @@ source_suffix = '.rst'
 source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'test'
+master_doc = 'index'
 
 # General information about the project.
 project = u'TrueOS® User Guide'
@@ -141,7 +141,7 @@ html_title = project + " "
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = "trueoslogo.png"
+# html_logo = "trueoslogo.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32

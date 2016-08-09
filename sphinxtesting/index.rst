@@ -1,5 +1,5 @@
-TrueOS\ |reg| User Guide |release|
-==================================
+Style Elements Testing Template
+===============================
 
 Contents:
 
