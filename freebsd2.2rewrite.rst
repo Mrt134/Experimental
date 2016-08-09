@@ -1,6 +1,6 @@
 .. handbook
 Minimum Hardware Requirements
-The hardware requirements to install FreeBSD vary by architecture. Hardware architectures and devices supported by a FreeBSD release are listed on the Release Information page of the FreeBSD web site (http://www.FreeBSD.org/releases/index.html).
+The hardware requirements to install FreeBSD vary by architecture. Hardware architectures and devices supported by a FreeBSD release are listed on the Release Information page of the FreeBSD web site (http://www.FreeBSD.org/releases/index.html). The FreeBSD download page also has recommendations for choosing the right image for your architecture (https://www.freebsd.org/where.html)
 
 A FreeBSD installation will require 64 MB of RAM and 1.5 GB of free hard drive space at minimum. However, this is not recommended as almost no free space will be left on the system. RAM requirements will depend on usage, with some customized FreeBSD systems using as little as 128 MB of RAM while general desktop systems are recommended to have 4 GB of RAM.
 
