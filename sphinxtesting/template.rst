@@ -27,7 +27,7 @@ Directives:
 
 :kbd:`keystroke`
 
-:guilabel:`testguilabel`
+:guilabel:`TestGuiLabel`
 
 Experiment with monospace formats for file and command
 directives.

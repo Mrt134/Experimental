@@ -1,25 +1,19 @@
-#PC-BSD Style 
+#TrueOS Style 
 
-###A new style for _Our_ docs so as to avoid upstream theme changes.
+###Creating a new theme for iX docs.
 
-**In order to use the pcbsd_style theme, there are some adjustments to make to the _src-qt/docs/conf.py_ file:**
+**Instructions for using trueos_style:**
 
-* Revise this value from 'classic' or something else, to 'pcbsd_style' prior to generating docs:
+* Edit the Sphinx project's conf.py file:
+
+* Change this value to trueos_style prior to generating docs:
 ```
-  html_theme = 'pcbsd_style'
+  html_theme = 'trueos_style'
 ```
-* Comment out these lines because the build may fail since these don't exist and/or aren't used right now:
-```
-   #    "stickysidebar": "true",
-   #    "rightsidebar": "false",
-   #    "sidebarwidth" : "240",
-   #    "headbgcolor" : "#fff",
-   #    "relbarbgcolor" : "#696969",
-   #    "sidebarbgcolor" : "#696969",
-   #    "bgcolor" : "#fff"
-```
-* Add or adjust this statement below to match, it is for _additional_ places to search:
+* No additional html_options yet.
+
+* Be sure Sphinx knows the path to the custom theme:
 ```
   html_theme_path = ['themes']
 ```
-#Adjusted for Lumina with theme changes and added guilabel directive support.
+#trueos_style is intended to be used in many iX stystems sphinx generated handbooks, with small style changes here and there.
