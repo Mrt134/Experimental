@@ -2673,15 +2673,7 @@ div[class^='highlight'] pre {
     padding: 0.4045em 2.427em
 }
 .wy-menu-vertical li.current a:hover {
-    background: rgba(162,12,2,1);
-	background: -moz-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(162,12,2,1)), color-stop(12%, rgba(162,12,2,1)), color-stop(37%, rgba(197,34,13,1)), color-stop(67%, rgba(197,29,7,1)), color-stop(93%, rgba(235,53,25,1)), color-stop(100%, rgba(235,53,25,1)));
-	background: -webkit-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -o-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -ms-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: linear-gradient(to right, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', endColorstr='#eb3519', GradientType=1 );
-	color: #f5f5f5
+ 	color: #f5f5f5
 }
 .wy-menu-vertical li code,
 .wy-menu-vertical li .rst-content tt,
@@ -2721,15 +2713,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', end
 }
 .wy-menu-vertical li.on a:hover,
 .wy-menu-vertical li.current>a:hover {
-    background: rgba(162,12,2,1);
-	background: -moz-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(162,12,2,1)), color-stop(12%, rgba(162,12,2,1)), color-stop(37%, rgba(197,34,13,1)), color-stop(67%, rgba(197,29,7,1)), color-stop(93%, rgba(235,53,25,1)), color-stop(100%, rgba(235,53,25,1)));
-	background: -webkit-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -o-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -ms-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: linear-gradient(to right, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', endColorstr='#eb3519', GradientType=1 );
-	color:#f5f5f5
+    color:#f5f5f5
 }
 .wy-menu-vertical li.on a:hover span.toctree-expand,
 .wy-menu-vertical li.current>a:hover span.toctree-expand {
@@ -2761,7 +2745,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', end
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', endColorstr='#ed0e0e', GradientType=1 );
     padding: 0.4045em 2.427em
 }
-/*level3:#.#.#*/.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
     display: block;
 	line-height: 1.6em;
     padding: 0.4045em 4.045em
@@ -2789,17 +2773,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b00000', end
 	padding: 0.4045em 3.2em
 }
 .wy-menu-vertical li.toctree-l3.current>a:hover{
-    background: rgba(162,12,2,1);
-	background: -moz-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(162,12,2,1)), color-stop(12%, rgba(162,12,2,1)), color-stop(37%, rgba(197,34,13,1)), color-stop(67%, rgba(197,29,7,1)), color-stop(93%, rgba(235,53,25,1)), color-stop(100%, rgba(235,53,25,1)));
-	background: -webkit-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -o-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: -ms-linear-gradient(left, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-	background: linear-gradient(to right, rgba(162,12,2,1) 0%, rgba(162,12,2,1) 12%, rgba(197,34,13,1) 37%, rgba(197,29,7,1) 67%, rgba(235,53,25,1) 93%, rgba(235,53,25,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', endColorstr='#eb3519', GradientType=1 );
-	color: #f5f5f5
+ 	color: #f5f5f5
 }
-/*level4: #.#.#.#*/.wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4>a {
     display: block;
     background: #890dod;
     padding: 0.4045em 5.663em;
@@ -2839,7 +2815,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', end
     font-size: 90%;
     color: #f5f5f5
 }
-/*sidebarlevel1 hover color*/
+/*hover color important applies to all levels*/
 .wy-menu-vertical a:hover {
     background: rgba(115,0,0,1)!important;
 	background: -moz-linear-gradient(left, rgba(115,0,0,1) 0%, rgba(115,0,0,1) 6%, rgba(145,2,2,1) 44%, rgba(191,0,0,1) 95%, rgba(191,0,0,1) 100%)!important;
@@ -2851,6 +2827,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a20c02', end
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#730000', endColorstr='#bf0000', GradientType=1 )!important;
     cursor: pointer
 }
+/*changes color of + box to expand tree*/
 .wy-menu-vertical a:hover span.toctree-expand {
     color: #f5f5f5
 }
