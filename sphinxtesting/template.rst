@@ -32,6 +32,12 @@ Directives:
 Experiment with monospace formats for file and command
 directives.
 
+.. note:: Testing formatting of notes.
+
+.. warning:: Testing formatting of warnings.
+
+.. important:: Testing formatting of important tags.
+
 Level 4
 ^^^^^^^
 
