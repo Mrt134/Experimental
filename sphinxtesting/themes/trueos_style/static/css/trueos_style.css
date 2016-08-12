@@ -2344,13 +2344,14 @@ div[class^='highlight'] td.code {
 div[class^='highlight'] pre {
     white-space: pre;
     margin: 0;
-    padding: 12px 12px;
+    padding: 10px 10px;
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-size: 12px;
     line-height: 1.5;
     display: block;
     overflow: auto;
-    color: #404040
+    color: #404040;
+    background: #E7EBF4
 }
 @media print {
     .codeblock,
@@ -3678,9 +3679,9 @@ code.guilabel,
     background-color: #D5DDE2; /* saturate from ecf0f3 to be more visible/blue on screen. */
     display: inline-block;
 	font-family:'Inconsolata', monospace;
-    font-size: 95%;
+    font-size: 92%;
     vertical-align: -.5px;
-    padding: 1px;
+    padding: 2px;
     line-height: 80%;
 	overflow: hidden;
 }
@@ -3729,7 +3730,9 @@ div.viewcode-block:target {
     background-color: #F0F0F0;
     color: inherit;
     display: inline-block;
+    font-family: 'Inconsolata', monospace;
     font-size: 88%!important;
+    font-weight: bold;
     padding-right: 3px;
     padding-left: 3px;
     padding-top: 3px;
