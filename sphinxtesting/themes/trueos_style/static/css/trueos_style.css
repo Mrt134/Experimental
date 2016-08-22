@@ -789,7 +789,7 @@ a .icon {
 .rst-content .warning,
 .rst-content .wy-alert-warning.seealso,
 .rst-content .admonition-todo {
-    background: #b4d8af
+    background: #ffd386
 }
 .wy-alert.wy-alert-warning .wy-alert-title,
 .rst-content .wy-alert-warning.note .wy-alert-title,
@@ -816,7 +816,7 @@ a .icon {
 .rst-content .warning .admonition-title,
 .rst-content .wy-alert-warning.seealso .admonition-title,
 .rst-content .admonition-todo .admonition-title {
-    background: #2bc916
+    background: #ffa318
 }
 .wy-alert.wy-alert-info,
 .rst-content .note,
@@ -830,7 +830,7 @@ a .icon {
 .rst-content .wy-alert-info.warning,
 .rst-content .seealso,
 .rst-content .wy-alert-info.admonition-todo {
-    background: #e7f2fa
+    background: #e4f5ff
 }
 .wy-alert.wy-alert-info .wy-alert-title,
 .rst-content .note .wy-alert-title,
@@ -857,7 +857,7 @@ a .icon {
 .rst-content .wy-alert-info.warning .admonition-title,
 .rst-content .seealso .admonition-title,
 .rst-content .wy-alert-info.admonition-todo .admonition-title {
-    background: #86d3f9
+    background: #89c7f7
 }
 .wy-alert.wy-alert-success,
 .rst-content .wy-alert-success.note,
@@ -3699,7 +3699,7 @@ code.file, .file {
     border: thin solid #999;
 }
 code.guilabel, .guilabel {
-	border:1px solid #7fbbe3;
+	border:hidden;/*1px solid #7fbbe3;*/
 	font-weight:bold;
 	background:#e7f2fa;
 	text-transform: none
@@ -3850,11 +3850,15 @@ border:solid #BA0000;
 }
 
 .rst-content .warning, .rwarningbox {
-border:solid #9bd194;
+border:solid #bababa;
 }
 
 .rst-content .note, .rnotebox {
 border:solid #BABABA;
+}
+
+.rst-content .important, .rimportantbox{
+border:solid #bababa;
 }
 
 .rversionbox {
