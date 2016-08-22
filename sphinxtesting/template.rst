@@ -29,6 +29,8 @@ Directives:
 
 :guilabel:`TestGuiLabel`
 
+:menuselection:`Click 1 --> Click 2`
+
 Experiment with monospace formats for file and command
 directives.
 
