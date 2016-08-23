@@ -36,9 +36,11 @@ directives.
 
 .. note:: Testing formatting of notes.
 
+.. tip:: Testing formatting of tips.
+
 .. warning:: Testing formatting of warnings.
 
-.. important:: Testing formatting of important tags.
+.. danger:: Testing formatting of danger tags.
 
 Level 4
 ^^^^^^^
@@ -56,4 +58,10 @@ Testing *italics*.
 
 * Test list 3
 
+::
+
+ Testing a code block.
+ 
+ Creating a large box for testing.
+ 
 Add additional themeing elements as they appear.
