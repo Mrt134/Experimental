@@ -21,15 +21,15 @@ Level 3
 
 Directives:
 
-:file:`testfile`
+:file:`testfile` with extra text for comparison.
 
-:command:`testcommand`
+:command:`testcommand` with extra text for comparison.
 
-:kbd:`keystroke`
+:kbd:`keystroke` with extra text for comparison.
 
-:guilabel:`TestGuiLabel`
+:guilabel:`TestGuiLabel` with extra text for comparison.
 
-:menuselection:`Click 1 --> Click 2`
+:menuselection:`Click 1 --> Click 2` with extra text for comparison.
 
 Experiment with monospace formats for file and command
 directives.
