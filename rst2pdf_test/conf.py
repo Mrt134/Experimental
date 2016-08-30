@@ -29,7 +29,8 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['rst2pdf.pdfbuilder']
+extensions = ['rst2pdf.pdfbuilder',
+		    ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -122,9 +123,9 @@ from sphinx.roles import _amp_re
 def patched_menusel_role(typ, rawtext, text, lineno, inliner, options={}, content=[]):
     text = utils.unescape(text)
     if typ == 'menuselection':
-        text = text.replace('-->', u'\u2192') # Here is the patch 
+        text = text.replace('-->', u'\u2192') # Here is the patch
 
-    spans = _amp_re.split(text)  
+    spans = _amp_re.split(text)
 
     node = nodes.literal(rawtext=rawtext)
     for i, span in enumerate(spans):
@@ -380,18 +381,18 @@ texinfo_documents = [
 # would mean that specific document would be compressed
 # regardless of the global pdf_compressed setting.
 pdf_documents = [
-    ('index', u'MyProject', u'My Project', u'Author Name'),
+    ('index', u'Rst2pdf test', u'Rst2pdf test', u'Tim Moore'),
 ]
 # A comma-separated list of custom stylesheets. Example:
-pdf_stylesheets = ['sphinx','kerning','a4']
+pdf_stylesheets = ['sphinx','kerning','a4','sphinx.style']
 # A list of folders to search for stylesheets. Example:
-pdf_style_path = ['.', '_styles','themes/trueos_style/static/css']
+pdf_style_path = ['.', '_styles','themes/trueos_style/static/css/']
 # Create a compressed PDF
 # Use True/False or 1/0
 # Example: compressed=True
 #pdf_compressed = False
 # A colon-separated list of folders to search for fonts. Example:
-# pdf_font_path = ['/usr/share/fonts', '/usr/share/texmf-dist/fonts/']
+pdf_font_path = ['themes/trueos_style/static/fonts']
 # Language to be used for hyphenation support
 #pdf_language = "en_US"
 # Mode for literal blocks wider than the frame. Can be
@@ -414,7 +415,7 @@ pdf_style_path = ['.', '_styles','themes/trueos_style/static/css']
 # If false, no modindex is generated.
 #pdf_use_modindex = True
 # If false, no coverpage is generated.
-#pdf_use_coverpage = True
+pdf_use_coverpage = False
 # Name of the cover page template to use
 #pdf_cover_template = 'sphinxcover.tmpl'
 # Documents to append as an appendix to all manuals.
@@ -430,7 +431,7 @@ pdf_style_path = ['.', '_styles','themes/trueos_style/static/css']
 # Page template name for "regular" pages
 #pdf_page_template = 'cutePage'
 # Show Table Of Contents at the beginning?
-#pdf_use_toc = True
+pdf_use_toc = False
 # How many levels deep should the table of contents be?
 pdf_toc_depth = 9999
 # Add section number to section references

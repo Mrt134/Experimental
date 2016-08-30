@@ -224,8 +224,8 @@ dummy:
 	@echo
 	@echo "Build finished. Dummy builder generates no files."
 	
-.PHONY: rinoh
-rinoh:
-        $(SPHINXBUILD) -b rinoh $(ALLSPHINXOPTS) $(BUILDDIR)/rinoh
-        @echo
-        @echo "Build finished. Rinoh PDF files are in $(BUILDDIR)/rinoh."
+#.PHONY: rinoh
+#rinoh:
+#        $(SPHINXBUILD) -b rinoh $(ALLSPHINXOPTS) $(BUILDDIR)/rinoh
+#        @echo
+#        @echo "Build finished. Rinoh PDF files are in $(BUILDDIR)/rinoh."
