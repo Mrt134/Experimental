@@ -16,6 +16,42 @@ Level 2
 .. figure:: images/trueoslogo.png
    :scale: 100%
 
+   A sample caption for the image. "A" is the first written character,
+   all other figure name and number values are imported from <somewhere>.
+
+:numref:`Figure %s <grub_menu_fig>`.
+
+
+.. _grub_menu_fig:
+
+.. figure:: images/install1.png
+
+   Grub Menu
+
+Tables don't appear to support captions. The writer has to decide where
+to place descriptive text.
+
++---------------+-----------+----------------------------------------+
+| **Parameter** | **Value** | **Description**                        |
+|               |           |                                        |
++===============+===========+========================================+
+| id            |           | Any unique value for the request,      |
+|               |           | including a hash, checksum, or uuid.   |
++---------------+-----------+----------------------------------------+
+| name          | beadm     |                                        |
+|               |           |                                        |
++---------------+-----------+----------------------------------------+
+| namespace     | sysadm    |                                        |
+|               |           |                                        |
++---------------+-----------+----------------------------------------+
+| action        |           | Supported actions include "listbes",   |
+|               |           | "renamebe", "activatebe", "createbe",  |
+|               |           | "destroybe", "mountbe", and "umountbe" |
++---------------+-----------+----------------------------------------+
+
+Tables don't appear to support captions. The writer has to decide where
+to place descriptive text.
+
 Level 3
 ---------
 
@@ -58,7 +94,7 @@ Testing *italics*.
 
 * Test list 3
 
-::
+.. code-block:: none
 
  Testing a code block.
  
@@ -94,18 +130,31 @@ Added value to above lines: border-radius: 5px
 Commands should use the same font typewriter font as filenames.
 Already fixed - set to inconsolata: monospace + bolded.
 
-.. TODO Filename background are somewhat distracting and reduce contrast.
-   Maybe just use a different foreground color and no background?
+Filename background are somewhat distracting and reduce contrast.
+Maybe just use a different foreground color and no background?
+#3681-3691: replaced padding to 1px, border-radius to 4px.
+Altered background-color to #e6ede9 for very slight off white box to
+emphasize the role command.
 
-.. TODO Remove either bold on menuselection, leave background color.
+Remove either bold on menuselection, leave background color.
+Deleted font-weight: 600 line and altered background color to #e8ede6
 
-.. TODO Reduce height of menuselection boxes to same as guilabel,
-   maybe reduce both, but make them the same.
-   Same with :kbd:, reduce to same height as others.
+Reduce height of menuselection boxes to same as guilabel, maybe reduce
+both, but make them the same. Same with :kbd:, reduce to same height as
+others.
+All boxes are have exactly the same values now, but :kbd: role has a
+1 pixel solid black border to simulate the outline of a computer key.
 
-.. TODO Can the "view page source" links be removed?
+Can the "view page source" links be removed?
+Edited conf.py, uncomment html_show_sourcelink and set to False.
 
-.. TODO Make figure captions normal size font.
+Make figure captions normal size font.
+.css line #2173: change font-size to 100%
+updated to sphinx 1.4.6 - this fixed numfig bug; numfig no longer needs
+to be listed as a sphinx extension.
 
-.. TODO Make table titles and figure captions consistent?
-   (Both on top or on bottom, left- or center-justified)
+Make table titles and figure captions consistent?
+(Both on top or on bottom, left- or center-justified)
+Not sure about this one - tables are flexible to the writer. Captions
+seem to be always displayed at the bottom of the image, with the text
+justified left.

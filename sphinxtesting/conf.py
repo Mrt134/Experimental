@@ -31,16 +31,15 @@ sys.path.append(os.path.abspath('/usr/local/lib/python2.7/site-packages/sphinx/e
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.ifconfig',
-    'sphinxcontrib.httpdomain',
-    'wikipedia',
-    'sphinx.ext.numfig',
+#    'sphinx.ext.ifconfig',
+#    'sphinxcontrib.httpdomain',
+#    'wikipedia',
     'rst2pdf.pdfbuilder'
 ]
 
 # -- Options for automatic Figure numbering
 numfig = True
-numfig_secnum_depth = (2)
+numfig_secnum_depth = (1)
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -218,7 +217,7 @@ html_use_smartypants = True
 #html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-#html_show_sourcelink = True
+html_show_sourcelink = False
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False

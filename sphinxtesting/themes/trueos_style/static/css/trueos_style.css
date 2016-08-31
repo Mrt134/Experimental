@@ -2168,17 +2168,17 @@ p {
     margin-bottom: 24px
 }
 h1 {
-    font-size: 175%
+    font-size: 100%
 }
 h2,
 .rst-content p.caption {
-    font-size: 150%
+    font-size: 100%
 }
 h3 {
-    font-size: 125%
+    font-size: 100%
 }
 h4 {
-    font-size: 115%
+    font-size: 100%
 }
 h5 {
     font-size: 110%
@@ -3679,15 +3679,15 @@ code.menuselection,
 .file,
 .guilabel,
 .menuselection{
-    background-color: #D5DDE2; /* saturate from ecf0f3 to be more visible/blue on screen. */
+    background-color: #e6ede9; /* saturate from ecf0f3 to be more visible/blue on screen. */
     display: inline;
 	font-family:'Inconsolata', monospace;
     font-size: 95%;
-    padding-right: 3px;
-    padding-left: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-radius: 3px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 4px;
     overflow: hidden;
 }
 code.kbd, .kbd {
@@ -3704,9 +3704,8 @@ code.guilabel, .guilabel {
 	text-transform: none
 }
 code.menuselection, .menuselection {
-    background-color: #e6e6ed;
+    background-color: #e8ede6;
     color: inherit;
-    font-weight: 600;
     border: hidden;
 	font-size: 98%
 }
