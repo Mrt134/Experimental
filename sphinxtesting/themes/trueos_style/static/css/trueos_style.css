@@ -2074,15 +2074,16 @@ line-height: 19px;
     white-space: inherit
 }
 a {
-    color: #2980B9;
+    color: #2c3fbd;
     text-decoration: none;
     cursor: pointer
 }
 a:hover {
-    color: #3091d1
+    color: #4653a3;
+	text-decoration: underline
 }
 a:visited {
-    color: #9B59B6
+    color: #c73030
 }
 html {
     height: 100%;
@@ -3848,24 +3849,34 @@ table.docutils {
  | textboxes adjusted for rst/RtD   (BEGIN)  | 
  *"""""""""""""""""""""""""""""""""""""""""""*/
 .rst-content .danger, .rdangerbox {
-border:solid #bababa;
-background: #edbeb6
+border: 2px solid #8a8988;
+border-radius: 5px;
+background: #edbeb6;
+color: #030303
 }
 
 .rst-content .warning, .rwarningbox {
-border:solid #bababa;
+border: 2px solid #8a8988;
+border-radius: 5px;
+color: #030303
 }
 
 .rst-content .note, .rnotebox {
-border:solid #BABABA;
+border: 2px solid #8a8988;
+border-radius: 5px;
+color: #030303
 }
 
 .rst-content .important, .rimportantbox{
-border:solid #bababa;
+border: 2px solid #8a8988;
+border-radius: 5px;
+color: #030303
 }
 
 .rst-content .tip, .rtipbox{
-border:solid #bababa;
+border: 2px solid #8a8988;
+border-radius: 5px;
+color: #030303
 }
 
 .rversionbox {
