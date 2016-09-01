@@ -28,29 +28,34 @@ Level 2
 
    Grub Menu
 
-Tables don't appear to support captions. The writer has to decide where
-to place descriptive text.
+Table test with numfig - numfig references should incorporate a
+caption?
 
-+---------------+-----------+----------------------------------------+
-| **Parameter** | **Value** | **Description**                        |
-|               |           |                                        |
-+===============+===========+========================================+
-| id            |           | Any unique value for the request,      |
-|               |           | including a hash, checksum, or uuid.   |
-+---------------+-----------+----------------------------------------+
-| name          | beadm     |                                        |
-|               |           |                                        |
-+---------------+-----------+----------------------------------------+
-| namespace     | sysadm    |                                        |
-|               |           |                                        |
-+---------------+-----------+----------------------------------------+
-| action        |           | Supported actions include "listbes",   |
-|               |           | "renamebe", "activatebe", "createbe",  |
-|               |           | "destroybe", "mountbe", and "umountbe" |
-+---------------+-----------+----------------------------------------+
+.. fix from stackoverflow:
 
-Tables don't appear to support captions. The writer has to decide where
-to place descriptive text.
+.. _table_test:
+
+.. table:: Table Testing
+
+   +---------------+-----------+----------------------------------------+
+   | Parameter     |   Value   |   Description                          |
+   |               |           |                                        |
+   +===============+===========+========================================+
+   | id            |           | Any unique value for the request,      |
+   |               |           | including a hash, checksum, or uuid.   |
+   +---------------+-----------+----------------------------------------+
+   | name          | beadm     |                                        |
+   |               |           |                                        |
+   +---------------+-----------+----------------------------------------+
+   | namespace     | sysadm    |                                        |
+   |               |           |                                        |
+   +---------------+-----------+----------------------------------------+
+   | action        |           | Supported actions include "listbes",   |
+   |               |           | "renamebe", "activatebe", "createbe",  |
+   |               |           | "destroybe", "mountbe", and "umountbe" |
+   +---------------+-----------+----------------------------------------+
+
+Table test is presented on table :numref:`Table %s <table_test>`.
 
 Level 3
 ---------
@@ -155,6 +160,11 @@ to be listed as a sphinx extension.
 
 Make table titles and figure captions consistent?
 (Both on top or on bottom, left- or center-justified)
-Not sure about this one - tables are flexible to the writer. Captions
-seem to be always displayed at the bottom of the image, with the text
-justified left.
+trueos_style.css: #1945 - 1953. Copied values for figure captions.
+
+Alter table header colors:
+trueos_style.css: #3799
+background-color: #bbeaf2
+
+Add hover color change for table elements:
+trueos_style.css: #2027-2044 - add :hover value and color #f2d8bb.

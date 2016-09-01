@@ -428,7 +428,7 @@ pdf_cover_template = 'sphinxcover.tmpl'
 # Page template name for "regular" pages
 #pdf_page_template = 'cutePage'
 # Show Table Of Contents at the beginning?
-pdf_use_toc = True
+pdf_use_toc = 'True'
 # How many levels deep should the table of contents be?
 pdf_toc_depth = 9999
 # Add section number to section references

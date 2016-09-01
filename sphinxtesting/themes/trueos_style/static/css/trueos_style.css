@@ -1938,15 +1938,18 @@ input[type="checkbox"][disabled] {
     border-spacing: 0;
     empty-cells: show;
     margin-bottom: 24px;
-line-height: 19px;
+    line-height: 19px;
 }
 .wy-table caption,
 .rst-content table.docutils caption,
 .rst-content table.field-list caption {
-    color: #000;
-    font: italic 85%/1 arial, sans-serif;
-    padding: 1em 0;
-    text-align: center
+    color: #404040;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+	font-size: 100%;
+	font-weight: 700;
+    padding: .2em;
+    text-align: left;
+	caption-side: bottom
 }
 .wy-table td,
 .rst-content table.docutils td,
@@ -1957,7 +1960,7 @@ line-height: 19px;
     font-size: 90%;
     margin: 0;
     overflow: visible;
-    padding: 8px 16px
+    padding: 8px 16px;
 }
 .wy-table td:first-child,
 .rst-content table.docutils td:first-child,
@@ -2021,9 +2024,23 @@ line-height: 19px;
     font-size: 80%
 }
 .wy-table-odd td,
-.wy-table-striped tr:nth-child(2n-1) td,
-.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
-    background-color: #f3f6f6
+.wy-table-striped tr:nth-child(odd) td,
+.rst-content table.docutils:not(.field-list) tr:nth-child(odd) td {
+    background-color: #f3f6f6;
+}
+.wy-table-odd td,
+.wy-table-striped tr:nth-child(odd):hover td,
+.rst-content table.docutils:not(.field-list) tr:nth-child(odd):hover td {
+    background-color: #f2d8bb
+}
+.wy-table-even td,
+.wy-table-striped tr:nth-child(even):hover td,
+.rst-content table.docutils:not(.field-list) tr:nth-child(even):hover td {
+    background-color: #f2d8bb
+}
+.wy-table tr,
+.rst-content table.docutils th:hover{
+	background-color: #f2d8bb
 }
 .wy-table-backed {
     background-color: #f3f6f6
@@ -3791,7 +3808,7 @@ th.spiffy_span {
 }
 .docutils th,
 .spiffy_table th {
-    background-color: LemonChiffon;
+    background-color: #bbeaf2;
     font-weight: 700;
     text-align: center;
     border-color: darkgray;
@@ -3838,7 +3855,6 @@ th {
 table.docutils {
     border-collapse: collapse;
 }
-
 /*"""""""""""""""""""""""""""""""""""""""""""""""*
  | spiffy_table adjusted for rst/RtD      (END)  | 
  *"""""""""""""""""""""""""""""""""""""""""""""""*/
