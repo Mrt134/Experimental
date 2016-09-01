@@ -168,3 +168,14 @@ background-color: #bbeaf2
 
 Add hover color change for table elements:
 trueos_style.css: #2027-2044 - add :hover value and color #f2d8bb.
+
+New feedback to incorporate post 9/1/16:
+look at different colors for table headers and hover.
+
+darken (or change tints) alternate rows in tables a little more.
+
+make the text size in code blocks and lists exactly the same as the rest of the doc (small right now).
+
+Confirm if table headers should be left justified or centered.
+
+Use #8b0000  for the red and #0707ff  for the blue link colors.
