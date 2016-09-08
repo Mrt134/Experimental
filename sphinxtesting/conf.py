@@ -104,6 +104,10 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+#Option to add text substitutions to all .rst files being built.
+rst_prolog = """
+.. |lumina| replace:: Lumina """u'\u00AE'"""
+"""
 # -- Option to change :menuselection: arrow -----------------------------
 
 from docutils import nodes, utils

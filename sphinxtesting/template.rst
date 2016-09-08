@@ -31,8 +31,6 @@ Level 2
 Table test with numfig - numfig references should incorporate a
 caption?
 
-.. fix from stackoverflow:
-
 .. _table_test:
 
 .. table:: Table Testing
@@ -104,6 +102,9 @@ Testing *italics*.
  Testing a code block.
  
  Creating a large box for testing.
+
+Lumina replace test:
+|lumina| is x, y, and z.
  
 Add additional themeing elements as they appear.
 
@@ -179,3 +180,16 @@ make the text size in code blocks and lists exactly the same as the rest of the 
 Confirm if table headers should be left justified or centered.
 
 Use #8b0000  for the red and #0707ff  for the blue link colors.
+
+Same size typewriter font for all these (same point size as normal font):
+    :command:
+    :file:
+    :samp:
+
+(command is good, code.file still does 95% in main text)
+
+Table column headers like Description should be left-justified like table title and contents (also helps with finding them in wide browser windows)
+
+Semicircle ends on search box make it kind of not look like a search box.  Maybe just reduce the rounding.
+
+Font sizes in tables is reduced by one standard size.  No need for these to be smaller at all, just use the same size as main text.
