@@ -70,6 +70,8 @@ Directives:
 
 :menuselection:`Click 1 --> Click 2` with extra text for comparison.
 
+:samp:`testsample` with comparison text.
+
 Experiment with monospace formats for file and command
 directives.
 
@@ -170,26 +172,37 @@ background-color: #bbeaf2
 Add hover color change for table elements:
 trueos_style.css: #2027-2044 - add :hover value and color #f2d8bb.
 
-New feedback to incorporate post 9/1/16:
+**New feedback to incorporate post 9/1/16:**
+
 look at different colors for table headers and hover.
+table headers: ln #3814 now #6699cc , hover #2027-2044 is now #85adad
 
 darken (or change tints) alternate rows in tables a little more.
+ln 2020: darkened to #e1e1d0
 
 make the text size in code blocks and lists exactly the same as the rest of the doc (small right now).
+fixed
 
 Confirm if table headers should be left justified or centered.
+ln 3813: text-align: left
 
 Use #8b0000  for the red and #0707ff  for the blue link colors.
+trueosstyle.css #2093-2103: used suggested color values
 
 Same size typewriter font for all these (same point size as normal font):
-    :command:
-    :file:
-    :samp:
+
+ :command:
+ :file:
+ :samp:
 
 (command is good, code.file still does 95% in main text)
+trueosstyle.css #3691: added samp to standard role format, increased text size to 100%
 
 Table column headers like Description should be left-justified like table title and contents (also helps with finding them in wide browser windows)
+ln 3813: text-align: left
 
 Semicircle ends on search box make it kind of not look like a search box.  Maybe just reduce the rounding.
+trueosstyle.css #2870 removed border-radius line.
 
 Font sizes in tables is reduced by one standard size.  No need for these to be smaller at all, just use the same size as main text.
+trueosstyle.css #1954 font-size now 100%

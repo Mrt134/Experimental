@@ -34,7 +34,7 @@ extensions = [
 #    'sphinx.ext.ifconfig',
 #    'sphinxcontrib.httpdomain',
 #    'wikipedia',
-    'rst2pdf.pdfbuilder'
+#    'rst2pdf.pdfbuilder'
 ]
 
 # -- Options for automatic Figure numbering
