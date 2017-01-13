@@ -1,0 +1,48 @@
+.Dd <Date created/updated>
+.Dt <name and manpage section #, all uppercase>
+.Os 1.0 <version #>
+
+.Sh NAME <section header>
+.Nm <name>
+.Nd <description>
+
+.Sh SYNOPSIS
+.Nm
+.Op Fl <argument; new .Op Fl entry for each argument>
+.Br <next line>
+<repeat .Nm, .Op Fl, .Br as necessary>
+<ALTERNATE METHOD>
+.Nm
+[-ex][-x name][-P][-c | -m]
+
+.Sh DESCRIPTION
+The
+.Nm
+utility <verbose description>
+.Pp <blank line, position holder>
+Here are the options:
+.Bl -tag -width indent <indent all that follows>
+.It Fl <d> <Adds a dash and bolds them both>
+<Argument description>
+.It Fl <h> <adds the dash and bolds them both>
+<argument description>
+.El <end the indent section>
+
+.Pp <blank line>
+The available action commands available to you are
+.It \fB<command>\fR
+This does X with Y on Z.
+
+.Sh <ALL USER CREATED SECTIONS>
+
+.Sh FILES
+example.conf
+.Br <next line>
+/usr/local/share/example
+
+.Sh SEE ALSO
+.Xr <manpage #>
+
+.Sh AUTHORS
+.An <name>
+.Aq <contact>
