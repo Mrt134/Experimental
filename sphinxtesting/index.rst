@@ -1,5 +1,5 @@
-Style Elements Testing Template
-===============================
+Style Elements Testing
+======================
 
 Contents:
 
