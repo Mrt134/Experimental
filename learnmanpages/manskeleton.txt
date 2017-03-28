@@ -1,3 +1,5 @@
+https://www.freebsd.org/cgi/man.cgi?query=mdoc&sektion=7&apropos=0&manpath=FreeBSD+11.0-RELEASE+and+Ports
+
 .\ This is a skeleton manpage incorporating as many "required" elements of manpages that I can find. Explanatory notes are enclosed in <> and should be removed.
 
 .Dd <Date created/updated>

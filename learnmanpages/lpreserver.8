@@ -1,0 +1,501 @@
+.Dd March 28, 2017
+.Dt LPRESERVER 8
+.Os TrueOS Rolling Release
+.\"-------------------------------------------------------------------
+.Sh NAME
+.Nm lpreserver
+.Nd ZFS management utility for TrueOS.
+.\"-------------------------------------------------------------------
+.Sh SYNOPSIS
+.Nm
+.Cm <command> [<sub-command>, <options>]
+.Pp
+.Cm cronsnap [start [<dataset>, <frequency>, <numToKeep>] | stop 
+<dataset> | list <dataset> | exclude [<dataset1>, <dataset2>, ...] | 
+rmexclude [<dataset1>, <dataset2>, ...] | listexclude <dataset>]
+.Pp
+.Cm cronscrub [start <pool>, <frequency> | stop <pool> | list <pool>]
+.Pp
+.Cm help [cronsnap | cronscrub | snapshot | replicate | set | get | 
+status]
+.Pp
+.Cm snapshot [create <dataset>, <snapshotname>, <comment> | remove 
+<dataset>, <snapshotname> | revert <dataset>, <snapshotname> | list 
+<dataset>]
+.Pp
+.Cm replicate [add [<remotehost>, <user>, <port>, <hostdataset>, 
+<remotedataset>, <time> | iscsi <*.lps file>, <hostdataset>, <time>, 
+[geli key] | iscsi <*.lpiscsi file>, <hostdataset>, <time>, 
+[password file]]| expand <localdataset/zpool>, <target host> | export 
+<localdataset/zpool>, <target host> | import <localdataset/zpool>, 
+<target host> | init <localdataset/zpool>, <target host> | list | 
+remove <dataset>, <target host> | run <dataset>, <target host> | 
+saveiscsi [<localdataset/zpool>, <target host>, [password file] | 
+geli <localdataset/zpool>, <target host>, [password file]] | exclude 
+[<dataset1>, <dataset 2> , ...] | rmexclude [<dataset1>, <dataset 2> 
+, ...] | listexclude <dataset> | pruneremote <dataset>, <target 
+host>]
+.Pp
+.Cm set [duwarn <0-99 percent>| email [ALL | WARN | ERROR] | 
+recursive [On | OFF] | pruneremote [ON | OFF]]
+.Pp
+.Cm get
+.Pp
+.Cm status
+.\"-------------------------------------------------------------------
+.Sh DESCRIPTION
+The
+.Nm
+utility manages ZFS snapshots on TrueOS systems.
+There are numerous commands to both automate
+.Nm
+and manage snapshots, scrubs, and replication.
+.Pp
+Use
+.Nm
+by typing the desired command, subcommand, and any relevant options.
+Commands, subcommands, and options are all described below.
+.\"-------------------------------------------------------------------
+.Sh COMMANDS
+.Bl -tag -width indent
+.It Ic cronsnap
+Manage scheduled snapshots.
+.It Ic cronscrub
+Manage scheduled scrubs.
+.It Ic help
+Describes available commands. Use with a command name to further 
+describe a command's usage.
+.It Ic snapshot
+Manage snapshot tasks.
+.It Ic replicate
+Manage replication tasks.
+.It Ic set
+Set lpreserver options.
+.It Ic get
+Get list of lpreserver options.
+.It Ic status
+List datasets, also with the last snapshot and replication date.
+.El
+.\"-------------------------------------------------------------------
+.Sh SUBCOMMANDS
+Here are all subcommands, organized under each
+.Nm
+command:
+.Pp
+.Em cronsnap:
+.Bl -tag -width indent
+.Pp
+.It Ic start
+Schedule snapshots for a dataset.
+.It Ic stop
+Stop scheduled snapshots for a dataset.
+.It Ic list
+List scheduled snapshots.
+.It Ic exclude
+Exclude datasets for scheduled snapshots.
+.It Ic rmexclude
+Remove datasets from exclude list for scheduled snapshot.
+.It Ic listexclude
+List excluded datasets for scheduled snapshots.
+.El
+.Pp
+.Em cronscrub:
+.Bl -tag -width indent
+.Pp
+.It Ic start
+Schedule scrub for a pool.
+.It Ic stop
+Stop scheduled scrub for a pool.
+.It Ic list
+List scheduled scrubs.
+.El
+.Pp
+.Em snapshot:
+.Bl -tag -width indent
+.Pp
+.It Ic create
+Create a snapshot of a dataset.
+.It Ic remove
+Remove a snapshot of a dataset.
+.It Ic revert
+Revert to a snapshot of a dataset.
+.It Ic list
+List snapshots of a dataset.
+.El
+.Pp
+.Em replicate:
+.Bl -tag -width indent
+.Pp
+.It Ic add
+Add a new replication target.
+.It Ic expand
+Expand the remote iSCSI zpool.
+.It Ic export
+Export/Offline an iSCSI zpool.
+.It Ic import
+Import/Online an iSCSI zpool.
+.It Ic init
+Initialize the remote side again.
+.It Ic list
+List replication targets.
+.It Ic remove
+Remove a replication target.
+.It Ic run
+Start a replication manually.
+.It Ic saveiscsi
+Save the iSCSI config data/GELI key.
+.It Ic exclude
+Exclude datasets from replication.
+.It Ic rmexclude
+Remove datasets from exclude list for replication.
+.It Ic listexclude
+List excluded datasets from replication.
+.It Ic pruneremote
+Remove remote datasets on target host which no longer exists on local 
+host.
+.El
+.Pp
+.Em set:
+.Bl -tag -width indent
+.Pp
+.It Ic duwarn
+Set to a disk percentage [0-99] at which to warn of low disk space.
+.It Ic email
+Set the e-mail address to receive notifications. This requires the 
+"mail" command is configured for outgoing mail.
+.It Ic recursive
+Can be set to "ON" or "OFF". The default "ON" creates or destroys 
+snapshots recursively, for all children of the target zpool/dataset. 
+Changing to "OFF" only creates or destroys snapshots on the specified 
+dataset.
+.It Ic pruneremote
+Can be set to "ON" or "OFF". Setting to "ON" allows
+.Nm
+during replication to prune remote datasets on destination which are 
+no longer available on the source. The default "OFF" indicates that 
+during replication
+.Nm
+does NOT prune remote datasets on destination which are no longer 
+available on the source.
+.El
+.Pp
+.\"-------------------------------------------------------------------
+.Sh OPTIONS
+Subcommands can have a variety of options. These options are
+described here, categorized by command and subcommand:
+.Pp
+.Em cronsnap start:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+A user defined dataset.
+.It Ic <frequency>
+Frequency defines how often to create a snapshot. Usage can be [auto 
+| daily@XX (hour to execute) | hourly | 30min | 10min | 5min].
+Frequency has two modes, regular cron and anacron. Specifying a number 
+or 'daily', 'weekly', and 'monthly' without using "@" creates the 
+schedule in "anacron" mode. Using "@" engages "cron" mode.
+.It Ic numToKeep
+Total number of snapshots to save on the system. User provides a 
+numeric value.
+.El
+.Pp
+.Em cronsnap stop:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+A user defined dataset.
+.El
+.Pp
+.Em cronsnap list:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.El
+.Pp
+.Em cronsnap exclude:
+.Bl -tag -width indent
+.Pp
+.It Ic [<dataset1>, <dataset2>]
+Excludes one or more datasets from scheduled snapshots.
+.El
+.Pp
+.Em cronsnap rmexclude:
+.Bl -tag -width indent
+.Pp
+.It Ic [<dataset1>, <dataset2>]
+Remove exclusion for one or more datasets that was previously 
+excluded from scheduled snapshots. This removes the datasets from the 
+exclude list.
+.El
+.Pp
+.Em cronsnap listexclude:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+List which datasets are excluded from schedule snapshots.
+.El
+.Pp
+.Em cronscrub start
+.Bl -tag -width indent
+.Pp
+.It Ic <pool>
+User defined pool.
+.It Ic <frequency>
+Frequency defines how often to scrub a pool. Usage can be [VV (execute 
+every "VV" days) | daily@XX (XX=hour)| weekly@YY@XX ("YY"=day of week) 
+| monthly@ZZ@XX (ZZ=day of month)]. Frequency has two modes, regular 
+cron and anacron. Specifying a number or 'daily', 'weekly', and 
+'monthly' without using "@" creates the schedule in "anacron" mode. 
+Using "@" engages "cron" mode. Anacron is recommended to ensure the 
+scrub always runs.
+.El
+.Pp
+.Em cronscrub stop:
+.Bl -tag -width indent
+.Pp
+.It Ic <pool>
+Define a pool to stop a scheduled scrub.
+.El
+.Pp
+.Em cronscrub list:
+.Bl -tag -width indent
+.Pp
+.It Ic <pool>
+List all scrub schedules for a defined pool. If no pool is defined
+.Nm
+lists schedules for all pools.
+.El
+.Pp
+.Em snapshot create:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <snapshotname>
+User defined snapshot.
+.It Ic <"comment">
+A unique comment can be added to the created snapshot. Comments are 
+alwasy between "".
+.El
+.Pp
+.Em snapshot remove:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <snapshotname>
+User defined snapshot.
+.El
+.Pp
+.Em snapshot revert:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <snapshotname>
+User defined snapshot.
+.El
+.Pp
+.Em snapshot list:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+Lists all snapshots within the specified dataset.
+.El
+.Pp
+.Em replicate add:
+.Bl -tag -width indent
+.Pp
+.It Ic <remotehost>
+User designated host.
+.It Ic <user>
+Specified user name.
+.It Ic <port>
+Connection port.
+.It Ic <hostdataset>
+Specified dataset to be replicated.
+.It Ic <remotedataset>
+Dataset to which the replicated snapshot is saved.
+.It Ic <time>
+Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
+10 min | manual]. XX= Time to perform replication in 24hr notation. 
+sync= Do replication with snaps (Not recommended for frequent snaps). 
+hour= Replicate hourly. alternating= Replicate once every 48 hours 
+using the even/odd days of the month. manual= Only replicate when 
+requested by the user.
+.El
+.Pp
+.Em replicate add iscsi (GELI):
+.Bl -tag -width indent
+.Pp
+.It Ic <*.lps file>
+User designated file.
+.It Ic <hostdataset>
+Specified dataset to be replicated.
+.It Ic <remotedataset>
+Dataset to which the replicated snapshot is saved.
+.It Ic <time>
+Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
+10 min | manual]. XX= Time to perform replication in 24hr notation. 
+sync= Do replication with snaps (Not recommended for frequent snaps). 
+hour= Replicate hourly. alternating= Replicate once every 48 hours 
+using the even/odd days of the month. manual= Only replicate when 
+requested by the user.
+.It Ic [geli key]
+User provided GELI encryption key.
+.El
+.Pp
+.Em replicate add iscsi:
+.Bl -tag -width indent
+.Pp
+.It Ic <*.lpiscsi file>
+User provided file.
+.It Ic <hostdataset>
+Specified dataset to be replicated.
+.It Ic <time>
+Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
+10 min | manual]. XX= Time to perform replication in 24hr notation. 
+sync= Do replication with snaps (Not recommended for frequent snaps). 
+hour= Replicate hourly. alternating= Replicate once every 48 hours 
+using the even/odd days of the month. manual= Only replicate when 
+requested by the user.
+.It Ic [password file]
+User provided file containing the required password.
+.El
+.Pp
+.Em replicate expand:
+.Bl -tag -width indent
+.Pp
+.It Ic <localdataset/zpool>
+User provided zpool or local dataset.
+.It Ic <target host>
+User defined replication target.
+.El
+.Pp
+.Em replicate export:
+.Bl -tag -width indent
+.Pp
+.It Ic <localdataset/zpool>
+User provided zpool or local dataset.
+.It Ic <target host>
+User defined replication target.
+.El
+.Pp
+.Em replicate import:
+.Bl -tag -width indent
+.Pp
+.It Ic <localdataset/zpool>
+User provided zpool or local dataset.
+.It Ic <target host>
+User defined replication target.
+.El
+.Pp
+.Em replicate init:
+.Bl -tag -width indent
+.Pp
+.It Ic <localdataset/zpool>
+User provided zpool or local dataset.
+.It Ic <target host>
+User defined replication target.
+.El
+.Pp
+.Em replicate remove:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <target host>
+User defined host from which to remove the replication task.
+.El
+.Pp
+.Em replicate run:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <target host>
+User defined host to manually stream the <dataset> replication.
+.El
+.Pp
+.Em replicate saveiscsi and saveiscsi geli:
+.Bl -tag -width indent
+.Pp
+.It Ic <localdataset/zpool>
+User provided zpool or local dataset.
+.It Ic <target host>
+User defined replication target.
+.It Ic [password file]
+Creates a GELI encrypted file containing all the iSCSI connection 
+information and the GELI key for the replication target. Prompts for 
+the password to set on this GELI encrypted file.
+.El
+.Pp
+.Em replicate exclude:
+.Bl -tag -width indent
+.Pp
+.It Ic [<dataset1>, <dataset2>]
+Exclude one or more datasets from replication.
+.El
+.Pp
+.Em replicate rmexclude:
+.Bl -tag -width indent
+.Pp
+.It Ic [<dataset1>, <dataset2>]
+Remove exclusion for one or more datasets that was previously excluded 
+from replication. This removes the datasets from the exclude list.
+.El
+.Pp
+.Em replicate listexclude:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+List which datasets are excluded from replication.
+.El
+.Pp
+.Em replicate pruneremote:
+.Bl -tag -width indent
+.Pp
+.It Ic <dataset>
+User defined dataset.
+.It Ic <target host>
+User provided target host. Removes remote datasets on target host 
+which no longer exist on local host.
+.El
+.Pp
+
+TODO: FINISH ADDING "SET" OPTIONS
+
+
+.\"-------------------------------------------------------------------
+.Sh EXAMPLES
+.Bl -tag -width indent
+.It lpreserver help cronsnap
+Display detailed help and instructions for using the cronsnap 
+sub-command.
+.Pp
+.It lpreserver replicate add freenas.8343 backupuser 22 tank1 
+tankbackup/backups sync
+Schedule replication of tank1 to tankbackup/backups with each 
+snapshot.
+.Pp
+.It lpreserver status
+List monitored dataset's last snapshot and replication.
+.\"-------------------------------------------------------------------
+.Sh FILES
+.Bl -tag -width indent
+.It Pa /var/log/lpreserver/lpreserver.log
+Log file of
+.Nm
+events.
+.It Pa /etc/crontab
+Manages scheduling.
+.\"-------------------------------------------------------------------
+.Sh SEE ALSO
+.Xr ZFS(8)
+.Xr ZPOOL(8)
+.\"-------------------------------------------------------------------
+.Sh Authors
+.An Tim Moore
+.Aq timmoore88@gmail.com
