@@ -11,8 +11,8 @@
 .Cm <command> [<sub-command>, <options>]
 .Pp
 .Cm cronsnap [start [<dataset>, <frequency>, <numToKeep>] | stop 
-<dataset> | list <dataset> | exclude [<dataset1>, <dataset2>, ...] | 
-rmexclude [<dataset1>, <dataset2>, ...] | listexclude <dataset>]
+<dataset> | list <dataset> | exclude [<dataset1>, <dataset2>] | 
+rmexclude [<dataset1>, <dataset2>] | listexclude <dataset>]
 .Pp
 .Cm cronscrub [start <pool>, <frequency> | stop <pool> | list <pool>]
 .Pp
@@ -36,7 +36,7 @@ geli <localdataset/zpool>, <target host>, [password file]] | exclude
 , ...] | listexclude <dataset> | pruneremote <dataset>, <target 
 host>]
 .Pp
-.Cm set [duwarn <0-99 percent>| email [ALL | WARN | ERROR] | 
+.Cm set [duwarn <0-99 percent> | email [ALL | WARN | ERROR] | 
 recursive [On | OFF] | pruneremote [ON | OFF]]
 .Pp
 .Cm get
@@ -46,15 +46,14 @@ recursive [On | OFF] | pruneremote [ON | OFF]]
 .Sh DESCRIPTION
 The
 .Nm
-utility manages ZFS snapshots on TrueOS systems.
-There are numerous commands to both automate
+utility manages ZFS on TrueOS systems. Managing snapshots, scrubs, and 
+replication is possible through
 .Nm
-and manage snapshots, scrubs, and replication.
-.Pp
-Use
-.Nm
-by typing the desired command, subcommand, and any relevant options.
-Commands, subcommands, and options are all described below.
+, as well as scheduling all tasks.
+.Nm operated through the use of commands, sub-commands, and attaching 
+options to the sub-command. Commands may also be restricted to the 
+root user. Each individual element is listed below, along with a 
+short description.
 .\"-------------------------------------------------------------------
 .Sh COMMANDS
 .Bl -tag -width indent
@@ -320,11 +319,13 @@ Specified dataset to be replicated.
 Dataset to which the replicated snapshot is saved.
 .It Ic <time>
 Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
-10 min | manual]. XX= Time to perform replication in 24hr notation. 
-sync= Do replication with snaps (Not recommended for frequent snaps). 
-hour= Replicate hourly. alternating= Replicate once every 48 hours 
-using the even/odd days of the month. manual= Only replicate when 
-requested by the user.
+10 min | manual].
+XX = Time to perform replication in 24hr notation. 
+sync = Do replication with snaps (Not recommended for frequent snaps). 
+hour = Replicate hourly.
+alternating = Replicate once every 48 hours using the even/odd days 
+of the month.
+manual = Only replicate when requested by the user.
 .El
 .Pp
 .Em replicate add iscsi (GELI):
@@ -338,11 +339,13 @@ Specified dataset to be replicated.
 Dataset to which the replicated snapshot is saved.
 .It Ic <time>
 Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
-10 min | manual]. XX= Time to perform replication in 24hr notation. 
-sync= Do replication with snaps (Not recommended for frequent snaps). 
-hour= Replicate hourly. alternating= Replicate once every 48 hours 
-using the even/odd days of the month. manual= Only replicate when 
-requested by the user.
+10 min | manual].
+XX = Time to perform replication in 24hr notation. 
+sync = Do replication with snaps (Not recommended for frequent snaps). 
+hour = Replicate hourly.
+alternating = Replicate once every 48 hours using the even/odd days 
+of the month.
+manual = Only replicate when requested by the user.
 .It Ic [geli key]
 User provided GELI encryption key.
 .El
@@ -356,11 +359,13 @@ User provided file.
 Specified dataset to be replicated.
 .It Ic <time>
 Schedule the replication. Usage is <time>=[XX | sync | hour | 30min | 
-10 min | manual]. XX= Time to perform replication in 24hr notation. 
-sync= Do replication with snaps (Not recommended for frequent snaps). 
-hour= Replicate hourly. alternating= Replicate once every 48 hours 
-using the even/odd days of the month. manual= Only replicate when 
-requested by the user.
+10 min | manual].
+XX = Time to perform replication in 24hr notation. 
+sync = Do replication with snaps (Not recommended for frequent snaps). 
+hour = Replicate hourly.
+alternating = Replicate once every 48 hours using the even/odd days 
+of the month.
+manual = Only replicate when requested by the user.
 .It Ic [password file]
 User provided file containing the required password.
 .El
@@ -464,10 +469,26 @@ User provided target host. Removes remote datasets on target host
 which no longer exist on local host.
 .El
 .Pp
-
-TODO: FINISH ADDING "SET" OPTIONS
-
-
+.Em set duwarn:
+.Bl -tag -width indent
+.Pp
+.It Ic <0-99>
+Type a numeric percent value for
+.Nm
+to generate a warning about low disk space.
+.El
+.Pp
+.Em set email:
+.Bl -tag -width indent
+.Pp
+.It Ic ALL
+Send mail for every snapshot, warning, and error.
+.It Ic WARN
+Send mail for warnings and errors (Default).
+.It Ic Error
+Send mail for errors only.
+.El
+.Pp
 .\"-------------------------------------------------------------------
 .Sh EXAMPLES
 .Bl -tag -width indent
@@ -475,13 +496,18 @@ TODO: FINISH ADDING "SET" OPTIONS
 Display detailed help and instructions for using the cronsnap 
 sub-command.
 .Pp
+.It lpreserver replicate exclude tank1 tank1/tmp tank1/var/tmp
+Exclude datasets tank1/tmp and tank1/car/tmp from replicationi for 
+dataset tank1.
 .It lpreserver replicate add freenas.8343 backupuser 22 tank1 
 tankbackup/backups sync
+.Pp
 Schedule replication of tank1 to tankbackup/backups with each 
 snapshot.
 .Pp
 .It lpreserver status
 List monitored dataset's last snapshot and replication.
+.El
 .\"-------------------------------------------------------------------
 .Sh FILES
 .Bl -tag -width indent
@@ -491,9 +517,10 @@ Log file of
 events.
 .It Pa /etc/crontab
 Manages scheduling.
+.El
 .\"-------------------------------------------------------------------
 .Sh SEE ALSO
-.Xr ZFS(8)
+.Xr ZFS(8),
 .Xr ZPOOL(8)
 .\"-------------------------------------------------------------------
 .Sh Authors
