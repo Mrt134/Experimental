@@ -1,0 +1,49 @@
+.Dd March 29, 2017
+.Dt START-LUMINA-DESKTOP 8
+.Os TrueOS Rolling Release
+.\"-------------------------------------------------------------------
+.Sh NAME
+.Nm start-lumina-desktop
+.Nd Basic binary that starts a new Lumina session for the current 
+user.
+.\"-------------------------------------------------------------------
+.Sh SYNOPSIS
+.Nm
+.\"-------------------------------------------------------------------
+.Sh DESCRIPTION
+The
+.Nm
+utility checks for an existing X11 session, starting one if necessary.
+The new local session has simplified settings with no VNC or XRDMCP 
+support.
+.Pp
+Here are the
+.Nm
+options:
+.Pp
+.Bl -tag -width indent
+.It Ic <option1>
+.It Ic <option2>
+.El
+.\"-------------------------------------------------------------------
+.Sh EXAMPLES
+.Bl -tag -width indent
+.It start-lumina-desktop
+Start a new X11 session, if one does not exist already.
+.El
+.\"-------------------------------------------------------------------
+.Sh FILES
+.Bl -tag -width indent
+.It Pa /file1
+Description1
+.It Pa /file2
+Description2
+.El
+.\"-------------------------------------------------------------------
+.Sh SEE ALSO
+.Xr
+.Xr
+.\"-------------------------------------------------------------------
+.Sh AUTHOR
+.An Tim Moore
+.Aq timmoore88@gmail.com
