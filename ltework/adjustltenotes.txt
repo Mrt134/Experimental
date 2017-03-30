@@ -1,0 +1,34 @@
+JSON Aide:
+
+{
+  "Dictionary" : {
+    "file_regex" : "<something>",
+    "name" : "<something>",
+    "text_rules" : {
+      "fixed" : "<true/false>"
+    }
+  }
+}
+
+LTE EXPANSIONS
+==============
+
+I. Dictionary Files (regex, macros, etc.)
+
+  A. File Definitions
+
+    1. File extension(s) for auto-detection (define with Regex).
+    2. Name of highlighting ("manpage", "sphinx", etc.)
+    3. Text limitations. Examples: Fixed-width, wrap text, monospace, tab indent, line limit.
+
+  B. Rules (many)
+
+    1. Regex (match text)/macro
+    2. Macro Insert (optional)
+    3. Color (background/foreground - optional)
+    4. Font Weight (optional)
+    5. Muli-line Regex
+      a. start Regex
+      b. end Regex
+    6. Priority (0-100)
+    7. URL/Text for reference
