@@ -8,23 +8,23 @@
 .\"-------------------------------------------------------------------
 .Sh SYNOPSIS
 .Nm
-.Cm <command> [<sub-command>, <options>]
+.Cm <command> [<sub-command> <options>]
 .Pp
-.Cm cronsnap [start [<dataset>, <frequency>, <numToKeep>] | stop 
-<dataset> | list <dataset> | exclude [<dataset1>, <dataset2>] | 
-rmexclude [<dataset1>, <dataset2>] | listexclude <dataset>]
+.Cm cronsnap [start [<dataset> <frequency> <numToKeep>] | stop 
+<dataset> | list <dataset> | exclude [<dataset1> <dataset2>] | 
+rmexclude [<dataset1> <dataset2>] | listexclude <dataset>]
 .Pp
-.Cm cronscrub [start <pool>, <frequency> | stop <pool> | list <pool>]
+.Cm cronscrub [start <pool> <frequency> | stop <pool> | list <pool>]
 .Pp
 .Cm help [cronsnap | cronscrub | snapshot | replicate | set | get | 
 status]
 .Pp
-.Cm snapshot [create <dataset>, <snapshotname>, <comment> | remove 
-<dataset>, <snapshotname> | revert <dataset>, <snapshotname> | list 
+.Cm snapshot [create <dataset> <snapshotname> <"comment"> | remove 
+<dataset> <snapshotname> | revert <dataset> <snapshotname> | list 
 <dataset>]
 .Pp
-.Cm replicate [add [<remotehost>, <user>, <port>, <hostdataset>, 
-<remotedataset>, <time> | iscsi <*.lps file>, <hostdataset>, <time>, 
+.Cm replicate [add [<remotehost> <user> <port> <hostdataset> 
+<remotedataset> <time> | iscsi <*.lps file> <hostdataset> <time>, 
 [geli key] | iscsi <*.lpiscsi file>, <hostdataset>, <time>, 
 [password file]]| expand <localdataset/zpool>, <target host> | export 
 <localdataset/zpool>, <target host> | import <localdataset/zpool>, 
