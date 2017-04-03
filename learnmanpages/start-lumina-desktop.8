@@ -1,6 +1,6 @@
 .Dd March 29, 2017
-.Dt START-LUMINA-DESKTOP 8
-.Os TrueOS Rolling Release
+.Dt START-LUMINA-DESKTOP 1
+.Os Lumina Desktop Environment
 .\"-------------------------------------------------------------------
 .Sh NAME
 .Nm start-lumina-desktop
@@ -14,17 +14,10 @@ user.
 The
 .Nm
 utility checks for an existing X11 session, starting one if necessary.
-The new local session has simplified settings with no VNC or XRDMCP 
-support.
-.Pp
-Here are the
 .Nm
-options:
-.Pp
-.Bl -tag -width indent
-.It Ic <option1>
-.It Ic <option2>
-.El
+also starts auxiliary processes for the Lumina Desktop. A newly 
+created X11 session has simplified settings with no VNC or XDMCP 
+support. There are no options for this command.
 .\"-------------------------------------------------------------------
 .Sh EXAMPLES
 .Bl -tag -width indent
@@ -32,17 +25,9 @@ options:
 Start a new X11 session, if one does not exist already.
 .El
 .\"-------------------------------------------------------------------
-.Sh FILES
-.Bl -tag -width indent
-.It Pa /file1
-Description1
-.It Pa /file2
-Description2
-.El
-.\"-------------------------------------------------------------------
 .Sh SEE ALSO
-.Xr
-.Xr
+.Xr lumina-desktop.8,
+.Xr lumina-open.1
 .\"-------------------------------------------------------------------
 .Sh AUTHOR
 .An Tim Moore

@@ -1,53 +1,60 @@
-.\" PER KEN (3/29/17), LUMINA-DESKTOP MANPAGE SHOULD REDIRECT TO
-.\" START-LUMINA-DESKTOP MANPAGE. FILL EMPTY PAGE IN LATER.
 .Dd March 29, 2017
 .Dt LUMINA-DESKTOP 8
-.Os TrueOS Rolling Release
+.Os Lumina Desktop Environment
 .\"-------------------------------------------------------------------
 .Sh NAME
 .Nm lumina-desktop
-.Nd Binary used to run the desktop.
+.Nd Binary used to run or communicate with the desktop.
 .\"-------------------------------------------------------------------
 .Sh SYNOPSIS
-.Nm
-.Cm <file>
-.Cm lumina-desktop --version (returns with the currently installed version of Lumina)
-.\" NEEDS EXPANSION!!!!!!!!!!!
+.Cm lumina-desktop
+.Pp
+.Cm lumina-desktop --check-geoms
+.Pp
+.Cm lumina-desktop --version
 .\"-------------------------------------------------------------------
 .Sh DESCRIPTION
 The
 .Nm
-utility <CONTINUE DESCRIPTION>
+utility starts or communicates with instances of the Lumina desktop. 
+NOTE: The start-lumina-desktop command is recommended over
+.Nm
+, refer to the SEE ALSO section.
 .Pp
 Here are the
 .Nm
 options:
 .Pp
 .Bl -tag -width indent
-.It Ic <option1>
-.It Ic <option2>
+.It Fl -check-geoms
+Prompts the desktop to verify and/or match current monitor settings.
+.It Fl -version
+Returns the currently installed version of Lumina.
 .El
 .\"-------------------------------------------------------------------
 .Sh EXAMPLES
 .Bl -tag -width indent
-.It example1
-ex1 description.
 .Pp
-.It example2
-ex2 description.
+.It lumina-desktop --version
+"1.2.1" (User's installed version of Lumina.)
 .El
 .\"-------------------------------------------------------------------
 .Sh FILES
 .Bl -tag -width indent
-.It Pa /file1
-Description1
-.It Pa /file2
-Description2
+.It Pa /usr/local/bin/lumina-desktop
+Binary location.
+.It Pa /usr/local/share/lumina-desktop/
+Master directory containing sub-directories and auxiliary files 
+related to the Lumina runtime.
+.It Pa ${XDG_CONFIG_HOME}/lumina-desktop/
+Directory containing the user's configuration files. See
+https://specifications.freedesktop.org/basedir-spec/latest/ar01s03.html 
+for more information about the environment variable.
 .El
 .\"-------------------------------------------------------------------
 .Sh SEE ALSO
-.Xr
-.Xr
+.Xr lumina-open.1,
+.Xr start-lumina-desktop.8
 .\"-------------------------------------------------------------------
 .Sh AUTHOR
 .An Tim Moore

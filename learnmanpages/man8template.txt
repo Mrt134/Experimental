@@ -2,15 +2,15 @@ General Rules for Manpages:
 
 Category #s (FreeBSD):
 
-1        FreeBSD General Commands Manual
+1     FreeBSD General Commands Manual
 2	  FreeBSD System Calls Manual
 3	  FreeBSD Library Functions Manual
 4	  FreeBSD Kernel Interfaces Manual
 5	  FreeBSD File Formats Manua
 6	  FreeBSD Games Manual
-7        FreeBSD Miscellaneous Information Manual
+7     FreeBSD Miscellaneous Information Manual
 8	  FreeBSD System Manager's Manual
-9        FreeBSD Kernel Developer's Manual
+9     FreeBSD Kernel Developer's Manual
 
 There is a standardized naming convention in place for manpage files:
 name.#.gz
